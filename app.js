@@ -2,6 +2,10 @@ let map;
 let markers = [];
 let allCases = [];
 
+// Handle URL parameters for view modes
+const urlParams = new URLSearchParams(window.location.search);
+const viewMode = urlParams.get('view'); // 'map' or 'table'
+
 // Initialize and add the map
 function initMap() {
     // Center of Puerto Rico
@@ -78,6 +82,21 @@ async function fetchDataAndPlot() {
         // Hide loading overlay
         document.getElementById('loading-overlay').classList.remove('active');
 
+        // Apply View Modes
+        if (viewMode === 'map') {
+            document.getElementById('table-section').style.display = 'none';
+        } else if (viewMode === 'table') {
+            // Already handled in initMap but just in case
+        }
+
+        // Setup Pop-out buttons
+        document.getElementById('btn-popout-map').addEventListener('click', () => {
+            window.open(window.location.pathname + '?view=map', '_blank', 'width=1000,height=700');
+        });
+        document.getElementById('btn-popout-table').addEventListener('click', () => {
+            window.open(window.location.pathname + '?view=table', '_blank', 'width=1000,height=700');
+        });
+        
     } catch (error) {
         console.error("Could not load cases.json:", error);
         document.getElementById('loading-overlay').innerHTML = `<p style="color: red; font-weight: bold;">Error loading data. Check console.</p>`;
@@ -85,6 +104,8 @@ async function fetchDataAndPlot() {
 }
 
 function plotMarkers(cases) {
+    if (viewMode === 'table') return; // Skip map plotting
+
     // Clear existing markers
     markers.forEach(m => m.setMap(null));
     markers = [];
@@ -165,6 +186,8 @@ function plotMarkers(cases) {
 }
 
 function generateSummary(cases) {
+    if (viewMode === 'table') return; // Skip summary
+    
     const summary = {
         Norte: { total: 0, relo: 0, recon: 0 },
         Sur: { total: 0, relo: 0, recon: 0 }
@@ -198,13 +221,15 @@ function generateSummary(cases) {
         </div>
     `;
     document.getElementById('summary-report').classList.remove('hidden');
+}
 
-    // Populate Table
+function generateTable(cases) {
+    if (viewMode === 'map') return; // Skip table
+
     const tableBody = document.getElementById('cases-table-body');
     let tableHtml = '';
     cases.forEach(c => {
         let sub = c['Subcontractor Name'] || 'N/A';
-        // Convert newlines to breaks for better display
         if (typeof sub === 'string') {
             sub = sub.replace(/\n/g, '<br>');
         }
@@ -222,6 +247,8 @@ function generateSummary(cases) {
     });
     tableBody.innerHTML = tableHtml;
 }
+
+
 
 function populateFilters() {
     const statuses = new Set();
@@ -245,6 +272,7 @@ function populateFilters() {
     document.getElementById('filter-municipality').addEventListener('change', applyFilters);
     document.getElementById('filter-subcontractor').addEventListener('change', applyFilters);
     document.getElementById('filter-type').addEventListener('change', applyFilters);
+    document.getElementById('search-case').addEventListener('input', applyFilters);
 }
 
 function populateSelect(id, values) {
@@ -258,13 +286,16 @@ function populateSelect(id, values) {
 }
 
 function applyFilters() {
+    const searchVal = document.getElementById('search-case').value.toLowerCase().trim();
     const statusVal = document.getElementById('filter-status').value;
     const munVal = document.getElementById('filter-municipality').value;
     const subVal = document.getElementById('filter-subcontractor').value;
     const typeVal = document.getElementById('filter-type').value;
 
     const filtered = allCases.filter(c => {
-        return (statusVal === 'All' || c['Stage Status'] === statusVal) &&
+        const caseId = (c['Case ID'] || '').toLowerCase();
+        return (searchVal === '' || caseId.includes(searchVal)) &&
+               (statusVal === 'All' || c['Stage Status'] === statusVal) &&
                (munVal === 'All' || c.Municipality === munVal) &&
                (subVal === 'All' || c['Subcontractor Name'] === subVal) &&
                (typeVal === 'All' || c['Award Type Equivalent'] === typeVal);
