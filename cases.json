@@ -1,1 +1,534 @@
-[]
+[
+    {
+        "Municipality": "Vega Alta",
+        "Region": "Norte",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.41064,-66.35881",
+        "Stage Status": "12 - Substantial Inspection"
+    },
+    {
+        "Municipality": "Guayama",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.00379,-66.10729",
+        "Stage Status": "12 - Substantial Inspection"
+    },
+    {
+        "Municipality": "Lajas",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "17.99622,-66.97082",
+        "Stage Status": "12 - Substantial Inspection"
+    },
+    {
+        "Municipality": "Yauco",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.02904,-66.86223",
+        "Stage Status": "11 - Structure Inspection"
+    },
+    {
+        "Municipality": "Pe\u00f1uelas",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.06269,-66.71748",
+        "Stage Status": "11 - Structure Inspection"
+    },
+    {
+        "Municipality": "Guayama",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.00354,-66.10611",
+        "Stage Status": "07 - Foundation Inspection"
+    },
+    {
+        "Municipality": "Guayama",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.00453,-66.10711",
+        "Stage Status": "11 - Structure Inspection"
+    },
+    {
+        "Municipality": "Guayama",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "17.96404,-66.16652",
+        "Stage Status": "11 - Structure Inspection"
+    },
+    {
+        "Municipality": "Guayama",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "17.96097,-66.16542",
+        "Stage Status": "11 - Structure Inspection"
+    },
+    {
+        "Municipality": "Gu\u00e1nica",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "17.96019,-66.93079",
+        "Stage Status": "11 - Structure Inspection"
+    },
+    {
+        "Municipality": "Isabela",
+        "Region": "Norte",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.50128,-67.0145",
+        "Stage Status": "11 - Structure Inspection"
+    },
+    {
+        "Municipality": "Moca",
+        "Region": "Norte",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.42748,-67.10705",
+        "Stage Status": "11 - Structure Inspection"
+    },
+    {
+        "Municipality": "Bayam\u00f3n",
+        "Region": "Norte",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.38319,-66.17253",
+        "Stage Status": "11 - Structure Inspection"
+    },
+    {
+        "Municipality": "Gu\u00e1nica",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.00602,-66.90244",
+        "Stage Status": "12 - Substantial Inspection"
+    },
+    {
+        "Municipality": "Gu\u00e1nica",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.00081,-66.87351",
+        "Stage Status": "08 - Walls Inspection (1st Level)"
+    },
+    {
+        "Municipality": "Lajas",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.04828,-67.04152",
+        "Stage Status": "11 - Structure Inspection"
+    },
+    {
+        "Municipality": "Gu\u00e1nica",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.00591,-66.89617",
+        "Stage Status": "12 - Substantial Inspection"
+    },
+    {
+        "Municipality": "Arecibo",
+        "Region": "Norte",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.45253,-66.61916",
+        "Stage Status": "12 - Substantial Inspection"
+    },
+    {
+        "Municipality": "Arecibo",
+        "Region": "Norte",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.46265,-66.74788",
+        "Stage Status": "08 - Walls Inspection (1st Level)"
+    },
+    {
+        "Municipality": "Arecibo",
+        "Region": "Norte",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.48478,-66.64658",
+        "Stage Status": "11 - Structure Inspection"
+    },
+    {
+        "Municipality": "Arecibo",
+        "Region": "Norte",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.46847,-66.75617",
+        "Stage Status": "11 - Structure Inspection"
+    },
+    {
+        "Municipality": "Arecibo",
+        "Region": "Norte",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.45875,-66.73754",
+        "Stage Status": "11 - Structure Inspection"
+    },
+    {
+        "Municipality": "Arecibo",
+        "Region": "Norte",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.44363,-66.65529",
+        "Stage Status": "11 - Structure Inspection"
+    },
+    {
+        "Municipality": "Arecibo",
+        "Region": "Norte",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.44319,-66.66677",
+        "Stage Status": "08 - Walls Inspection (1st Level)"
+    },
+    {
+        "Municipality": "Arecibo",
+        "Region": "Norte",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.44353,-66.63826",
+        "Stage Status": "12 - Substantial Inspection"
+    },
+    {
+        "Municipality": "Arecibo",
+        "Region": "Norte",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.48428,-66.67687",
+        "Stage Status": "04 - Construction - Started"
+    },
+    {
+        "Municipality": "Arecibo",
+        "Region": "Norte",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.44096,-66.65219",
+        "Stage Status": "11 - Structure Inspection"
+    },
+    {
+        "Municipality": "Arecibo",
+        "Region": "Norte",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.48825,-66.63818",
+        "Stage Status": "11 - Structure Inspection"
+    },
+    {
+        "Municipality": "Arecibo",
+        "Region": "Norte",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.42564,-66.76378",
+        "Stage Status": "12 - Substantial Inspection"
+    },
+    {
+        "Municipality": "Arecibo",
+        "Region": "Norte",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.42475,-66.6722",
+        "Stage Status": "11 - Structure Inspection"
+    },
+    {
+        "Municipality": "Arecibo",
+        "Region": "Norte",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.46016,-66.75448",
+        "Stage Status": "13 - Final Inspection"
+    },
+    {
+        "Municipality": "Arecibo",
+        "Region": "Norte",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.43793,-66.76117",
+        "Stage Status": "11 - Structure Inspection"
+    },
+    {
+        "Municipality": "Morovis",
+        "Region": "Norte",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.31318,-66.38738",
+        "Stage Status": "11 - Structure Inspection"
+    },
+    {
+        "Municipality": "Arecibo",
+        "Region": "Norte",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.40086,-66.60016",
+        "Stage Status": "04 - Construction - Started"
+    },
+    {
+        "Municipality": "Lajas",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.03508,-66.97281",
+        "Stage Status": "08 - Walls Inspection (1st Level)"
+    },
+    {
+        "Municipality": "Pe\u00f1uelas",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.06695,-66.76066",
+        "Stage Status": "04 - Construction - Started"
+    },
+    {
+        "Municipality": "Lajas",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.00367,-67.07123",
+        "Stage Status": "07 - Foundation Inspection"
+    },
+    {
+        "Municipality": "Santa Isabel",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "17.96378,-66.37358",
+        "Stage Status": "11 - Structure Inspection"
+    },
+    {
+        "Municipality": "Gu\u00e1nica",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "17.96096,-66.93308",
+        "Stage Status": "04 - Construction - Started"
+    },
+    {
+        "Municipality": "Gu\u00e1nica",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "17.96116,-66.93376",
+        "Stage Status": "06 - Retaining Wall Inspection (Walls)"
+    },
+    {
+        "Municipality": "Gu\u00e1nica",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "17.97923,-66.88368",
+        "Stage Status": "07 - Foundation Inspection"
+    },
+    {
+        "Municipality": "Lajas",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.04153,-67.07691",
+        "Stage Status": "11 - Structure Inspection"
+    },
+    {
+        "Municipality": "Gu\u00e1nica",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "17.97946,-66.88543",
+        "Stage Status": "07 - Foundation Inspection"
+    },
+    {
+        "Municipality": "Gu\u00e1nica",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "17.96533,-66.94202",
+        "Stage Status": "04 - Construction - Started"
+    },
+    {
+        "Municipality": "Gu\u00e1nica",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.00559,-66.90186",
+        "Stage Status": "12 - Substantial Inspection"
+    },
+    {
+        "Municipality": "Carolina",
+        "Region": "Norte",
+        "Award Type Equivalent": "Repair",
+        "Coordinates": "18.29849,-65.94148",
+        "Stage Status": "04 - Construction - Started"
+    },
+    {
+        "Municipality": "Caguas",
+        "Region": "Norte",
+        "Award Type Equivalent": "Repair",
+        "Coordinates": "18.17216,-66.04001",
+        "Stage Status": "04 - Construction - Started"
+    },
+    {
+        "Municipality": "Yauco",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.02463,-66.86451",
+        "Stage Status": "11 - Structure Inspection"
+    },
+    {
+        "Municipality": "Lajas",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "17.9964,-66.97134",
+        "Stage Status": "11 - Structure Inspection"
+    },
+    {
+        "Municipality": "Gu\u00e1nica",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.00497,-66.91159",
+        "Stage Status": "04 - Construction - Started"
+    },
+    {
+        "Municipality": "Lajas",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "17.99664,-66.9714",
+        "Stage Status": "11 - Structure Inspection"
+    },
+    {
+        "Municipality": "Lajas",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "17.99614,-66.97159",
+        "Stage Status": "04 - Construction - Started"
+    },
+    {
+        "Municipality": "Pe\u00f1uelas",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.0542,-66.71586",
+        "Stage Status": "11 - Structure Inspection"
+    },
+    {
+        "Municipality": "Yauco",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.01209,-66.87451",
+        "Stage Status": "11 - Structure Inspection"
+    },
+    {
+        "Municipality": "Guayanilla",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.03962,-66.79576",
+        "Stage Status": "08 - Walls Inspection (1st Level)"
+    },
+    {
+        "Municipality": "Pe\u00f1uelas",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.06603,-66.75093",
+        "Stage Status": "06 - Retaining Wall Inspection (Walls)"
+    },
+    {
+        "Municipality": "Pe\u00f1uelas",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.05792,-66.69619",
+        "Stage Status": "11 - Structure Inspection"
+    },
+    {
+        "Municipality": "Pe\u00f1uelas",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.05963,-66.69681",
+        "Stage Status": "08 - Walls Inspection (1st Level)"
+    },
+    {
+        "Municipality": "Pe\u00f1uelas",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.06061,-66.69777",
+        "Stage Status": "08 - Walls Inspection (1st Level)"
+    },
+    {
+        "Municipality": "Pe\u00f1uelas",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.06244,-66.74633",
+        "Stage Status": "11 - Structure Inspection"
+    },
+    {
+        "Municipality": "Pe\u00f1uelas",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.05554,-66.71492",
+        "Stage Status": "07 - Foundation Inspection"
+    },
+    {
+        "Municipality": "Gu\u00e1nica",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "17.97875,-66.89214",
+        "Stage Status": "04 - Construction - Started"
+    },
+    {
+        "Municipality": "Yauco",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.02911,-66.86174",
+        "Stage Status": "07 - Foundation Inspection"
+    },
+    {
+        "Municipality": "Pe\u00f1uelas",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.04978,-66.71501",
+        "Stage Status": "11 - Structure Inspection"
+    },
+    {
+        "Municipality": "Ponce",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.04828,-66.55212",
+        "Stage Status": "08 - Walls Inspection (1st Level)"
+    },
+    {
+        "Municipality": "Ponce",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.05033,-66.55241",
+        "Stage Status": "06 - Retaining Wall Inspection (Walls)"
+    },
+    {
+        "Municipality": "Adjuntas",
+        "Region": "Sur",
+        "Award Type Equivalent": "Relocation",
+        "Coordinates": "18.13659,-66.73367",
+        "Stage Status": "04 - Construction - Started"
+    },
+    {
+        "Municipality": "Yauco",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.03636,-66.8576",
+        "Stage Status": "08 - Walls Inspection (1st Level)"
+    },
+    {
+        "Municipality": "Lajas",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.029,-66.98486",
+        "Stage Status": "04 - Construction - Started"
+    },
+    {
+        "Municipality": "Pe\u00f1uelas",
+        "Region": "Sur",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.05736,-66.6954",
+        "Stage Status": "04 - Construction - Started"
+    },
+    {
+        "Municipality": "Arecibo",
+        "Region": "Norte",
+        "Award Type Equivalent": "Relocation",
+        "Coordinates": "18.4883,-66.65072",
+        "Stage Status": "04 - Construction - Started"
+    },
+    {
+        "Municipality": "Lares",
+        "Region": "Norte",
+        "Award Type Equivalent": "Relocation",
+        "Coordinates": "18.25165,-66.85495",
+        "Stage Status": "04 - Construction - Started"
+    },
+    {
+        "Municipality": "Mayag\u00fcez",
+        "Region": "Sur",
+        "Award Type Equivalent": "Relocation",
+        "Coordinates": "18.23527,-67.16981",
+        "Stage Status": "04 - Construction - Started"
+    },
+    {
+        "Municipality": "Naguabo",
+        "Region": "Norte",
+        "Award Type Equivalent": "Relocation",
+        "Coordinates": "18.23472,-65.70038",
+        "Stage Status": "04 - Construction - Started"
+    },
+    {
+        "Municipality": "Mayag\u00fcez",
+        "Region": "Sur",
+        "Award Type Equivalent": "Relocation",
+        "Coordinates": "18.17588,-67.17157",
+        "Stage Status": "04 - Construction - Started"
+    },
+    {
+        "Municipality": "Pe\u00f1uelas",
+        "Region": "Sur",
+        "Award Type Equivalent": "Relocation",
+        "Coordinates": "18.05403,-66.71835",
+        "Stage Status": "04 - Construction - Started"
+    }
+]
