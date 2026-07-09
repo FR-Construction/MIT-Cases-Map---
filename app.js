@@ -97,6 +97,10 @@ async function fetchDataAndPlot() {
             window.open(window.location.pathname + '?view=table', '_blank', 'width=1000,height=700');
         });
         
+        document.getElementById('btn-export-excel')?.addEventListener('click', () => {
+            exportToExcel();
+        });
+        
     } catch (error) {
         console.error("Could not load cases.json:", error);
         document.getElementById('loading-overlay').innerHTML = `<p style="color: red; font-weight: bold;">Error loading data. Check console.</p>`;
@@ -255,23 +259,27 @@ function populateFilters() {
     const municipalities = new Set();
     const subcontractors = new Set();
     const types = new Set();
+    const regions = new Set();
 
     allCases.forEach(c => {
         if (c['Stage Status']) statuses.add(c['Stage Status']);
         if (c.Municipality) municipalities.add(c.Municipality);
         if (c['Subcontractor Name']) subcontractors.add(c['Subcontractor Name']);
         if (c['Award Type Equivalent']) types.add(c['Award Type Equivalent']);
+        if (c.Region) regions.add(c.Region);
     });
 
     populateSelect('filter-status', Array.from(statuses).sort());
     populateSelect('filter-municipality', Array.from(municipalities).sort());
     populateSelect('filter-subcontractor', Array.from(subcontractors).sort());
     populateSelect('filter-type', Array.from(types).sort());
+    populateSelect('filter-region', Array.from(regions).sort());
 
     document.getElementById('filter-status').addEventListener('change', applyFilters);
     document.getElementById('filter-municipality').addEventListener('change', applyFilters);
     document.getElementById('filter-subcontractor').addEventListener('change', applyFilters);
     document.getElementById('filter-type').addEventListener('change', applyFilters);
+    document.getElementById('filter-region').addEventListener('change', applyFilters);
     document.getElementById('search-case').addEventListener('input', applyFilters);
 }
 
@@ -291,6 +299,7 @@ function applyFilters() {
     const munVal = document.getElementById('filter-municipality').value;
     const subVal = document.getElementById('filter-subcontractor').value;
     const typeVal = document.getElementById('filter-type').value;
+    const regionVal = document.getElementById('filter-region').value;
 
     const filtered = allCases.filter(c => {
         const caseId = (c['Case ID'] || '').toLowerCase();
@@ -298,10 +307,45 @@ function applyFilters() {
                (statusVal === 'All' || c['Stage Status'] === statusVal) &&
                (munVal === 'All' || c.Municipality === munVal) &&
                (subVal === 'All' || c['Subcontractor Name'] === subVal) &&
-               (typeVal === 'All' || c['Award Type Equivalent'] === typeVal);
+               (typeVal === 'All' || c['Award Type Equivalent'] === typeVal) &&
+               (regionVal === 'All' || c.Region === regionVal);
     });
 
     plotMarkers(filtered);
     generateSummary(filtered);
     generateTable(filtered);
+}
+
+function exportToExcel() {
+    // We will export the currently filtered cases
+    // To do this, we can extract the rows from the HTML table directly or use the DOM logic.
+    // It is safer to use the table DOM so it matches exactly what the user sees.
+    const table = document.getElementById('cases-table');
+    let csv = [];
+    
+    // Add BOM for UTF-8 so Excel opens it correctly with accents
+    csv.push('\uFEFF');
+
+    const rows = table.querySelectorAll('tr');
+    
+    for (let i = 0; i < rows.length; i++) {
+        let row = [], cols = rows[i].querySelectorAll('td, th');
+        
+        for (let j = 0; j < cols.length; j++) {
+            // Get innerText and escape double quotes
+            let data = cols[j].innerText.replace(/"/g, '""');
+            // Enclose in quotes
+            row.push('"' + data + '"');
+        }
+        csv.push(row.join(','));
+    }
+
+    const csvFile = new Blob([csv.join('\\n')], {type: 'text/csv;charset=utf-8;'});
+    const downloadLink = document.createElement('a');
+    downloadLink.download = 'MIT_Cases_Report.csv';
+    downloadLink.href = window.URL.createObjectURL(csvFile);
+    downloadLink.style.display = 'none';
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
 }
