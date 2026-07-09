@@ -340,7 +340,7 @@ function exportToExcel() {
         csv.push(row.join(','));
     }
 
-    const csvFile = new Blob([csv.join('\\n')], {type: 'text/csv;charset=utf-8;'});
+    const csvFile = new Blob([csv.join('\r\n')], {type: 'text/csv;charset=utf-8;'});
     const downloadLink = document.createElement('a');
     downloadLink.download = 'MIT_Cases_Report.csv';
     downloadLink.href = window.URL.createObjectURL(csvFile);
