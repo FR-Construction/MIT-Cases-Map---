@@ -1,5 +1,6 @@
 let map;
 let markers = [];
+let allCases = [];
 
 // Initialize and add the map
 function initMap() {
@@ -69,9 +70,10 @@ async function fetchDataAndPlot() {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         const cases = await response.json();
+        allCases = cases;
         
-        plotMarkers(cases);
-        generateSummary(cases);
+        populateFilters();
+        applyFilters(); // This will call plotMarkers, generateSummary, and generateTable
         
         // Hide loading overlay
         document.getElementById('loading-overlay').classList.remove('active');
@@ -83,6 +85,10 @@ async function fetchDataAndPlot() {
 }
 
 function plotMarkers(cases) {
+    // Clear existing markers
+    markers.forEach(m => m.setMap(null));
+    markers = [];
+
     const infoWindow = new google.maps.InfoWindow();
 
     cases.forEach(caseData => {
@@ -141,7 +147,7 @@ function plotMarkers(cases) {
                 <div class="info-window">
                     <h3>Case ID: ${caseData['Case ID'] || 'N/A'}</h3>
                     <p><strong>Municipality:</strong> ${caseData.Municipality}</p>
-                    <p><strong>Subcontractor:</strong> ${caseData.Subcontractor || 'N/A'}</p>
+                    <p><strong>Subcontractor:</strong> ${caseData['Subcontractor Name'] || 'N/A'}</p>
                     <p><strong>Type:</strong> ${caseData['Award Type Equivalent']}</p>
                     <p><strong>Region:</strong> ${region}</p>
                     <p><strong>Status:</strong> ${caseData['Stage Status'] || 'N/A'}</p>
@@ -197,7 +203,7 @@ function generateSummary(cases) {
     const tableBody = document.getElementById('cases-table-body');
     let tableHtml = '';
     cases.forEach(c => {
-        let sub = c.Subcontractor || 'N/A';
+        let sub = c['Subcontractor Name'] || 'N/A';
         // Convert newlines to breaks for better display
         if (typeof sub === 'string') {
             sub = sub.replace(/\n/g, '<br>');
@@ -215,4 +221,56 @@ function generateSummary(cases) {
         `;
     });
     tableBody.innerHTML = tableHtml;
+}
+
+function populateFilters() {
+    const statuses = new Set();
+    const municipalities = new Set();
+    const subcontractors = new Set();
+    const types = new Set();
+
+    allCases.forEach(c => {
+        if (c['Stage Status']) statuses.add(c['Stage Status']);
+        if (c.Municipality) municipalities.add(c.Municipality);
+        if (c['Subcontractor Name']) subcontractors.add(c['Subcontractor Name']);
+        if (c['Award Type Equivalent']) types.add(c['Award Type Equivalent']);
+    });
+
+    populateSelect('filter-status', Array.from(statuses).sort());
+    populateSelect('filter-municipality', Array.from(municipalities).sort());
+    populateSelect('filter-subcontractor', Array.from(subcontractors).sort());
+    populateSelect('filter-type', Array.from(types).sort());
+
+    document.getElementById('filter-status').addEventListener('change', applyFilters);
+    document.getElementById('filter-municipality').addEventListener('change', applyFilters);
+    document.getElementById('filter-subcontractor').addEventListener('change', applyFilters);
+    document.getElementById('filter-type').addEventListener('change', applyFilters);
+}
+
+function populateSelect(id, values) {
+    const select = document.getElementById(id);
+    values.forEach(val => {
+        const option = document.createElement('option');
+        option.value = val;
+        option.textContent = val;
+        select.appendChild(option);
+    });
+}
+
+function applyFilters() {
+    const statusVal = document.getElementById('filter-status').value;
+    const munVal = document.getElementById('filter-municipality').value;
+    const subVal = document.getElementById('filter-subcontractor').value;
+    const typeVal = document.getElementById('filter-type').value;
+
+    const filtered = allCases.filter(c => {
+        return (statusVal === 'All' || c['Stage Status'] === statusVal) &&
+               (munVal === 'All' || c.Municipality === munVal) &&
+               (subVal === 'All' || c['Subcontractor Name'] === subVal) &&
+               (typeVal === 'All' || c['Award Type Equivalent'] === typeVal);
+    });
+
+    plotMarkers(filtered);
+    generateSummary(filtered);
+    generateTable(filtered);
 }
