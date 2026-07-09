@@ -35,9 +35,9 @@ def get_region(municipality_name):
     # Check if the municipality is in the Sur list
     for sur_muni in SUR_MUNICIPALITIES:
         if clean_name == sur_muni or sur_muni in clean_name:
-            return "Sur"
+            return "South"
             
-    return "Norte"
+    return "North"
 
 def main():
     print("Initializing Smartsheet client...")
