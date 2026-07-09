@@ -26,7 +26,14 @@ function initMap() {
         ]
     });
 
-    // Draw the dividing red line
+    // Draw the dividing red line (dotted/dashed)
+    const lineSymbol = {
+        path: 'M 0,-1 0,1',
+        strokeOpacity: 1,
+        strokeColor: "#FF0000",
+        scale: 3
+    };
+
     const dividingLineCoords = [
         { lat: 18.33, lng: -67.26 }, // Rincon area
         { lat: 18.25, lng: -67.14 }, // South of Añasco
@@ -41,9 +48,12 @@ function initMap() {
     const dividingLine = new google.maps.Polyline({
         path: dividingLineCoords,
         geodesic: true,
-        strokeColor: "#FF0000",
-        strokeOpacity: 0.8,
-        strokeWeight: 4,
+        strokeOpacity: 0, // Hide the solid line
+        icons: [{
+            icon: lineSymbol,
+            offset: '0',
+            repeat: '15px'
+        }],
     });
     dividingLine.setMap(map);
 
@@ -61,6 +71,7 @@ async function fetchDataAndPlot() {
         const cases = await response.json();
         
         plotMarkers(cases);
+        generateSummary(cases);
         
         // Hide loading overlay
         document.getElementById('loading-overlay').classList.remove('active');
@@ -130,6 +141,7 @@ function plotMarkers(cases) {
                 <div class="info-window">
                     <h3>Case ID: ${caseData['Case ID'] || 'N/A'}</h3>
                     <p><strong>Municipality:</strong> ${caseData.Municipality}</p>
+                    <p><strong>Subcontractor:</strong> ${caseData.Subcontractor || 'N/A'}</p>
                     <p><strong>Type:</strong> ${caseData['Award Type Equivalent']}</p>
                     <p><strong>Region:</strong> ${region}</p>
                     <p><strong>Status:</strong> ${caseData['Stage Status'] || 'N/A'}</p>
@@ -144,4 +156,63 @@ function plotMarkers(cases) {
 
         markers.push(marker);
     });
+}
+
+function generateSummary(cases) {
+    const summary = {
+        Norte: { total: 0, relo: 0, recon: 0 },
+        Sur: { total: 0, relo: 0, recon: 0 }
+    };
+
+    cases.forEach(c => {
+        const r = c.Region;
+        if (summary[r]) {
+            summary[r].total++;
+            const t = (c['Award Type Equivalent'] || '').toLowerCase();
+            if (t.includes('relo')) summary[r].relo++;
+            else summary[r].recon++;
+        }
+    });
+
+    const content = document.querySelector('.summary-content');
+    content.innerHTML = `
+        <div class="summary-region">
+            <h4>Norte (Total: ${summary.Norte.total})</h4>
+            <div class="summary-stats">
+                <span><span class="marker relo" style="width:10px;height:10px;margin-right:5px;"></span> Relo: ${summary.Norte.relo}</span>
+                <span><span class="marker recon" style="width:10px;height:10px;margin-right:5px;"></span> Recon: ${summary.Norte.recon}</span>
+            </div>
+        </div>
+        <div class="summary-region">
+            <h4>Sur (Total: ${summary.Sur.total})</h4>
+            <div class="summary-stats">
+                <span><span class="marker relo" style="width:10px;height:10px;margin-right:5px;"></span> Relo: ${summary.Sur.relo}</span>
+                <span><span class="marker recon" style="width:10px;height:10px;margin-right:5px;"></span> Recon: ${summary.Sur.recon}</span>
+            </div>
+        </div>
+    `;
+    document.getElementById('summary-report').classList.remove('hidden');
+
+    // Populate Table
+    const tableBody = document.getElementById('cases-table-body');
+    let tableHtml = '';
+    cases.forEach(c => {
+        let sub = c.Subcontractor || 'N/A';
+        // Convert newlines to breaks for better display
+        if (typeof sub === 'string') {
+            sub = sub.replace(/\n/g, '<br>');
+        }
+        
+        tableHtml += `
+            <tr>
+                <td>${c['Case ID'] || 'N/A'}</td>
+                <td>${c.Municipality || 'N/A'}</td>
+                <td>${c.Region || 'N/A'}</td>
+                <td>${c['Award Type Equivalent'] || 'N/A'}</td>
+                <td>${sub}</td>
+                <td>${c['Stage Status'] || 'N/A'}</td>
+            </tr>
+        `;
+    });
+    tableBody.innerHTML = tableHtml;
 }

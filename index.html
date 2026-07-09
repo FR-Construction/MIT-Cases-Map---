@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Puerto Rico Cases Dashboard</title>
-    <link rel="stylesheet" href="style.css?v=2">
+    <link rel="stylesheet" href="style.css?v=3">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,11 +22,33 @@
             </div>
         </header>
         <main>
-            <div id="map"></div>
-            <div id="summary-report" class="hidden">
-                <h3>Resumen Regional</h3>
-                <div class="summary-content">
-                    <!-- Populated by JS -->
+            <div id="map-section">
+                <div id="map"></div>
+                <div id="summary-report" class="hidden">
+                    <h3>Resumen Regional</h3>
+                    <div class="summary-content">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </div>
+            <div id="table-section">
+                <h2>Reporte de Casos (Excel)</h2>
+                <div class="table-wrapper">
+                    <table id="cases-table">
+                        <thead>
+                            <tr>
+                                <th>Case ID</th>
+                                <th>Municipality</th>
+                                <th>Region</th>
+                                <th>Award Type</th>
+                                <th>Subcontractor</th>
+                                <th>Stage Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cases-table-body">
+                            <!-- Populated by JS -->
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </main>
