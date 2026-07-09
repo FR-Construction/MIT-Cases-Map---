@@ -1,6 +1,7 @@
 let map;
 let markers = [];
 let allCases = [];
+let choicesInstances = {};
 
 // Handle URL parameters for view modes
 const urlParams = new URLSearchParams(window.location.search);
@@ -275,40 +276,56 @@ function populateFilters() {
     populateSelect('filter-type', Array.from(types).sort());
     populateSelect('filter-region', Array.from(regions).sort());
 
-    document.getElementById('filter-status').addEventListener('change', applyFilters);
-    document.getElementById('filter-municipality').addEventListener('change', applyFilters);
-    document.getElementById('filter-subcontractor').addEventListener('change', applyFilters);
-    document.getElementById('filter-type').addEventListener('change', applyFilters);
-    document.getElementById('filter-region').addEventListener('change', applyFilters);
     document.getElementById('search-case').addEventListener('input', applyFilters);
 }
 
 function populateSelect(id, values) {
-    const select = document.getElementById(id);
-    values.forEach(val => {
-        const option = document.createElement('option');
-        option.value = val;
-        option.textContent = val;
-        select.appendChild(option);
+    const selectEl = document.getElementById(id);
+    const options = values.map(v => ({ value: v, label: v }));
+    
+    if (choicesInstances[id]) {
+        choicesInstances[id].destroy();
+    }
+    
+    choicesInstances[id] = new Choices(selectEl, {
+        removeItemButton: true,
+        searchEnabled: true,
+        placeholder: true,
+        placeholderValue: 'All',
+        itemSelectText: ''
     });
+    
+    choicesInstances[id].setChoices(options, 'value', 'label', true);
+    
+    selectEl.addEventListener('change', applyFilters);
 }
 
 function applyFilters() {
     const searchVal = document.getElementById('search-case').value.toLowerCase().trim();
-    const statusVal = document.getElementById('filter-status').value;
-    const munVal = document.getElementById('filter-municipality').value;
-    const subVal = document.getElementById('filter-subcontractor').value;
-    const typeVal = document.getElementById('filter-type').value;
-    const regionVal = document.getElementById('filter-region').value;
+    
+    const getVals = (id) => {
+        if (!choicesInstances[id]) return [];
+        const vals = choicesInstances[id].getValue(true);
+        return Array.isArray(vals) ? vals : (vals ? [vals] : []);
+    };
+
+    const statusVals = getVals('filter-status');
+    const munVals = getVals('filter-municipality');
+    const subVals = getVals('filter-subcontractor');
+    const typeVals = getVals('filter-type');
+    const regionVals = getVals('filter-region');
 
     const filtered = allCases.filter(c => {
         const caseId = (c['Case ID'] || '').toLowerCase();
+        
+        const matchStatus = statusVals.length === 0 || statusVals.includes(c['Stage Status']);
+        const matchMun = munVals.length === 0 || munVals.includes(c.Municipality);
+        const matchSub = subVals.length === 0 || subVals.includes(c['Subcontractor Name']);
+        const matchType = typeVals.length === 0 || typeVals.includes(c['Award Type Equivalent']);
+        const matchRegion = regionVals.length === 0 || regionVals.includes(c.Region);
+
         return (searchVal === '' || caseId.includes(searchVal)) &&
-               (statusVal === 'All' || c['Stage Status'] === statusVal) &&
-               (munVal === 'All' || c.Municipality === munVal) &&
-               (subVal === 'All' || c['Subcontractor Name'] === subVal) &&
-               (typeVal === 'All' || c['Award Type Equivalent'] === typeVal) &&
-               (regionVal === 'All' || c.Region === regionVal);
+               matchStatus && matchMun && matchSub && matchType && matchRegion;
     });
 
     plotMarkers(filtered);
