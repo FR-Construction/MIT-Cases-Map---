@@ -3,8 +3,18 @@ import json
 import os
 import subprocess
 
-# Smartsheet Configuration
-TOKEN = "v6mG3HaOMr1VjYDdTAdvSyIUmTOK2F3SlBBiV"
+# Load token from .env file securely
+env_path = os.path.join(os.path.dirname(__file__), ".env")
+TOKEN = None
+if os.path.exists(env_path):
+    with open(env_path, "r") as f:
+        for line in f:
+            if line.startswith("SMARTSHEET_API_TOKEN="):
+                TOKEN = line.strip().split("=")[1].strip()
+
+if not TOKEN or TOKEN == "PEGUE_SU_NUEVO_TOKEN_AQUI":
+    print("ERROR: Por favor ponga su nuevo token en el archivo .env")
+    exit(1)
 SHEET_ID = 9006720391008132
 
 # Mapping for Sur Municipalities based on the red line in the provided image
@@ -51,7 +61,8 @@ def main():
         "Award Type Equivalent", 
         "Coordinates", 
         "Subcontractor Date of Notice to Proceed", 
-        "Stage Status"
+        "Stage Status",
+        "Subcontractor"
     ]
     
     # Some columns might have slightly different names, trying to handle that if needed, 
@@ -103,7 +114,8 @@ def main():
             "Region": region,
             "Award Type Equivalent": row_dict.get("Award Type Equivalent", ""),
             "Coordinates": row_dict.get("Coordinates", ""),
-            "Stage Status": stage
+            "Stage Status": stage,
+            "Subcontractor": row_dict.get("Subcontractor", "") or row_dict.get("Subcontractor Name", "")
         }
         cases.append(case_data)
 
