@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Puerto Rico Cases Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=2">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,6 +23,12 @@
         </header>
         <main>
             <div id="map"></div>
+            <div id="summary-report" class="hidden">
+                <h3>Resumen Regional</h3>
+                <div class="summary-content">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
         </main>
         <div id="loading-overlay" class="active">
             <div class="spinner"></div>
@@ -32,6 +38,6 @@
 
     <!-- Google Maps JS API (loaded async via app.js to control initialization if needed, but synchronous callback works too) -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7mft-eK0A5xk6JpV7w-7EGLEoINuLaqM&callback=initMap&libraries=maps,marker&v=beta" async defer></script>
-    <script src="app.js"></script>
+    <script src="app.js?v=2"></script>
 </body>
 </html>
