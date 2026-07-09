@@ -1,5 +1,6 @@
 [
     {
+        "Case ID": "PR-SFM-01985",
         "Municipality": "Vega Alta",
         "Region": "Norte",
         "Award Type Equivalent": "Reconstruction",
@@ -7,6 +8,7 @@
         "Stage Status": "12 - Substantial Inspection"
     },
     {
+        "Case ID": "PR-SFM-01930",
         "Municipality": "Guayama",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -14,6 +16,7 @@
         "Stage Status": "12 - Substantial Inspection"
     },
     {
+        "Case ID": "PR-EQK-01055",
         "Municipality": "Lajas",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -21,6 +24,7 @@
         "Stage Status": "12 - Substantial Inspection"
     },
     {
+        "Case ID": "PR-EQK-00878",
         "Municipality": "Yauco",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -28,6 +32,7 @@
         "Stage Status": "11 - Structure Inspection"
     },
     {
+        "Case ID": "PR-EQK-00594",
         "Municipality": "Pe\u00f1uelas",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -35,6 +40,7 @@
         "Stage Status": "11 - Structure Inspection"
     },
     {
+        "Case ID": "PR-SFM-01868",
         "Municipality": "Guayama",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -42,6 +48,7 @@
         "Stage Status": "07 - Foundation Inspection"
     },
     {
+        "Case ID": "PR-SFM-01867",
         "Municipality": "Guayama",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -49,6 +56,7 @@
         "Stage Status": "11 - Structure Inspection"
     },
     {
+        "Case ID": "PR-SFM-01851",
         "Municipality": "Guayama",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -56,6 +64,7 @@
         "Stage Status": "11 - Structure Inspection"
     },
     {
+        "Case ID": "PR-SFM-01842",
         "Municipality": "Guayama",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -63,6 +72,7 @@
         "Stage Status": "11 - Structure Inspection"
     },
     {
+        "Case ID": "PR-R3-25289 (BR)",
         "Municipality": "Gu\u00e1nica",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -70,6 +80,7 @@
         "Stage Status": "11 - Structure Inspection"
     },
     {
+        "Case ID": "PR-SFM-02788",
         "Municipality": "Isabela",
         "Region": "Norte",
         "Award Type Equivalent": "Reconstruction",
@@ -77,6 +88,7 @@
         "Stage Status": "11 - Structure Inspection"
     },
     {
+        "Case ID": "PR-R3-04719",
         "Municipality": "Moca",
         "Region": "Norte",
         "Award Type Equivalent": "Reconstruction",
@@ -84,6 +96,7 @@
         "Stage Status": "11 - Structure Inspection"
     },
     {
+        "Case ID": "PR-SFM-01990",
         "Municipality": "Bayam\u00f3n",
         "Region": "Norte",
         "Award Type Equivalent": "Reconstruction",
@@ -91,6 +104,7 @@
         "Stage Status": "11 - Structure Inspection"
     },
     {
+        "Case ID": "PR-EQK-01124",
         "Municipality": "Gu\u00e1nica",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -98,6 +112,7 @@
         "Stage Status": "12 - Substantial Inspection"
     },
     {
+        "Case ID": "PR-EQK-01123",
         "Municipality": "Gu\u00e1nica",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -105,6 +120,7 @@
         "Stage Status": "08 - Walls Inspection (1st Level)"
     },
     {
+        "Case ID": "PR-EQK-00946",
         "Municipality": "Lajas",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -112,6 +128,7 @@
         "Stage Status": "11 - Structure Inspection"
     },
     {
+        "Case ID": "PR-EQK-00496",
         "Municipality": "Gu\u00e1nica",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -119,6 +136,7 @@
         "Stage Status": "12 - Substantial Inspection"
     },
     {
+        "Case ID": "PR-R3-03018",
         "Municipality": "Arecibo",
         "Region": "Norte",
         "Award Type Equivalent": "Reconstruction",
@@ -126,6 +144,7 @@
         "Stage Status": "12 - Substantial Inspection"
     },
     {
+        "Case ID": "PR-R3-13085",
         "Municipality": "Arecibo",
         "Region": "Norte",
         "Award Type Equivalent": "Reconstruction",
@@ -133,6 +152,7 @@
         "Stage Status": "08 - Walls Inspection (1st Level)"
     },
     {
+        "Case ID": "PR-R3-20326 (BR)",
         "Municipality": "Arecibo",
         "Region": "Norte",
         "Award Type Equivalent": "Reconstruction",
@@ -140,6 +160,7 @@
         "Stage Status": "11 - Structure Inspection"
     },
     {
+        "Case ID": "PR-SFM-02512",
         "Municipality": "Arecibo",
         "Region": "Norte",
         "Award Type Equivalent": "Reconstruction",
@@ -147,6 +168,7 @@
         "Stage Status": "11 - Structure Inspection"
     },
     {
+        "Case ID": "PR-SFM-02842",
         "Municipality": "Arecibo",
         "Region": "Norte",
         "Award Type Equivalent": "Reconstruction",
@@ -154,6 +176,7 @@
         "Stage Status": "11 - Structure Inspection"
     },
     {
+        "Case ID": "PR-SFM-02916",
         "Municipality": "Arecibo",
         "Region": "Norte",
         "Award Type Equivalent": "Reconstruction",
@@ -161,6 +184,7 @@
         "Stage Status": "11 - Structure Inspection"
     },
     {
+        "Case ID": "PR-SFM-02923",
         "Municipality": "Arecibo",
         "Region": "Norte",
         "Award Type Equivalent": "Reconstruction",
@@ -168,6 +192,7 @@
         "Stage Status": "08 - Walls Inspection (1st Level)"
     },
     {
+        "Case ID": "PR-SFM-02930",
         "Municipality": "Arecibo",
         "Region": "Norte",
         "Award Type Equivalent": "Reconstruction",
@@ -175,6 +200,7 @@
         "Stage Status": "12 - Substantial Inspection"
     },
     {
+        "Case ID": "PR-SFM-02942",
         "Municipality": "Arecibo",
         "Region": "Norte",
         "Award Type Equivalent": "Reconstruction",
@@ -182,6 +208,7 @@
         "Stage Status": "04 - Construction - Started"
     },
     {
+        "Case ID": "PR-SFM-02952",
         "Municipality": "Arecibo",
         "Region": "Norte",
         "Award Type Equivalent": "Reconstruction",
@@ -189,6 +216,7 @@
         "Stage Status": "11 - Structure Inspection"
     },
     {
+        "Case ID": "PR-SFM-02953",
         "Municipality": "Arecibo",
         "Region": "Norte",
         "Award Type Equivalent": "Reconstruction",
@@ -196,6 +224,7 @@
         "Stage Status": "11 - Structure Inspection"
     },
     {
+        "Case ID": "PR-SFM-02962",
         "Municipality": "Arecibo",
         "Region": "Norte",
         "Award Type Equivalent": "Reconstruction",
@@ -203,6 +232,7 @@
         "Stage Status": "12 - Substantial Inspection"
     },
     {
+        "Case ID": "PR-SFM-02999",
         "Municipality": "Arecibo",
         "Region": "Norte",
         "Award Type Equivalent": "Reconstruction",
@@ -210,6 +240,7 @@
         "Stage Status": "11 - Structure Inspection"
     },
     {
+        "Case ID": "PR-SFM-03017",
         "Municipality": "Arecibo",
         "Region": "Norte",
         "Award Type Equivalent": "Reconstruction",
@@ -217,6 +248,7 @@
         "Stage Status": "13 - Final Inspection"
     },
     {
+        "Case ID": "PR-SFM-03025",
         "Municipality": "Arecibo",
         "Region": "Norte",
         "Award Type Equivalent": "Reconstruction",
@@ -224,6 +256,7 @@
         "Stage Status": "11 - Structure Inspection"
     },
     {
+        "Case ID": "PR-SFM-02833",
         "Municipality": "Morovis",
         "Region": "Norte",
         "Award Type Equivalent": "Reconstruction",
@@ -231,6 +264,7 @@
         "Stage Status": "11 - Structure Inspection"
     },
     {
+        "Case ID": "PR-R3-07237",
         "Municipality": "Arecibo",
         "Region": "Norte",
         "Award Type Equivalent": "Reconstruction",
@@ -238,6 +272,7 @@
         "Stage Status": "04 - Construction - Started"
     },
     {
+        "Case ID": "PR-EQK-00610",
         "Municipality": "Lajas",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -245,6 +280,7 @@
         "Stage Status": "08 - Walls Inspection (1st Level)"
     },
     {
+        "Case ID": "PR-EQK-00667",
         "Municipality": "Pe\u00f1uelas",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -252,6 +288,7 @@
         "Stage Status": "04 - Construction - Started"
     },
     {
+        "Case ID": "PR-EQK-03012",
         "Municipality": "Lajas",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -259,6 +296,7 @@
         "Stage Status": "07 - Foundation Inspection"
     },
     {
+        "Case ID": "PR-R3-01373",
         "Municipality": "Santa Isabel",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -266,6 +304,7 @@
         "Stage Status": "11 - Structure Inspection"
     },
     {
+        "Case ID": "PR-EQK-00458",
         "Municipality": "Gu\u00e1nica",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -273,6 +312,7 @@
         "Stage Status": "04 - Construction - Started"
     },
     {
+        "Case ID": "PR-EQK-00499",
         "Municipality": "Gu\u00e1nica",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -280,6 +320,7 @@
         "Stage Status": "06 - Retaining Wall Inspection (Walls)"
     },
     {
+        "Case ID": "PR-EQK-00565",
         "Municipality": "Gu\u00e1nica",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -287,6 +328,7 @@
         "Stage Status": "07 - Foundation Inspection"
     },
     {
+        "Case ID": "PR-EQK-00650",
         "Municipality": "Lajas",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -294,6 +336,7 @@
         "Stage Status": "11 - Structure Inspection"
     },
     {
+        "Case ID": "PR-EQK-00964",
         "Municipality": "Gu\u00e1nica",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -301,6 +344,7 @@
         "Stage Status": "07 - Foundation Inspection"
     },
     {
+        "Case ID": "PR-EQK-00973",
         "Municipality": "Gu\u00e1nica",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -308,6 +352,7 @@
         "Stage Status": "04 - Construction - Started"
     },
     {
+        "Case ID": "PR-EQK-01214",
         "Municipality": "Gu\u00e1nica",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -315,6 +360,7 @@
         "Stage Status": "12 - Substantial Inspection"
     },
     {
+        "Case ID": "PR-R3-08556",
         "Municipality": "Carolina",
         "Region": "Norte",
         "Award Type Equivalent": "Repair",
@@ -322,6 +368,7 @@
         "Stage Status": "04 - Construction - Started"
     },
     {
+        "Case ID": "PR-R3-00123",
         "Municipality": "Caguas",
         "Region": "Norte",
         "Award Type Equivalent": "Repair",
@@ -329,6 +376,7 @@
         "Stage Status": "04 - Construction - Started"
     },
     {
+        "Case ID": "PR-EQK-00646",
         "Municipality": "Yauco",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -336,6 +384,7 @@
         "Stage Status": "11 - Structure Inspection"
     },
     {
+        "Case ID": "PR-EQK-00676",
         "Municipality": "Lajas",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -343,6 +392,7 @@
         "Stage Status": "11 - Structure Inspection"
     },
     {
+        "Case ID": "PR-EQK-00832",
         "Municipality": "Gu\u00e1nica",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -350,6 +400,7 @@
         "Stage Status": "04 - Construction - Started"
     },
     {
+        "Case ID": "PR-EQK-00835",
         "Municipality": "Lajas",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -357,6 +408,7 @@
         "Stage Status": "11 - Structure Inspection"
     },
     {
+        "Case ID": "PR-EQK-00951",
         "Municipality": "Lajas",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -364,6 +416,7 @@
         "Stage Status": "04 - Construction - Started"
     },
     {
+        "Case ID": "PR-BR-50495",
         "Municipality": "Pe\u00f1uelas",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -371,6 +424,7 @@
         "Stage Status": "11 - Structure Inspection"
     },
     {
+        "Case ID": "PR-R3-09808",
         "Municipality": "Yauco",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -378,6 +432,7 @@
         "Stage Status": "11 - Structure Inspection"
     },
     {
+        "Case ID": "PR-R3-25372",
         "Municipality": "Guayanilla",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -385,6 +440,7 @@
         "Stage Status": "08 - Walls Inspection (1st Level)"
     },
     {
+        "Case ID": "PR-SFM-03059",
         "Municipality": "Pe\u00f1uelas",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -392,6 +448,7 @@
         "Stage Status": "06 - Retaining Wall Inspection (Walls)"
     },
     {
+        "Case ID": "PR-SFM-03109",
         "Municipality": "Pe\u00f1uelas",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -399,6 +456,7 @@
         "Stage Status": "11 - Structure Inspection"
     },
     {
+        "Case ID": "PR-SFM-03110",
         "Municipality": "Pe\u00f1uelas",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -406,6 +464,7 @@
         "Stage Status": "08 - Walls Inspection (1st Level)"
     },
     {
+        "Case ID": "PR-SFM-03113",
         "Municipality": "Pe\u00f1uelas",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -413,6 +472,7 @@
         "Stage Status": "08 - Walls Inspection (1st Level)"
     },
     {
+        "Case ID": "PR-SFM-03172",
         "Municipality": "Pe\u00f1uelas",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -420,6 +480,7 @@
         "Stage Status": "11 - Structure Inspection"
     },
     {
+        "Case ID": "PR-SFM-03341",
         "Municipality": "Pe\u00f1uelas",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -427,6 +488,7 @@
         "Stage Status": "07 - Foundation Inspection"
     },
     {
+        "Case ID": "PR-EQK-00814",
         "Municipality": "Gu\u00e1nica",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -434,6 +496,7 @@
         "Stage Status": "04 - Construction - Started"
     },
     {
+        "Case ID": "PR-EQK-00729",
         "Municipality": "Yauco",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -441,6 +504,7 @@
         "Stage Status": "07 - Foundation Inspection"
     },
     {
+        "Case ID": "PR-R3-07716",
         "Municipality": "Pe\u00f1uelas",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -448,6 +512,7 @@
         "Stage Status": "11 - Structure Inspection"
     },
     {
+        "Case ID": "PR-SFM-02602",
         "Municipality": "Ponce",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -455,6 +520,7 @@
         "Stage Status": "08 - Walls Inspection (1st Level)"
     },
     {
+        "Case ID": "PR-SFM-03075",
         "Municipality": "Ponce",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -462,6 +528,7 @@
         "Stage Status": "06 - Retaining Wall Inspection (Walls)"
     },
     {
+        "Case ID": "PR-R3-07653 (BR)",
         "Municipality": "Adjuntas",
         "Region": "Sur",
         "Award Type Equivalent": "Relocation",
@@ -469,6 +536,7 @@
         "Stage Status": "04 - Construction - Started"
     },
     {
+        "Case ID": "PR-EQK-00876",
         "Municipality": "Yauco",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -476,6 +544,7 @@
         "Stage Status": "08 - Walls Inspection (1st Level)"
     },
     {
+        "Case ID": "PR-EQK-03013",
         "Municipality": "Lajas",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -483,6 +552,7 @@
         "Stage Status": "04 - Construction - Started"
     },
     {
+        "Case ID": "PR-SFM-04409",
         "Municipality": "Pe\u00f1uelas",
         "Region": "Sur",
         "Award Type Equivalent": "Reconstruction",
@@ -490,6 +560,7 @@
         "Stage Status": "04 - Construction - Started"
     },
     {
+        "Case ID": "PR-R3-06509",
         "Municipality": "Arecibo",
         "Region": "Norte",
         "Award Type Equivalent": "Relocation",
@@ -497,6 +568,7 @@
         "Stage Status": "04 - Construction - Started"
     },
     {
+        "Case ID": "PR-R3-03868",
         "Municipality": "Lares",
         "Region": "Norte",
         "Award Type Equivalent": "Relocation",
@@ -504,6 +576,7 @@
         "Stage Status": "04 - Construction - Started"
     },
     {
+        "Case ID": "PR-R3-15853",
         "Municipality": "Mayag\u00fcez",
         "Region": "Sur",
         "Award Type Equivalent": "Relocation",
@@ -511,6 +584,7 @@
         "Stage Status": "04 - Construction - Started"
     },
     {
+        "Case ID": "PR-R3-20628",
         "Municipality": "Naguabo",
         "Region": "Norte",
         "Award Type Equivalent": "Relocation",
@@ -518,6 +592,7 @@
         "Stage Status": "04 - Construction - Started"
     },
     {
+        "Case ID": "PR-SFM-01610",
         "Municipality": "Mayag\u00fcez",
         "Region": "Sur",
         "Award Type Equivalent": "Relocation",
@@ -525,6 +600,7 @@
         "Stage Status": "04 - Construction - Started"
     },
     {
+        "Case ID": "PR-R3-12811",
         "Municipality": "Pe\u00f1uelas",
         "Region": "Sur",
         "Award Type Equivalent": "Relocation",
