@@ -26,6 +26,27 @@ function initMap() {
         ]
     });
 
+    // Draw the dividing red line
+    const dividingLineCoords = [
+        { lat: 18.33, lng: -67.26 }, // Rincon area
+        { lat: 18.25, lng: -67.14 }, // South of Añasco
+        { lat: 18.17, lng: -66.72 }, // Adjuntas
+        { lat: 18.22, lng: -66.38 }, // Orocovis
+        { lat: 18.21, lng: -66.15 }, // Cidra
+        { lat: 18.21, lng: -65.98 }, // San Lorenzo
+        { lat: 18.23, lng: -65.71 }, // Naguabo
+        { lat: 18.28, lng: -65.61 }  // Fajardo
+    ];
+    
+    const dividingLine = new google.maps.Polyline({
+        path: dividingLineCoords,
+        geodesic: true,
+        strokeColor: "#FF0000",
+        strokeOpacity: 0.8,
+        strokeWeight: 4,
+    });
+    dividingLine.setMap(map);
+
     // Fetch data and plot markers
     fetchDataAndPlot();
 }
@@ -75,24 +96,15 @@ function plotMarkers(cases) {
 
         const position = { lat, lng };
         
-        // Determine Marker Color based on Region and Type
+        // Determine Marker Color based on Type
         let markerColor = "#000000"; // Default
         const region = caseData.Region; // "Norte" or "Sur"
-        // 'Award Type Equivalent' values might be 'Relocation' or 'Reconstruction' etc
         const caseType = caseData['Award Type Equivalent'] || "";
 
-        if (region === "Norte") {
-            if (caseType.toLowerCase().includes("relo")) {
-                markerColor = "#3182ce"; // Blue
-            } else {
-                markerColor = "#805ad5"; // Purple
-            }
-        } else if (region === "Sur") {
-            if (caseType.toLowerCase().includes("relo")) {
-                markerColor = "#dd6b20"; // Orange
-            } else {
-                markerColor = "#e53e3e"; // Red
-            }
+        if (caseType.toLowerCase().includes("relo")) {
+            markerColor = "#3182ce"; // Blue
+        } else {
+            markerColor = "#e53e3e"; // Red
         }
 
         // SVG Marker definition
@@ -116,7 +128,8 @@ function plotMarkers(cases) {
         marker.addListener("click", () => {
             const contentString = `
                 <div class="info-window">
-                    <h3>${caseData.Municipality}</h3>
+                    <h3>Case ID: ${caseData['Case ID'] || 'N/A'}</h3>
+                    <p><strong>Municipality:</strong> ${caseData.Municipality}</p>
                     <p><strong>Type:</strong> ${caseData['Award Type Equivalent']}</p>
                     <p><strong>Region:</strong> ${region}</p>
                     <p><strong>Status:</strong> ${caseData['Stage Status'] || 'N/A'}</p>

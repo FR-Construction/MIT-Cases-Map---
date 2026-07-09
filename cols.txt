@@ -1,0 +1,245 @@
+Acc. Case ID_Current
+Case ID
+Team Name
+Award Type
+Award Type Equivalent
+No Other Scope Changes Needed
+Program ShortName
+Model Home Design Selection
+Current Environmental [CE-ENV]
+Activity Status
+Activity Status Updated
+Activity Status Detail
+Property Address
+Municipality
+Zip
+Coordinates - Latitude and Longitude
+Coordinates
+Google map
+Front of Residence Photo
+Applicant First Name
+Applicant Middle Name
+Applicant Last Name
+Applicant Contact Primary Phone
+Applicant Contact Secondary Phone
+Scope Type
+Scoping Status
+Scoping Status Updated
+Task Order Issued Date
+Date Of Notice To Proceed
+Power Utility Company
+Power Utility Account Number
+Evidencia Solicitud Desconexión LUMA
+Water Utility Company
+Water Utility Account Number
+Original Construction End Date
+Current Construction End Date
+Current Milestone Goal
+System Calculated Liquidated Damages
+Milestone Inspections Failed
+Milestone Inspections Failed Penalty
+Project Penalty Total
+Current Milestone Goal Updated
+Demolition Start Date
+Homeowner Move Out Status
+Subcontractor Date of Notice to Proceed
+Carta de Adjudicación al SubC
+Construction Aging
+Construction Permit Approved
+Demolition Permit Approved
+Construction Permit Status
+Construction Amendment Approved
+Use Permit Approved
+Permit to NTP Status
+Use Permit Status
+Substantial Inspection Approved Date
+Final Inspection Approved Date
+Subcontractor
+Subcontractor Total Contract Amount
+Subcontractor Assignment Sheet
+11. Sub Pmt Breakdown
+12. MIT Cost Detail
+14. Dash Sub 1 Cuadre
+16. Dash Sub 2 Cuadre
+18. Dash Sub 3 Cuadre
+Tier 2 Subcontractor [Under F&R Construction]
+Subcontractor Name
+Póliza CFSE
+CFSE Comienzo
+CFSE Vencimiento
+Price SubC Contract
+Demolition SubC Contract
+Site SubC Contract
+Foundation SubC Contract
+Walls SubC Contract
+Roof SubC Contract
+Walls 2 SubC Contract
+Roof 2 SubC Contract
+Substantial SubC Contract
+Change Order 1 SubC Contract
+Change Order 2 SubC Contract
+Other SubC Contract
+Notes SubC Contract
+Construction Notes
+Construction Notes (Form)
+Supervisor
+Foreman
+SRI Requested
+SRI Received
+SRI Notes
+Radicación Certificación Plomería
+Plumbing Certification Number
+Master Plumber's License
+EC Comments
+Electrical Pedestal Complete
+Radicación Certificación Eléctrica
+Aprobación Certificación Eléctrica
+Electrical Certification Status
+Número de Certificación Eléctrica
+LUMA Region
+Master Electrician Name
+Master Electrician License Number
+Master Electrician Phone Number
+SRI Number
+SRI Date
+Site Assessment Representative
+Feasibility Status CM
+Feasibility Notes CM
+Pre-Construction Status
+No Presence Cert. (ASB & LBP)
+Environmental General Status
+Environmental Comments
+Current Scope Change No.
+Current Scope Change Status
+Current Scope Change Status Updated
+Current Scope Change General Status
+Current Scope Change Notes
+Current Scope Change Estimator
+Award Status CM
+Award Meeting Conducted Date
+Permitting General Status
+Permitting Goal Status
+Permitting Status Updated
+Permitting Requested
+Scoping General Notes
+Key Turnover Completed
+Site Walk Schedule Notes
+Stage Status
+Stage Status Updated
+Days Already Added in Scope Change
+Days Left
+Inspection Status
+Inspection QC Status
+Quality Control General Status
+Quality Control Status
+Quality Control Status Updated
+Quality Control Comments
+Substantial Requested Date
+Substantial Inspection Completed Date
+Final Inspection Requested Date
+Final Inspection Completed Date
+Personnel Validating Claim
+Warranty Status (Canopy)
+Validating Personnel Status
+Warranty Claim ID
+Home Keys Returned
+Inactive ORA
+PUS Available
+Pending Electrical Certification
+Certificación Eléctrica
+Construction Permit Filing Number
+Plumbing Certification Requested Date
+Certificación de Plomería
+Construction Status
+Construction Status Updated
+Current Hard Costs
+Current Total Task Order Cost
+Current ScopeChange Scope Change ID
+Current Demolition [CE-DEMO]
+Current Unique Site [CE-SITE]
+Demolition General Status
+Construction General Status
+Permit Status
+Tier 2 Re-Evaluation Status
+Requires SHPO Consultation
+In SHPO Research
+Septic System Inspection Status
+Retaining Wall 1 Inspection Status
+Retaining Wall 2 Inspection Status
+Foundation Inspection Status
+Walls (1st Level) Inspection Status
+Intermediate Slab Inspection Status
+Walls (2nd Level) Inspection Status
+Structure Inspection Status
+Substantial/Finishes Inspection Status
+Final Inspection Status
+Post-Final/Stop Work Inspection Status
+Current Milestone
+Current Inspection Status fx
+Current Inspection Status
+Compañía de Recogido
+Disposición/Mercado
+Concrete Structures SF
+Wood Structures SF
+Mixed Materials Structures SF
+Aluminum tons
+Concrete Structures tons
+Wood Structures tons
+Mixed Materials Structures tons
+Equipment tons
+Residuos Sólidos Generados Doméstico (lbs)
+Nombre PDF ADS
+05. Subcontractor Assignment Demolition
+05. Subcontractor Assignment Site
+05. Subcontractor Assignment House
+05. Subcontractor Assignment Price
+21. MIT Cost Sheet
+FRCG Subcontractor Amount
+Roof Warranty
+Solar Water Heater Delivery Confirmed
+Cabinetry Delivery Confirmed
+Windows & Doors Delivery Confirmed
+Scope Type (Manual)
+Status (Manual)
+Contract No.
+Contract Status (Manual)
+Roof Waterproofing Application Completed
+Ready for PV Date
+Closeout Binder Uploaded
+Closeout Binder Approved
+Closeout Binder Delivered
+Roof Warranty Manufacture Type
+Area of Roof (sq.ft.)
+Area of Roof (sq.ft.)-Repair
+Roof Warranty Notes
+Bond No.
+Septic System in Scope
+Stove Choice
+Fridge
+Scope Reduction
+Non-appliance SR
+SOW w/o PVS
+Green Building Binder Notes
+Green Building Binder Completed
+Green Building Binder Delivered
+Generate Document Programa Seguridad
+PDF Name Programa Seguridad
+Doc Tracking: Status
+Doc Tracking: Folder
+Doc Tracking: Labels
+Doc Tracking: WhatsApp
+Doc Tracking: Receipt Confirmed
+Doc Tracking: Weekly Comments
+Doc Tracking: Delivery Date
+Map Image
+Doc Tracking: Drawings
+Doc Tracking: Receiver Name
+Doc Tracking: Created Date
+Today's Date
+Case ID + Municipality (Helper)
+Hospital Name
+Emergency Services Image
+Hospital Phone
+Senior Officer Name
+Senior Officer Phone
+Days Since Last Milestone Inspection

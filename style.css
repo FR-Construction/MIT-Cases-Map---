@@ -64,13 +64,9 @@ h1 {
     box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
 }
 
-/* Norte Colors */
-.relo-norte { background-color: #3182ce; } /* Blue */
-.recon-norte { background-color: #805ad5; } /* Purple */
-
-/* Sur Colors */
-.relo-sur { background-color: #dd6b20; } /* Orange */
-.recon-sur { background-color: #e53e3e; } /* Red */
+/* Colors */
+.relo { background-color: #3182ce; } /* Blue */
+.recon { background-color: #e53e3e; } /* Red */
 
 main {
     flex: 1;

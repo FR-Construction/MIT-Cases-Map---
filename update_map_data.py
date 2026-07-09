@@ -46,6 +46,7 @@ def main():
     
     # Identify required columns
     req_columns = [
+        "Case ID",
         "Municipality", 
         "Award Type Equivalent", 
         "Coordinates", 
@@ -97,6 +98,7 @@ def main():
         region = get_region(municipality)
         
         case_data = {
+            "Case ID": row_dict.get("Case ID", ""),
             "Municipality": municipality,
             "Region": region,
             "Award Type Equivalent": row_dict.get("Award Type Equivalent", ""),
