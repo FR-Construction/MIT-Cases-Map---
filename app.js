@@ -189,8 +189,8 @@ function generateSummary(cases) {
     if (viewMode === 'table') return; // Skip summary
     
     const summary = {
-        Norte: { total: 0, relo: 0, recon: 0 },
-        Sur: { total: 0, relo: 0, recon: 0 }
+        North: { total: 0, relo: 0, recon: 0 },
+        South: { total: 0, relo: 0, recon: 0 }
     };
 
     cases.forEach(c => {
@@ -206,17 +206,17 @@ function generateSummary(cases) {
     const content = document.querySelector('.summary-content');
     content.innerHTML = `
         <div class="summary-region">
-            <h4>Norte (Total: ${summary.Norte.total})</h4>
+            <h4>North (Total: ${summary.North.total})</h4>
             <div class="summary-stats">
-                <span><span class="marker relo" style="width:10px;height:10px;margin-right:5px;"></span> Relo: ${summary.Norte.relo}</span>
-                <span><span class="marker recon" style="width:10px;height:10px;margin-right:5px;"></span> Recon: ${summary.Norte.recon}</span>
+                <span><span class="marker relo" style="width:10px;height:10px;margin-right:5px;"></span> Relo: ${summary.North.relo}</span>
+                <span><span class="marker recon" style="width:10px;height:10px;margin-right:5px;"></span> Recon: ${summary.North.recon}</span>
             </div>
         </div>
         <div class="summary-region">
-            <h4>Sur (Total: ${summary.Sur.total})</h4>
+            <h4>South (Total: ${summary.South.total})</h4>
             <div class="summary-stats">
-                <span><span class="marker relo" style="width:10px;height:10px;margin-right:5px;"></span> Relo: ${summary.Sur.relo}</span>
-                <span><span class="marker recon" style="width:10px;height:10px;margin-right:5px;"></span> Recon: ${summary.Sur.recon}</span>
+                <span><span class="marker relo" style="width:10px;height:10px;margin-right:5px;"></span> Relo: ${summary.South.relo}</span>
+                <span><span class="marker recon" style="width:10px;height:10px;margin-right:5px;"></span> Recon: ${summary.South.recon}</span>
             </div>
         </div>
     `;
