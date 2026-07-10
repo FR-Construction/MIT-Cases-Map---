@@ -247,6 +247,7 @@ function generateTable(cases) {
                 <td>${c['Award Type Equivalent'] || 'N/A'}</td>
                 <td>${sub}</td>
                 <td>${c['Stage Status'] || 'N/A'}</td>
+                <td>${c['Model Home Design Selection'] || 'N/A'}</td>
             </tr>
         `;
     });

@@ -62,7 +62,8 @@ def main():
         "Coordinates", 
         "Subcontractor Date of Notice to Proceed", 
         "Stage Status",
-        "Subcontractor Name"
+        "Subcontractor Name",
+        "Model Home Design Selection"
     ]
     
     # Some columns might have slightly different names, trying to handle that if needed, 
@@ -115,7 +116,8 @@ def main():
             "Award Type Equivalent": row_dict.get("Award Type Equivalent", ""),
             "Coordinates": row_dict.get("Coordinates", ""),
             "Stage Status": stage,
-            "Subcontractor Name": row_dict.get("Subcontractor Name", "") or row_dict.get("Subcontractor", "")
+            "Subcontractor Name": row_dict.get("Subcontractor Name", "") or row_dict.get("Subcontractor", ""),
+            "Model Home Design Selection": row_dict.get("Model Home Design Selection", "")
         }
         cases.append(case_data)
 
