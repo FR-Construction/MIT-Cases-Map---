@@ -186,6 +186,104 @@ function addDaysToDate(dateStr, dayNumber) {
     return base.toLocaleDateString('en-US', { month: '2-digit', day: '2-digit', year: 'numeric' });
 }
 
+// Builds the same rows shown on screen (tasks grouped into 4 sections, with
+// Milestone Goal / total duration rows), as plain arrays for export.
+function buildScheduleExportRows() {
+    const startDate = document.getElementById('schedule-start-date').value;
+    const rows = [['#', 'Frente', 'Tarea', 'Día Inicio', 'Día Fin', 'Duración (días)']];
+    let rowNum = 0;
+
+    [1, 2, 3, 4].forEach(sectionNum => {
+        const sectionTasks = scheduleData.tasks.filter(t => t.section === sectionNum);
+
+        sectionTasks.forEach(t => {
+            rowNum++;
+            const duracion = (Number(t.diaFin) || 0) - (Number(t.diaInicio) || 0);
+            rows.push([rowNum, t.frente, t.tarea, t.diaInicio, t.diaFin, duracion]);
+        });
+
+        const maxDiaFin = Math.max(...sectionTasks.map(t => Number(t.diaFin) || 0), 0);
+        const isLast = sectionNum === 4;
+        if (isLast) {
+            rows.push(['', '', '', '', 'DURACIÓN TOTAL DEL PROYECTO (días)', maxDiaFin]);
+        } else {
+            const milestoneDate = addDaysToDate(startDate, maxDiaFin);
+            rows.push(['', '', '', '', 'Milestone Goal', milestoneDate || '—']);
+        }
+    });
+
+    return rows;
+}
+
+function exportScheduleToExcel() {
+    const caseId = document.getElementById('schedule-case-id').value.trim();
+    if (!scheduleData || !scheduleData.tasks.length) {
+        alert('Load or create a schedule first.');
+        return;
+    }
+
+    const rows = buildScheduleExportRows();
+    const csv = ['﻿' + `Case ID: ${caseId || 'N/A'} - Start Date: ${document.getElementById('schedule-start-date').value || 'N/A'}`];
+    rows.forEach(row => {
+        csv.push(row.map(cell => `"${String(cell).replace(/"/g, '""')}"`).join(','));
+    });
+
+    const csvFile = new Blob([csv.join('\r\n')], { type: 'text/csv;charset=utf-8;' });
+    const downloadLink = document.createElement('a');
+    downloadLink.download = `Schedule_${caseId || 'export'}.csv`;
+    downloadLink.href = window.URL.createObjectURL(csvFile);
+    downloadLink.style.display = 'none';
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+}
+
+function exportScheduleToPdf() {
+    const caseId = document.getElementById('schedule-case-id').value.trim();
+    if (!scheduleData || !scheduleData.tasks.length) {
+        alert('Load or create a schedule first.');
+        return;
+    }
+
+    const rows = buildScheduleExportRows();
+    const startDate = document.getElementById('schedule-start-date').value || 'N/A';
+
+    const tableRowsHtml = rows.slice(1).map(row => {
+        const isMilestone = String(row[4]).includes('Milestone') || String(row[4]).includes('DURACIÓN');
+        return `<tr style="${isMilestone ? 'background:#edf2f7;font-weight:700;' : ''}">${row.map(cell => `<td>${cell}</td>`).join('')}</tr>`;
+    }).join('');
+
+    const headerHtml = rows[0].map(h => `<th>${h}</th>`).join('');
+
+    const printWindow = window.open('', '_blank');
+    printWindow.document.write(`
+        <html>
+        <head>
+            <title>Schedule - ${caseId || 'Export'}</title>
+            <style>
+                body { font-family: Arial, sans-serif; padding: 20px; }
+                h1 { font-size: 18px; }
+                p { font-size: 13px; color: #444; }
+                table { border-collapse: collapse; width: 100%; margin-top: 15px; }
+                th, td { border: 1px solid #ccc; padding: 6px 10px; font-size: 12px; text-align: left; }
+                th { background: #f0f0f0; }
+            </style>
+        </head>
+        <body>
+            <h1>Substantial Phase Schedule</h1>
+            <p><strong>Case ID:</strong> ${caseId || 'N/A'} &nbsp;|&nbsp; <strong>Start Date:</strong> ${startDate}</p>
+            <table>
+                <thead><tr>${headerHtml}</tr></thead>
+                <tbody>${tableRowsHtml}</tbody>
+            </table>
+        </body>
+        </html>
+    `);
+    printWindow.document.close();
+    printWindow.focus();
+    printWindow.print();
+}
+
 function renderScheduleTable() {
     const tbody = document.getElementById('schedule-table-body');
     const startDate = document.getElementById('schedule-start-date').value;
@@ -393,6 +491,9 @@ document.addEventListener('DOMContentLoaded', () => {
         // opening for the first time or already visible.
         loadSchedulesReport();
     });
+
+    document.getElementById('btn-schedule-export-excel').addEventListener('click', exportScheduleToExcel);
+    document.getElementById('btn-schedule-export-pdf').addEventListener('click', exportScheduleToPdf);
 
     document.getElementById('schedule-case-id').addEventListener('input', (e) => {
         updateScheduleCaseInfo(e.target.value.trim());

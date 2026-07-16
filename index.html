@@ -45,6 +45,8 @@
                     <button id="btn-schedule-load" class="btn">Load</button>
                     <button id="btn-schedule-reset" class="btn" style="background-color: #718096;">Reset to Template</button>
                     <button id="btn-schedule-report" class="btn" style="background-color: #2b6cb0;">Schedules Report</button>
+                    <button id="btn-schedule-export-excel" class="btn" style="background-color: #38a169;">Export to Excel</button>
+                    <button id="btn-schedule-export-pdf" class="btn" style="background-color: #c53030;">Export to PDF</button>
                     <span id="schedule-save-status" class="save-status"></span>
                 </div>
                 <div id="schedule-case-info" class="schedule-case-info hidden"></div>
@@ -124,6 +126,10 @@
                     <label for="filter-region">Region</label>
                     <select id="filter-region" multiple></select>
                 </div>
+                <div class="filter-group">
+                    <label for="filter-schedule">Schedule Substantial</label>
+                    <select id="filter-schedule" multiple></select>
+                </div>
             </div>
             <div id="table-section">
                 <div class="section-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
@@ -141,7 +147,7 @@
                                 <th>Subcontractor Name</th>
                                 <th>Stage Status</th>
                                 <th>Model Home Design</th>
-                                <th>Schedule</th>
+                                <th>Schedule Substantial</th>
                             </tr>
                         </thead>
                         <tbody id="cases-table-body">
@@ -162,7 +168,7 @@
     
     <!-- Google Maps JS API -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7mft-eK0A5xk6JpV7w-7EGLEoINuLaqM&callback=initMap&libraries=maps,marker&v=beta" async defer></script>
-    <script src="app.js?v=12"></script>
-    <script src="schedule.js?v=2"></script>
+    <script src="app.js?v=13"></script>
+    <script src="schedule.js?v=3"></script>
 </body>
 </html>

@@ -291,6 +291,7 @@ function populateFilters() {
     populateSelect('filter-subcontractor', Array.from(subcontractors).sort());
     populateSelect('filter-type', Array.from(types).sort());
     populateSelect('filter-region', Array.from(regions).sort());
+    populateSelect('filter-schedule', ['Has Schedule', 'No Schedule']);
 
     document.getElementById('search-case').addEventListener('input', applyFilters);
 }
@@ -330,18 +331,23 @@ function applyFilters() {
     const subVals = getVals('filter-subcontractor');
     const typeVals = getVals('filter-type');
     const regionVals = getVals('filter-region');
+    const scheduleVals = getVals('filter-schedule');
 
     const filtered = allCases.filter(c => {
         const caseId = (c['Case ID'] || '').toLowerCase();
-        
+
         const matchStatus = statusVals.length === 0 || statusVals.includes(c['Stage Status']);
         const matchMun = munVals.length === 0 || munVals.includes(c.Municipality);
         const matchSub = subVals.length === 0 || subVals.includes(c['Subcontractor Name']);
         const matchType = typeVals.length === 0 || typeVals.includes(c['Award Type Equivalent']);
         const matchRegion = regionVals.length === 0 || regionVals.includes(c.Region);
+        const hasSchedule = typeof scheduledCaseIds !== 'undefined' && scheduledCaseIds.has(c['Case ID']);
+        const matchSchedule = scheduleVals.length === 0 ||
+            (scheduleVals.includes('Has Schedule') && hasSchedule) ||
+            (scheduleVals.includes('No Schedule') && !hasSchedule);
 
         return (searchVal === '' || caseId.includes(searchVal)) &&
-               matchStatus && matchMun && matchSub && matchType && matchRegion;
+               matchStatus && matchMun && matchSub && matchType && matchRegion && matchSchedule;
     });
 
     plotMarkers(filtered);
