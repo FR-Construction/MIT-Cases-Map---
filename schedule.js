@@ -1,5 +1,10 @@
 // Schedule Tool - editable per-case task schedule with milestone sections
-// Data is stored per Case ID in the browser's localStorage.
+// Data is stored per Case ID in a shared Google Sheet (via Apps Script Web App),
+// with the browser's localStorage used as an offline cache/fallback.
+
+// Paste the Apps Script "Web app" URL here once deployed (see SCHEDULE_SETUP.md).
+// Leave empty to run in local-only mode (localStorage per browser).
+const SCHEDULE_API_URL = '';
 
 const SCHEDULE_STORAGE_PREFIX = 'mit_schedule_';
 
@@ -45,7 +50,7 @@ function getDefaultSchedule() {
     };
 }
 
-function loadSchedule(caseId) {
+function loadScheduleLocal(caseId) {
     if (!caseId) return getDefaultSchedule();
     const raw = localStorage.getItem(SCHEDULE_STORAGE_PREFIX + caseId);
     if (!raw) return getDefaultSchedule();
@@ -58,14 +63,64 @@ function loadSchedule(caseId) {
     }
 }
 
-function saveSchedule() {
+// Loads a schedule for a Case ID, preferring the shared Google Sheet backend
+// when configured, falling back to the local browser cache if offline or unset.
+async function loadSchedule(caseId) {
+    if (!caseId) return getDefaultSchedule();
+
+    if (SCHEDULE_API_URL) {
+        try {
+            setSaveStatus('Loading...');
+            const res = await fetch(`${SCHEDULE_API_URL}?caseId=${encodeURIComponent(caseId)}`);
+            const data = await res.json();
+            if (data.found) {
+                const schedule = { startDate: data.startDate || '', tasks: data.tasks || [] };
+                localStorage.setItem(SCHEDULE_STORAGE_PREFIX + caseId, JSON.stringify(schedule));
+                setSaveStatus('Loaded from shared sheet ✓');
+                return schedule;
+            }
+            setSaveStatus('');
+            return getDefaultSchedule();
+        } catch (err) {
+            console.error('Could not reach shared schedule sheet, using local cache:', err);
+            setSaveStatus('Offline - using local copy', true);
+            return loadScheduleLocal(caseId);
+        }
+    }
+
+    return loadScheduleLocal(caseId);
+}
+
+async function saveSchedule() {
     const caseId = document.getElementById('schedule-case-id').value.trim();
     if (!caseId) {
         setSaveStatus('Enter a Case ID to save.', true);
         return;
     }
+
+    // Always keep a local cache so the tool still works offline.
     localStorage.setItem(SCHEDULE_STORAGE_PREFIX + caseId, JSON.stringify(scheduleData));
-    setSaveStatus('Saved ✓');
+
+    if (!SCHEDULE_API_URL) {
+        setSaveStatus('Saved (this browser only) ✓');
+        return;
+    }
+
+    try {
+        setSaveStatus('Saving...');
+        await fetch(SCHEDULE_API_URL, {
+            method: 'POST',
+            body: JSON.stringify({
+                caseId,
+                startDate: scheduleData.startDate,
+                tasks: scheduleData.tasks
+            })
+        });
+        setSaveStatus('Saved to shared sheet ✓');
+    } catch (err) {
+        console.error('Could not save to shared schedule sheet, kept local copy only:', err);
+        setSaveStatus('Saved locally only (offline)', true);
+    }
 }
 
 function scheduleAutoSave() {
@@ -174,9 +229,9 @@ function onScheduleInputChange(e) {
     scheduleAutoSave();
 }
 
-function loadScheduleForCurrentCaseId() {
+async function loadScheduleForCurrentCaseId() {
     const caseId = document.getElementById('schedule-case-id').value.trim();
-    scheduleData = loadSchedule(caseId);
+    scheduleData = await loadSchedule(caseId);
     document.getElementById('schedule-start-date').value = scheduleData.startDate || '';
     renderScheduleTable();
     updateScheduleCaseInfo(caseId);
