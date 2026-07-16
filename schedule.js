@@ -117,9 +117,19 @@ async function saveSchedule() {
             })
         });
         setSaveStatus('Saved to shared sheet ✓');
+        refreshScheduleReportIfOpen();
     } catch (err) {
         console.error('Could not save to shared schedule sheet, kept local copy only:', err);
         setSaveStatus('Saved locally only (offline)', true);
+    }
+}
+
+// If the Schedules Report is currently open, silently refresh it so newly
+// saved/edited cases show up right away instead of only on next open.
+function refreshScheduleReportIfOpen() {
+    const section = document.getElementById('schedule-report-section');
+    if (section && !section.classList.contains('hidden')) {
+        loadSchedulesReport();
     }
 }
 
@@ -349,13 +359,9 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('btn-schedule-load').addEventListener('click', loadScheduleForCurrentCaseId);
 
     document.getElementById('btn-schedule-report').addEventListener('click', () => {
-        const section = document.getElementById('schedule-report-section');
-        const wasHidden = section.classList.contains('hidden');
-        if (wasHidden) {
-            loadSchedulesReport();
-        } else {
-            section.classList.add('hidden');
-        }
+        // Always refresh with the latest data when clicked, whether it's
+        // opening for the first time or already visible.
+        loadSchedulesReport();
     });
 
     document.getElementById('schedule-case-id').addEventListener('input', (e) => {
