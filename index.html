@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Puerto Rico Cases Dashboard</title>
-    <link rel="stylesheet" href="style.css?v=11">
+    <link rel="stylesheet" href="style.css?v=12">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +19,7 @@
             <div class="header-content">
                 <h1>MIT Cases Dashboard</h1>
                 <div class="header-actions">
+                    <button id="btn-schedule-tool" class="btn" style="background-color: #805ad5;">Schedule Tool</button>
                     <button id="btn-popout-map" class="btn">Pop-out Map</button>
                     <button id="btn-popout-table" class="btn">Pop-out Report</button>
                 </div>
@@ -29,6 +30,39 @@
             </div>
         </header>
         <main>
+            <div id="schedule-section" class="hidden">
+                <div class="schedule-toolbar">
+                    <div class="filter-group">
+                        <label for="schedule-case-id">Case ID</label>
+                        <input type="text" id="schedule-case-id" list="schedule-case-list" placeholder="Ex. PR-BR-50495">
+                        <datalist id="schedule-case-list"></datalist>
+                    </div>
+                    <div class="filter-group">
+                        <label for="schedule-start-date">Fecha de Comienzo</label>
+                        <input type="date" id="schedule-start-date">
+                    </div>
+                    <button id="btn-schedule-load" class="btn">Load</button>
+                    <button id="btn-schedule-reset" class="btn" style="background-color: #718096;">Reset to Template</button>
+                    <span id="schedule-save-status" class="save-status"></span>
+                </div>
+                <div class="table-wrapper">
+                    <table id="schedule-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Frente</th>
+                                <th>Tarea</th>
+                                <th>Día Inicio</th>
+                                <th>Día Fin</th>
+                                <th>Duración (días)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="schedule-table-body">
+                            <!-- Populated by JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
             <div id="map-section">
                 <div id="map"></div>
                 <div id="summary-report" class="hidden">
@@ -101,5 +135,6 @@
     <!-- Google Maps JS API -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7mft-eK0A5xk6JpV7w-7EGLEoINuLaqM&callback=initMap&libraries=maps,marker&v=beta" async defer></script>
     <script src="app.js?v=11"></script>
+    <script src="schedule.js?v=1"></script>
 </body>
 </html>
