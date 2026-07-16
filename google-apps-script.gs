@@ -15,7 +15,21 @@ function getSheet_() {
     sheet = ss.insertSheet(SHEET_NAME);
     sheet.appendRow(['Case ID', 'Start Date', 'Tasks JSON', 'Last Updated']);
   }
+  // Force Start Date and Last Updated columns to Plain Text so Sheets doesn't
+  // auto-convert them into Date objects with timezone/time-of-day noise.
+  sheet.getRange('B:B').setNumberFormat('@');
+  sheet.getRange('D:D').setNumberFormat('@');
   return sheet;
+}
+
+// Defensive: if a cell was ever auto-converted into a real Date object
+// (e.g. from data written before the plain-text format was applied),
+// convert it back into a plain YYYY-MM-DD string.
+function toPlainDateString_(value) {
+  if (value instanceof Date) {
+    return Utilities.formatDate(value, Session.getScriptTimeZone(), 'yyyy-MM-dd');
+  }
+  return value || '';
 }
 
 function findRowByCaseId_(sheet, caseId) {
@@ -52,9 +66,9 @@ function doGet(e) {
   return jsonResponse_({
     found: true,
     caseId: values[0],
-    startDate: values[1],
+    startDate: toPlainDateString_(values[1]),
     tasks: tasks,
-    lastUpdated: values[3]
+    lastUpdated: toPlainDateString_(values[3])
   });
 }
 
