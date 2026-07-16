@@ -290,6 +290,11 @@ main {
 #schedule-section.hidden {
     display: none;
 }
+.schedule-title {
+    font-size: 1.2rem;
+    color: #2d3748;
+    margin-bottom: 15px;
+}
 .schedule-toolbar {
     display: flex;
     align-items: flex-end;
