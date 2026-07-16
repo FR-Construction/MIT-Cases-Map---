@@ -320,13 +320,19 @@ main {
     border-collapse: collapse;
     min-width: 900px;
 }
+#schedule-report-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 700px;
+}
+#schedule-report-table th, #schedule-report-table td,
 #schedule-table th, #schedule-table td {
     text-align: left;
     padding: 8px 12px;
     border-bottom: 1px solid #e2e8f0;
     font-size: 0.85rem;
 }
-#schedule-table th {
+#schedule-report-table th, #schedule-table th {
     background-color: #f8fafc;
     font-weight: 600;
     color: #4a5568;

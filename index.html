@@ -44,6 +44,7 @@
                     </div>
                     <button id="btn-schedule-load" class="btn">Load</button>
                     <button id="btn-schedule-reset" class="btn" style="background-color: #718096;">Reset to Template</button>
+                    <button id="btn-schedule-report" class="btn" style="background-color: #2b6cb0;">Schedules Report</button>
                     <span id="schedule-save-status" class="save-status"></span>
                 </div>
                 <div id="schedule-case-info" class="schedule-case-info hidden"></div>
@@ -64,6 +65,29 @@
                             <!-- Populated by JS -->
                         </tbody>
                     </table>
+                </div>
+
+                <div id="schedule-report-section" class="hidden">
+                    <h3 class="schedule-title" style="margin-top: 25px;">Schedules Report</h3>
+                    <p id="schedule-report-status" class="save-status"></p>
+                    <div class="table-wrapper">
+                        <table id="schedule-report-table">
+                            <thead>
+                                <tr>
+                                    <th>Case ID</th>
+                                    <th>Municipality</th>
+                                    <th>Start Date</th>
+                                    <th>Total Duration (days)</th>
+                                    <th>Estimated End Date</th>
+                                    <th>Last Updated</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody id="schedule-report-table-body">
+                                <!-- Populated by JS -->
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
             <div id="map-section">

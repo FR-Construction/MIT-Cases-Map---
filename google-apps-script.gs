@@ -46,6 +46,10 @@ function doGet(e) {
   const caseId = e.parameter.caseId;
   const sheet = getSheet_();
 
+  if (e.parameter.list) {
+    return jsonResponse_({ schedules: listAllSchedules_(sheet) });
+  }
+
   if (!caseId) {
     return jsonResponse_({ error: 'Missing caseId parameter' }, 400);
   }
@@ -70,6 +74,37 @@ function doGet(e) {
     tasks: tasks,
     lastUpdated: toPlainDateString_(values[3])
   });
+}
+
+// Returns a summary of every saved schedule: Case ID, start date, total
+// duration in days (max Día Fin across all tasks), and last updated time.
+function listAllSchedules_(sheet) {
+  const data = sheet.getDataRange().getValues();
+  const summaries = [];
+
+  for (let i = 1; i < data.length; i++) {
+    const caseId = data[i][0];
+    if (!caseId) continue;
+
+    let tasks = [];
+    try {
+      tasks = JSON.parse(data[i][2] || '[]');
+    } catch (err) {
+      tasks = [];
+    }
+
+    const totalDays = tasks.reduce((max, t) => Math.max(max, Number(t.diaFin) || 0), 0);
+
+    summaries.push({
+      caseId: caseId,
+      startDate: toPlainDateString_(data[i][1]),
+      totalDurationDays: totalDays,
+      taskCount: tasks.length,
+      lastUpdated: toPlainDateString_(data[i][3])
+    });
+  }
+
+  return summaries;
 }
 
 function doPost(e) {

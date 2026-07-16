@@ -265,6 +265,67 @@ function updateScheduleCaseInfo(caseId) {
     `;
 }
 
+async function loadSchedulesReport() {
+    const section = document.getElementById('schedule-report-section');
+    const statusEl = document.getElementById('schedule-report-status');
+    const tbody = document.getElementById('schedule-report-table-body');
+
+    section.classList.remove('hidden');
+
+    if (!SCHEDULE_API_URL) {
+        statusEl.textContent = 'Shared reporting is not available yet (no Google Sheet connected).';
+        statusEl.style.color = '#e53e3e';
+        tbody.innerHTML = '';
+        return;
+    }
+
+    statusEl.textContent = 'Loading...';
+    statusEl.style.color = '#4a5568';
+
+    try {
+        const res = await fetch(`${SCHEDULE_API_URL}?list=true`);
+        const data = await res.json();
+        const schedules = data.schedules || [];
+
+        if (!schedules.length) {
+            statusEl.textContent = 'No schedules have been saved yet.';
+            tbody.innerHTML = '';
+            return;
+        }
+
+        statusEl.textContent = `${schedules.length} schedule(s) found.`;
+
+        tbody.innerHTML = schedules.map(s => {
+            const match = Array.isArray(allCases) ? allCases.find(c => c['Case ID'] === s.caseId) : null;
+            const endDate = addDaysToDate(s.startDate, s.totalDurationDays) || '—';
+            return `
+                <tr>
+                    <td>${s.caseId}</td>
+                    <td>${match ? match.Municipality : 'N/A'}</td>
+                    <td>${s.startDate || 'N/A'}</td>
+                    <td>${s.totalDurationDays || 0}</td>
+                    <td>${endDate}</td>
+                    <td>${s.lastUpdated || 'N/A'}</td>
+                    <td><button type="button" class="btn schedule-report-view-btn" data-case-id="${s.caseId}">View</button></td>
+                </tr>
+            `;
+        }).join('');
+
+        tbody.querySelectorAll('.schedule-report-view-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const caseId = e.target.dataset.caseId;
+                document.getElementById('schedule-case-id').value = caseId;
+                loadScheduleForCurrentCaseId();
+                document.getElementById('schedule-table').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+    } catch (err) {
+        console.error('Could not load schedules report:', err);
+        statusEl.textContent = 'Could not reach the shared Google Sheet. Check your connection.';
+        statusEl.style.color = '#e53e3e';
+    }
+}
+
 function populateScheduleCaseList() {
     const datalist = document.getElementById('schedule-case-list');
     if (!datalist || !Array.isArray(allCases)) return;
@@ -286,6 +347,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     document.getElementById('btn-schedule-load').addEventListener('click', loadScheduleForCurrentCaseId);
+
+    document.getElementById('btn-schedule-report').addEventListener('click', () => {
+        const section = document.getElementById('schedule-report-section');
+        const wasHidden = section.classList.contains('hidden');
+        if (wasHidden) {
+            loadSchedulesReport();
+        } else {
+            section.classList.add('hidden');
+        }
+    });
 
     document.getElementById('schedule-case-id').addEventListener('input', (e) => {
         updateScheduleCaseInfo(e.target.value.trim());
