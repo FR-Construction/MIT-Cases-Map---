@@ -122,6 +122,7 @@ function renderScheduleTable() {
                     <td><input type="number" class="sched-input sched-num sched-dia-inicio" data-idx="${t.idx}" value="${t.diaInicio}"></td>
                     <td><input type="number" class="sched-input sched-num sched-dia-fin" data-idx="${t.idx}" value="${t.diaFin}"></td>
                     <td>${duracion}</td>
+                    <td><button type="button" class="sched-remove-btn" data-idx="${t.idx}" title="Remove task">&times;</button></td>
                 </tr>
             `;
         });
@@ -133,6 +134,7 @@ function renderScheduleTable() {
             <tr class="milestone-row">
                 <td colspan="5">${isLast ? 'DURACIÓN TOTAL DEL PROYECTO (días)' : 'Milestone Goal'}</td>
                 <td>${isLast ? maxDiaFin : (milestoneDate || '—')}</td>
+                <td></td>
             </tr>
         `;
     });
@@ -143,6 +145,18 @@ function renderScheduleTable() {
         input.addEventListener('input', onScheduleInputChange);
         input.addEventListener('change', onScheduleInputChange);
     });
+
+    tbody.querySelectorAll('.sched-remove-btn').forEach(btn => {
+        btn.addEventListener('click', onScheduleRemoveTask);
+    });
+}
+
+function onScheduleRemoveTask(e) {
+    const idx = Number(e.target.dataset.idx);
+    if (!confirm('Remove this task from the schedule?')) return;
+    scheduleData.tasks.splice(idx, 1);
+    renderScheduleTable();
+    scheduleAutoSave();
 }
 
 function onScheduleInputChange(e) {
@@ -165,6 +179,35 @@ function loadScheduleForCurrentCaseId() {
     scheduleData = loadSchedule(caseId);
     document.getElementById('schedule-start-date').value = scheduleData.startDate || '';
     renderScheduleTable();
+    updateScheduleCaseInfo(caseId);
+}
+
+function updateScheduleCaseInfo(caseId) {
+    const infoEl = document.getElementById('schedule-case-info');
+    if (!infoEl) return;
+
+    const match = Array.isArray(allCases) ? allCases.find(c => c['Case ID'] === caseId) : null;
+
+    if (!caseId) {
+        infoEl.classList.add('hidden');
+        infoEl.innerHTML = '';
+        return;
+    }
+
+    if (!match) {
+        infoEl.classList.remove('hidden');
+        infoEl.innerHTML = `<span class="schedule-case-info-warning">No match found on the map for Case ID "${caseId}".</span>`;
+        return;
+    }
+
+    infoEl.classList.remove('hidden');
+    infoEl.innerHTML = `
+        <span><strong>Municipality:</strong> ${match.Municipality || 'N/A'}</span>
+        <span><strong>Region:</strong> ${match.Region || 'N/A'}</span>
+        <span><strong>Award Type:</strong> ${match['Award Type Equivalent'] || 'N/A'}</span>
+        <span><strong>Subcontractor:</strong> ${match['Subcontractor Name'] || 'N/A'}</span>
+        <span><strong>Stage Status:</strong> ${match['Stage Status'] || 'N/A'}</span>
+    `;
 }
 
 function populateScheduleCaseList() {
@@ -188,6 +231,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     document.getElementById('btn-schedule-load').addEventListener('click', loadScheduleForCurrentCaseId);
+
+    document.getElementById('schedule-case-id').addEventListener('input', (e) => {
+        updateScheduleCaseInfo(e.target.value.trim());
+    });
 
     document.getElementById('btn-schedule-reset').addEventListener('click', () => {
         if (!confirm('Reset this schedule back to the default template? Unsaved changes for this Case ID will be replaced.')) return;

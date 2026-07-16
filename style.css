@@ -350,6 +350,37 @@ main {
 .sched-tarea {
     min-width: 260px;
 }
+.sched-remove-btn {
+    background: none;
+    border: none;
+    color: #e53e3e;
+    font-size: 1.2rem;
+    line-height: 1;
+    cursor: pointer;
+    padding: 4px 8px;
+}
+.sched-remove-btn:hover {
+    color: #c53030;
+}
+.schedule-case-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    font-size: 0.85rem;
+    color: #4a5568;
+}
+.schedule-case-info.hidden {
+    display: none;
+}
+.schedule-case-info-warning {
+    color: #dd6b20;
+    font-weight: 600;
+}
 
 /* Info Window Customization */
 .info-window {
