@@ -8,6 +8,33 @@ const SCHEDULE_API_URL = 'https://script.google.com/macros/s/AKfycbwYIOCBPcOb1fj
 
 const SCHEDULE_STORAGE_PREFIX = 'mit_schedule_';
 
+// Set of Case IDs that currently have a saved schedule, used to badge the
+// main Cases Report table. Populated from the shared Google Sheet on load.
+let scheduledCaseIds = new Set();
+
+async function loadScheduledCaseIdsSet() {
+    if (!SCHEDULE_API_URL) return;
+    try {
+        const res = await fetch(`${SCHEDULE_API_URL}?list=true`);
+        const data = await res.json();
+        scheduledCaseIds = new Set((data.schedules || []).map(s => s.caseId));
+        if (typeof applyFilters === 'function') applyFilters();
+    } catch (err) {
+        console.error('Could not load list of scheduled cases:', err);
+    }
+}
+
+// Opens the Schedule Tool section and loads a specific Case ID's schedule,
+// used by the "📅 Set" badge in the main Cases Report table.
+function openScheduleForCaseId(caseId) {
+    const section = document.getElementById('schedule-section');
+    section.classList.remove('hidden');
+    populateScheduleCaseList();
+    document.getElementById('schedule-case-id').value = caseId;
+    loadScheduleForCurrentCaseId();
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
 // Default "SUBSTANCIAL" template, grouped into 4 sections (6/6/7/6 tasks)
 const SCHEDULE_TEMPLATE = [
     { section: 1, frente: 'Exterior', tarea: 'Remoción de Paneles, Gatos, Andamios', diaInicio: 1, diaFin: 2 },
@@ -118,6 +145,7 @@ async function saveSchedule() {
         });
         setSaveStatus('Saved to shared sheet ✓');
         refreshScheduleReportIfOpen();
+        loadScheduledCaseIdsSet();
     } catch (err) {
         console.error('Could not save to shared schedule sheet, kept local copy only:', err);
         setSaveStatus('Saved locally only (offline)', true);
@@ -344,6 +372,8 @@ function populateScheduleCaseList() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    loadScheduledCaseIdsSet();
+
     document.getElementById('btn-schedule-tool').addEventListener('click', () => {
         const section = document.getElementById('schedule-section');
         section.classList.toggle('hidden');

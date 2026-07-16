@@ -281,6 +281,26 @@ main {
     100% { transform: rotate(360deg); }
 }
 
+.schedule-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.schedule-badge-set {
+    background-color: #ebf8ff;
+    color: #2b6cb0;
+    border: 1px solid #bee3f8;
+    cursor: pointer;
+}
+.schedule-badge-set:hover {
+    background-color: #bee3f8;
+}
+.schedule-badge-none {
+    color: #a0aec0;
+}
+
 /* Schedule Tool */
 #schedule-section {
     padding: 20px 30px;

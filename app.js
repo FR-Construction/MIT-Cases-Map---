@@ -238,7 +238,13 @@ function generateTable(cases) {
         if (typeof sub === 'string') {
             sub = sub.replace(/\n/g, '<br>');
         }
-        
+
+        const caseId = c['Case ID'] || '';
+        const hasSchedule = typeof scheduledCaseIds !== 'undefined' && scheduledCaseIds.has(caseId);
+        const scheduleCell = hasSchedule
+            ? `<button type="button" class="schedule-badge schedule-badge-set" data-case-id="${caseId}">📅 Set</button>`
+            : `<span class="schedule-badge schedule-badge-none">—</span>`;
+
         tableHtml += `
             <tr>
                 <td>${c['Case ID'] || 'N/A'}</td>
@@ -248,10 +254,19 @@ function generateTable(cases) {
                 <td>${sub}</td>
                 <td>${c['Stage Status'] || 'N/A'}</td>
                 <td>${c['Model Home Design Selection'] || 'N/A'}</td>
+                <td>${scheduleCell}</td>
             </tr>
         `;
     });
     tableBody.innerHTML = tableHtml;
+
+    tableBody.querySelectorAll('.schedule-badge-set').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            if (typeof openScheduleForCaseId === 'function') {
+                openScheduleForCaseId(e.currentTarget.dataset.caseId);
+            }
+        });
+    });
 }
 
 
