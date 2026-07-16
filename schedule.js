@@ -44,27 +44,27 @@ const SCHEDULE_TEMPLATE = [
     { section: 1, frente: 'Interior', tarea: 'Empañetado Interior', diaInicio: 8, diaFin: 15 },
     { section: 1, frente: 'Exterior', tarea: 'Empañetado Exterior', diaInicio: 12, diaFin: 18 },
 
-    { section: 2, frente: 'Exterior', tarea: 'Sellado de Techo', diaInicio: 4, diaFin: 6 },
-    { section: 2, frente: 'Interior', tarea: 'Topping', diaInicio: 2, diaFin: 6 },
-    { section: 2, frente: 'Interior', tarea: 'Losa Piso / Losa Baño', diaInicio: 6, diaFin: 11 },
-    { section: 2, frente: 'Interior', tarea: 'Pintura - Primer', diaInicio: 11, diaFin: 14 },
-    { section: 2, frente: 'Interior', tarea: 'Pintura - 1era Mano', diaInicio: 14, diaFin: 17 },
-    { section: 2, frente: 'Interior', tarea: 'Pintura - 2da Mano', diaInicio: 17, diaFin: 20 },
+    { section: 2, frente: 'Exterior', tarea: 'Sellado de Techo', diaInicio: 16, diaFin: 18 },
+    { section: 2, frente: 'Interior', tarea: 'Topping', diaInicio: 15, diaFin: 19 },
+    { section: 2, frente: 'Interior', tarea: 'Losa Piso / Losa Baño', diaInicio: 19, diaFin: 24 },
+    { section: 2, frente: 'Interior', tarea: 'Pintura - Primer', diaInicio: 24, diaFin: 27 },
+    { section: 2, frente: 'Interior', tarea: 'Pintura - 1era Mano', diaInicio: 27, diaFin: 30 },
+    { section: 2, frente: 'Interior', tarea: 'Pintura - 2da Mano', diaInicio: 30, diaFin: 33 },
 
-    { section: 3, frente: 'Interior', tarea: 'Puertas Exteriores / Ventanas / Puertas Closets', diaInicio: 20, diaFin: 24 },
-    { section: 3, frente: 'Interior', tarea: 'Puertas Interiores / Cerraduras / Racks Closets', diaInicio: 24, diaFin: 27 },
-    { section: 3, frente: 'Interior', tarea: 'Plomería - Llaves de paso / Mezcladoras / Duchas', diaInicio: 27, diaFin: 29 },
-    { section: 3, frente: 'Interior', tarea: 'Electricidad - Abanicos / Switches / Outlets', diaInicio: 29, diaFin: 31 },
-    { section: 3, frente: 'Interior', tarea: 'Gabinetes - Cocina / Vanity', diaInicio: 31, diaFin: 35 },
-    { section: 3, frente: 'Interior', tarea: 'Backsplash', diaInicio: 35, diaFin: 37 },
-    { section: 3, frente: 'Interior', tarea: 'Equipos - Nevera / Estufa / Inodoro / Accesorios', diaInicio: 37, diaFin: 39 },
+    { section: 3, frente: 'Interior', tarea: 'Puertas Exteriores / Ventanas / Puertas Closets', diaInicio: 33, diaFin: 37 },
+    { section: 3, frente: 'Interior', tarea: 'Puertas Interiores / Cerraduras / Racks Closets', diaInicio: 37, diaFin: 40 },
+    { section: 3, frente: 'Interior', tarea: 'Plomería - Llaves de paso / Mezcladoras / Duchas', diaInicio: 40, diaFin: 42 },
+    { section: 3, frente: 'Interior', tarea: 'Electricidad - Abanicos / Switches / Outlets', diaInicio: 42, diaFin: 44 },
+    { section: 3, frente: 'Interior', tarea: 'Gabinetes - Cocina / Vanity', diaInicio: 44, diaFin: 48 },
+    { section: 3, frente: 'Interior', tarea: 'Backsplash', diaInicio: 48, diaFin: 50 },
+    { section: 3, frente: 'Interior', tarea: 'Equipos - Nevera / Estufa / Inodoro / Accesorios', diaInicio: 50, diaFin: 52 },
 
-    { section: 4, frente: 'Exterior', tarea: 'Calentador Solar', diaInicio: 6, diaFin: 7 },
-    { section: 4, frente: 'Exterior', tarea: 'Cisterna', diaInicio: 6, diaFin: 10 },
-    { section: 4, frente: 'Exterior', tarea: 'Placas Solares', diaInicio: 7, diaFin: 9 },
-    { section: 4, frente: 'Exterior', tarea: 'Carpad / Acera', diaInicio: 10, diaFin: 16 },
-    { section: 4, frente: 'Exterior', tarea: 'TopSoil / Grama', diaInicio: 16, diaFin: 21 },
-    { section: 4, frente: 'Ambos', tarea: 'Limpieza General', diaInicio: 39, diaFin: 41 },
+    { section: 4, frente: 'Exterior', tarea: 'Calentador Solar', diaInicio: 48, diaFin: 49 },
+    { section: 4, frente: 'Exterior', tarea: 'Cisterna', diaInicio: 18, diaFin: 22 },
+    { section: 4, frente: 'Exterior', tarea: 'Placas Solares', diaInicio: 49, diaFin: 51 },
+    { section: 4, frente: 'Exterior', tarea: 'Carpad / Acera', diaInicio: 22, diaFin: 28 },
+    { section: 4, frente: 'Exterior', tarea: 'TopSoil / Grama', diaInicio: 52, diaFin: 57 },
+    { section: 4, frente: 'Ambos', tarea: 'Limpieza General', diaInicio: 58, diaFin: 60 },
 ];
 
 let scheduleData = null; // { caseId, startDate, tasks: [...] }
@@ -215,6 +215,8 @@ function buildScheduleExportRows() {
     return rows;
 }
 
+// Builds a styled HTML table that Excel opens with real formatting (bold
+// headers, colored milestone rows, borders) when saved with an .xls extension.
 function exportScheduleToExcel() {
     const caseId = document.getElementById('schedule-case-id').value.trim();
     if (!scheduleData || !scheduleData.tasks.length) {
@@ -222,16 +224,59 @@ function exportScheduleToExcel() {
         return;
     }
 
+    const startDate = document.getElementById('schedule-start-date').value || 'N/A';
     const rows = buildScheduleExportRows();
-    const csv = ['﻿' + `Case ID: ${caseId || 'N/A'} - Start Date: ${document.getElementById('schedule-start-date').value || 'N/A'}`];
-    rows.forEach(row => {
-        csv.push(row.map(cell => `"${String(cell).replace(/"/g, '""')}"`).join(','));
-    });
+    const headerRow = rows[0];
+    const dataRows = rows.slice(1);
 
-    const csvFile = new Blob([csv.join('\r\n')], { type: 'text/csv;charset=utf-8;' });
+    const headerHtml = headerRow.map(h =>
+        `<th style="background:#2b6cb0;color:#ffffff;font-weight:bold;padding:8px 12px;border:1px solid #1a4971;text-align:left;">${h}</th>`
+    ).join('');
+
+    const bodyHtml = dataRows.map(row => {
+        const isMilestone = String(row[4]).includes('Milestone') || String(row[4]).includes('DURACIÓN');
+        const cellStyle = isMilestone
+            ? 'background:#edf2f7;font-weight:bold;color:#2d3748;padding:6px 12px;border:1px solid #cbd5e0;'
+            : 'padding:6px 12px;border:1px solid #e2e8f0;';
+        return `<tr>${row.map(cell => `<td style="${cellStyle}">${cell}</td>`).join('')}</tr>`;
+    }).join('');
+
+    const html = `
+        <html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel">
+        <head>
+            <meta charset="utf-8">
+            <!--[if gte mso 9]>
+            <xml>
+                <x:ExcelWorkbook>
+                    <x:ExcelWorksheets>
+                        <x:ExcelWorksheet>
+                            <x:Name>Schedule</x:Name>
+                            <x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions>
+                        </x:ExcelWorksheet>
+                    </x:ExcelWorksheets>
+                </x:ExcelWorkbook>
+            </xml>
+            <![endif]-->
+        </head>
+        <body style="font-family: Calibri, Arial, sans-serif;">
+            <table style="border-collapse:collapse;">
+                <tr>
+                    <td colspan="6" style="font-size:16px;font-weight:bold;color:#1a202c;padding:6px 0;">Substantial Phase Schedule</td>
+                </tr>
+                <tr>
+                    <td colspan="6" style="font-size:12px;color:#4a5568;padding-bottom:10px;">Case ID: ${caseId || 'N/A'} &nbsp;|&nbsp; Start Date: ${startDate}</td>
+                </tr>
+                <tr>${headerHtml}</tr>
+                ${bodyHtml}
+            </table>
+        </body>
+        </html>
+    `;
+
+    const blob = new Blob(['﻿' + html], { type: 'application/vnd.ms-excel' });
     const downloadLink = document.createElement('a');
-    downloadLink.download = `Schedule_${caseId || 'export'}.csv`;
-    downloadLink.href = window.URL.createObjectURL(csvFile);
+    downloadLink.download = `Schedule_${caseId || 'export'}.xls`;
+    downloadLink.href = window.URL.createObjectURL(blob);
     downloadLink.style.display = 'none';
     document.body.appendChild(downloadLink);
     downloadLink.click();
