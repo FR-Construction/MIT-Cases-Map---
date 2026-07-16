@@ -332,6 +332,10 @@ function exportScheduleToPdf() {
 function renderScheduleTable() {
     const tbody = document.getElementById('schedule-table-body');
     const startDate = document.getElementById('schedule-start-date').value;
+
+    const warningEl = document.getElementById('schedule-no-date-warning');
+    if (warningEl) warningEl.classList.toggle('hidden', !!startDate);
+
     let html = '';
     let rowNum = 0;
     const sections = [1, 2, 3, 4];

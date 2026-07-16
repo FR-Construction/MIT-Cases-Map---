@@ -407,6 +407,19 @@ main {
     color: #dd6b20;
     font-weight: 600;
 }
+.schedule-warning {
+    background: #fffaf0;
+    border: 1px solid #feebc8;
+    color: #9c4221;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+.schedule-warning.hidden {
+    display: none;
+}
 
 /* Info Window Customization */
 .info-window {
