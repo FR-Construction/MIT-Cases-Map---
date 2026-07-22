@@ -192,6 +192,7 @@ function buildScheduleExportRows() {
     const startDate = document.getElementById('schedule-start-date').value;
     const rows = [['#', 'Frente', 'Tarea', 'Día Inicio', 'Día Fin', 'Duración (días)']];
     let rowNum = 0;
+    let prevMaxDiaFin = 0;
 
     [1, 2, 3, 4].forEach(sectionNum => {
         const sectionTasks = scheduleData.tasks.filter(t => t.section === sectionNum);
@@ -203,14 +204,15 @@ function buildScheduleExportRows() {
         });
 
         const maxDiaFin = Math.max(...sectionTasks.map(t => Number(t.diaFin) || 0), 0);
-        const isLast = sectionNum === 4;
-        if (isLast) {
-            rows.push(['', '', '', '', 'DURACIÓN TOTAL DEL PROYECTO (días)', maxDiaFin]);
-        } else {
-            const milestoneDate = addDaysToDate(startDate, maxDiaFin);
-            rows.push(['', '', '', '', 'Milestone Goal', milestoneDate || '—']);
-        }
+        const phaseDuration = maxDiaFin - prevMaxDiaFin;
+        prevMaxDiaFin = maxDiaFin;
+
+        const milestoneDate = addDaysToDate(startDate, maxDiaFin);
+        rows.push(['', `Duración Fase ${sectionNum}: ${phaseDuration} días`, '', '', 'Milestone Goal', milestoneDate || '—']);
     });
+
+    const totalDays = Math.max(...scheduleData.tasks.map(t => Number(t.diaFin) || 0), 0);
+    rows.push(['', '', '', '', 'DURACIÓN TOTAL DEL PROYECTO (días)', totalDays]);
 
     return rows;
 }
@@ -339,6 +341,7 @@ function renderScheduleTable() {
     let html = '';
     let rowNum = 0;
     const sections = [1, 2, 3, 4];
+    let prevMaxDiaFin = 0;
 
     sections.forEach(sectionNum => {
         const rows = scheduleData.tasks
@@ -368,16 +371,30 @@ function renderScheduleTable() {
         });
 
         const maxDiaFin = Math.max(...rows.map(t => Number(t.diaFin) || 0), 0);
+        const phaseDuration = maxDiaFin - prevMaxDiaFin;
+        prevMaxDiaFin = maxDiaFin;
         const milestoneDate = addDaysToDate(startDate, maxDiaFin);
-        const isLast = sectionNum === 4;
+
         html += `
             <tr class="milestone-row">
-                <td colspan="5">${isLast ? 'DURACIÓN TOTAL DEL PROYECTO (días)' : 'Milestone Goal'}</td>
-                <td>${isLast ? maxDiaFin : (milestoneDate || '—')}</td>
+                <td colspan="4" style="text-align: left; font-weight: 600; color: #2d3748; padding-left: 15px;">
+                    Duración Fase ${sectionNum}: <strong>${phaseDuration} días</strong>
+                </td>
+                <td style="font-weight: bold; text-align: right;">Milestone Goal</td>
+                <td style="font-weight: bold; color: #2b6cb0;">${milestoneDate || '—'}</td>
                 <td></td>
             </tr>
         `;
     });
+
+    const totalProjectDays = Math.max(...scheduleData.tasks.map(t => Number(t.diaFin) || 0), 0);
+    html += `
+        <tr class="milestone-row project-total-row" style="background-color: #e2e8f0; font-weight: bold;">
+            <td colspan="5" style="text-align: right; font-size: 0.95rem;">DURACIÓN TOTAL DEL PROYECTO (días)</td>
+            <td style="font-size: 1rem; color: #1a202c; text-align: center;">${totalProjectDays}</td>
+            <td></td>
+        </tr>
+    `;
 
     tbody.innerHTML = html;
 
