@@ -277,6 +277,7 @@ function populateFilters() {
     const subcontractors = new Set();
     const types = new Set();
     const regions = new Set();
+    const models = new Set();
 
     allCases.forEach(c => {
         if (c['Stage Status']) statuses.add(c['Stage Status']);
@@ -284,6 +285,7 @@ function populateFilters() {
         if (c['Subcontractor Name']) subcontractors.add(c['Subcontractor Name']);
         if (c['Award Type Equivalent']) types.add(c['Award Type Equivalent']);
         if (c.Region) regions.add(c.Region);
+        if (c['Model Home Design Selection']) models.add(c['Model Home Design Selection']);
     });
 
     populateSelect('filter-status', Array.from(statuses).sort());
@@ -292,6 +294,7 @@ function populateFilters() {
     populateSelect('filter-type', Array.from(types).sort());
     populateSelect('filter-region', Array.from(regions).sort());
     populateSelect('filter-schedule', ['Has Schedule', 'No Schedule']);
+    populateSelect('filter-model', Array.from(models).sort());
 
     document.getElementById('search-case').addEventListener('input', applyFilters);
 }
@@ -332,6 +335,7 @@ function applyFilters() {
     const typeVals = getVals('filter-type');
     const regionVals = getVals('filter-region');
     const scheduleVals = getVals('filter-schedule');
+    const modelVals = getVals('filter-model');
 
     const filtered = allCases.filter(c => {
         const caseId = (c['Case ID'] || '').toLowerCase();
@@ -341,13 +345,14 @@ function applyFilters() {
         const matchSub = subVals.length === 0 || subVals.includes(c['Subcontractor Name']);
         const matchType = typeVals.length === 0 || typeVals.includes(c['Award Type Equivalent']);
         const matchRegion = regionVals.length === 0 || regionVals.includes(c.Region);
+        const matchModel = modelVals.length === 0 || modelVals.includes(c['Model Home Design Selection']);
         const hasSchedule = typeof scheduledCaseIds !== 'undefined' && scheduledCaseIds.has(c['Case ID']);
         const matchSchedule = scheduleVals.length === 0 ||
             (scheduleVals.includes('Has Schedule') && hasSchedule) ||
             (scheduleVals.includes('No Schedule') && !hasSchedule);
 
         return (searchVal === '' || caseId.includes(searchVal)) &&
-               matchStatus && matchMun && matchSub && matchType && matchRegion && matchSchedule;
+               matchStatus && matchMun && matchSub && matchType && matchRegion && matchModel && matchSchedule;
     });
 
     plotMarkers(filtered);
