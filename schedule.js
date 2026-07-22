@@ -208,7 +208,8 @@ function buildScheduleExportRows() {
         prevMaxDiaFin = maxDiaFin;
 
         const milestoneDate = addDaysToDate(startDate, maxDiaFin);
-        rows.push(['', `Duración Fase ${sectionNum}: ${phaseDuration} días`, '', '', 'Milestone Goal', milestoneDate || '—']);
+        const milestoneText = milestoneDate ? `Milestone Goal (${milestoneDate})` : 'Milestone Goal';
+        rows.push(['', '', '', '', milestoneText, phaseDuration]);
     });
 
     const totalDays = Math.max(...scheduleData.tasks.map(t => Number(t.diaFin) || 0), 0);
@@ -377,11 +378,10 @@ function renderScheduleTable() {
 
         html += `
             <tr class="milestone-row">
-                <td colspan="4" style="text-align: left; font-weight: 600; color: #2d3748; padding-left: 15px;">
-                    Duración Fase ${sectionNum}: <strong>${phaseDuration} días</strong>
+                <td colspan="5" style="text-align: right; font-weight: bold; padding-right: 15px;">
+                    Milestone Goal ${milestoneDate ? `<span style="color: #2b6cb0; margin-left: 5px;">(${milestoneDate})</span>` : ''}
                 </td>
-                <td style="font-weight: bold; text-align: right;">Milestone Goal</td>
-                <td style="font-weight: bold; color: #2b6cb0;">${milestoneDate || '—'}</td>
+                <td style="font-weight: bold; text-align: center; font-size: 0.95rem;">${phaseDuration}</td>
                 <td></td>
             </tr>
         `;
@@ -390,7 +390,7 @@ function renderScheduleTable() {
     const totalProjectDays = Math.max(...scheduleData.tasks.map(t => Number(t.diaFin) || 0), 0);
     html += `
         <tr class="milestone-row project-total-row" style="background-color: #e2e8f0; font-weight: bold;">
-            <td colspan="5" style="text-align: right; font-size: 0.95rem;">DURACIÓN TOTAL DEL PROYECTO (días)</td>
+            <td colspan="5" style="text-align: right; font-size: 0.95rem; padding-right: 15px;">DURACIÓN TOTAL DEL PROYECTO (días)</td>
             <td style="font-size: 1rem; color: #1a202c; text-align: center;">${totalProjectDays}</td>
             <td></td>
         </tr>
