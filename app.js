@@ -1,5 +1,6 @@
 let map;
 let markers = [];
+let markerCluster = null;
 let allCases = [];
 let choicesInstances = {};
 
@@ -111,7 +112,10 @@ async function fetchDataAndPlot() {
 function plotMarkers(cases) {
     if (viewMode === 'table') return; // Skip map plotting
 
-    // Clear existing markers
+    // Clear existing markers and clustering
+    if (markerCluster) {
+        markerCluster.clearMarkers();
+    }
     markers.forEach(m => m.setMap(null));
     markers = [];
 
@@ -162,7 +166,6 @@ function plotMarkers(cases) {
 
         const marker = new google.maps.Marker({
             position: position,
-            map: map,
             icon: svgMarker,
             title: `${caseData.Municipality} - ${caseData['Award Type Equivalent']}`
         });
@@ -188,6 +191,15 @@ function plotMarkers(cases) {
 
         markers.push(marker);
     });
+
+    // Group nearby markers into a single numbered cluster when zoomed out;
+    // they split apart into individual pins as you zoom in.
+    if (typeof markerClusterer !== 'undefined' && markerClusterer.MarkerClusterer) {
+        markerCluster = new markerClusterer.MarkerClusterer({ map, markers });
+    } else {
+        // Fallback if the clustering library failed to load: show pins directly.
+        markers.forEach(m => m.setMap(map));
+    }
 }
 
 function generateSummary(cases) {
