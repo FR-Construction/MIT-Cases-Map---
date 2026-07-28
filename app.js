@@ -1,6 +1,7 @@
 let map;
 let markers = [];
 let markerCluster = null;
+const LABEL_MIN_ZOOM = 12; // Case ID labels only show once zoomed in past this level
 let allCases = [];
 let choicesInstances = {};
 
@@ -90,8 +91,20 @@ function initMap() {
     });
     dividingLine.setMap(map);
 
+    // Show/hide Case ID labels as the user zooms in or out
+    map.addListener('zoom_changed', updateMarkerLabelVisibility);
+
     // Fetch data and plot markers
     fetchDataAndPlot();
+}
+
+function updateMarkerLabelVisibility() {
+    const showLabels = map.getZoom() >= LABEL_MIN_ZOOM;
+    markers.forEach(m => {
+        if (m.caseLabel) {
+            m.setLabel(showLabels ? m.caseLabel : null);
+        }
+    });
 }
 
 async function fetchDataAndPlot() {
@@ -191,18 +204,21 @@ function plotMarkers(cases) {
             labelOrigin: new google.maps.Point(0, -10), // push the Case ID label above the dot
         };
 
+        const caseLabel = {
+            text: caseData['Case ID'] || '',
+            color: '#1a202c',
+            fontSize: '11px',
+            fontWeight: '700',
+            className: 'marker-case-label'
+        };
+
         const marker = new google.maps.Marker({
             position: position,
             icon: svgMarker,
-            label: {
-                text: caseData['Case ID'] || '',
-                color: '#1a202c',
-                fontSize: '11px',
-                fontWeight: '700',
-                className: 'marker-case-label'
-            },
+            label: map.getZoom() >= LABEL_MIN_ZOOM ? caseLabel : null,
             title: `${caseData.Municipality} - ${caseData['Award Type Equivalent']}`
         });
+        marker.caseLabel = caseLabel; // stashed so we can show/hide it as the zoom level changes
 
         // Add Click listener for InfoWindow
         marker.addListener("click", () => {
