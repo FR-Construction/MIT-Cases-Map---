@@ -4,6 +4,32 @@ let markerCluster = null;
 let allCases = [];
 let choicesInstances = {};
 
+// Custom renderer for grouped-marker clusters: bigger, dark-blue circles with
+// the case count, growing slightly as more cases stack into one cluster.
+const clusterRenderer = {
+    render({ count, position }) {
+        const scale = Math.min(26 + count * 0.6, 42);
+        return new google.maps.Marker({
+            position,
+            icon: {
+                path: google.maps.SymbolPath.CIRCLE,
+                fillColor: '#1a365d',
+                fillOpacity: 0.9,
+                strokeColor: '#ffffff',
+                strokeWeight: 2,
+                scale: scale,
+            },
+            label: {
+                text: String(count),
+                color: '#ffffff',
+                fontSize: '14px',
+                fontWeight: 'bold',
+            },
+            zIndex: 1000 + count,
+        });
+    }
+};
+
 // Handle URL parameters for view modes
 const urlParams = new URLSearchParams(window.location.search);
 const viewMode = urlParams.get('view'); // 'map' or 'table'
@@ -195,7 +221,7 @@ function plotMarkers(cases) {
     // Group nearby markers into a single numbered cluster when zoomed out;
     // they split apart into individual pins as you zoom in.
     if (typeof markerClusterer !== 'undefined' && markerClusterer.MarkerClusterer) {
-        markerCluster = new markerClusterer.MarkerClusterer({ map, markers });
+        markerCluster = new markerClusterer.MarkerClusterer({ map, markers, renderer: clusterRenderer });
     } else {
         // Fallback if the clustering library failed to load: show pins directly.
         markers.forEach(m => m.setMap(map));
