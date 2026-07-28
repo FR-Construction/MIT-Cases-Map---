@@ -188,11 +188,19 @@ function plotMarkers(cases) {
             strokeWeight: 2,
             strokeColor: "#ffffff",
             scale: 7, // Size of the marker
+            labelOrigin: new google.maps.Point(0, -10), // push the Case ID label above the dot
         };
 
         const marker = new google.maps.Marker({
             position: position,
             icon: svgMarker,
+            label: {
+                text: caseData['Case ID'] || '',
+                color: '#1a202c',
+                fontSize: '11px',
+                fontWeight: '700',
+                className: 'marker-case-label'
+            },
             title: `${caseData.Municipality} - ${caseData['Award Type Equivalent']}`
         });
 

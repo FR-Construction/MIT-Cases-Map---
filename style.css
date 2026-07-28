@@ -421,6 +421,12 @@ main {
     display: none;
 }
 
+/* Case ID label shown above each individual map pin */
+.marker-case-label {
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff, 0 0 3px #fff;
+    white-space: nowrap;
+}
+
 /* Info Window Customization */
 .info-window {
     padding: 5px;
