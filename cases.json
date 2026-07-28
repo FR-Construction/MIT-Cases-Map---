@@ -20,16 +20,6 @@
         "Model Home Design Selection": "Single-Story 2-Bedroom"
     },
     {
-        "Case ID": "PR-EQK-01055",
-        "Municipality": "Lajas",
-        "Region": "South",
-        "Award Type Equivalent": "Reconstruction",
-        "Coordinates": "17.99622,-66.97082",
-        "Stage Status": "12 - Substantial Inspection",
-        "Subcontractor Name": "PW Contractor Corp",
-        "Model Home Design Selection": "Single-Story 2-Bedroom"
-    },
-    {
         "Case ID": "PR-EQK-00878",
         "Municipality": "Yauco",
         "Region": "South",
@@ -105,7 +95,7 @@
         "Region": "North",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.50128,-67.0145",
-        "Stage Status": "11 - Structure Inspection",
+        "Stage Status": "12 - Substantial Inspection",
         "Subcontractor Name": "Constructora Yanmar, LLC",
         "Model Home Design Selection": "Single-Story 2-Bedroom"
     },
@@ -135,7 +125,7 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.00602,-66.90244",
-        "Stage Status": "12 - Substantial Inspection",
+        "Stage Status": "13 - Final Inspection",
         "Subcontractor Name": "OF Construction Corp",
         "Model Home Design Selection": "Single-Story 2-Bedroom"
     },
@@ -235,7 +225,7 @@
         "Region": "North",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.44319,-66.66677",
-        "Stage Status": "08 - Walls Inspection (1st Level)",
+        "Stage Status": "11 - Structure Inspection",
         "Subcontractor Name": "Custom Development Group, LLC",
         "Model Home Design Selection": "Single-Story 4-Bedroom"
     },
@@ -300,22 +290,22 @@
         "Model Home Design Selection": "Single-Story 2-Bedroom (RAR)"
     },
     {
-        "Case ID": "PR-SFM-03017",
-        "Municipality": "Arecibo",
-        "Region": "North",
-        "Award Type Equivalent": "Reconstruction",
-        "Coordinates": "18.46016,-66.75448",
-        "Stage Status": "13 - Final Inspection",
-        "Subcontractor Name": "Marcelo Electro Inc.",
-        "Model Home Design Selection": "Single-Story 3-Bedroom"
-    },
-    {
         "Case ID": "PR-SFM-03025",
         "Municipality": "Arecibo",
         "Region": "North",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.43793,-66.76117",
         "Stage Status": "11 - Structure Inspection",
+        "Subcontractor Name": "Marcelo Electro Inc.",
+        "Model Home Design Selection": "Single-Story 2-Bedroom"
+    },
+    {
+        "Case ID": "PR-R3-25531",
+        "Municipality": "Arecibo",
+        "Region": "North",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.47347,-66.65071",
+        "Stage Status": "04 - Construction - Started",
         "Subcontractor Name": "Marcelo Electro Inc.",
         "Model Home Design Selection": "Single-Story 2-Bedroom"
     },
@@ -335,7 +325,7 @@
         "Region": "North",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.40086,-66.60016",
-        "Stage Status": "04 - Construction - Started",
+        "Stage Status": "07 - Foundation Inspection",
         "Subcontractor Name": "Marcelo Electro Inc.",
         "Model Home Design Selection": "Single-Story 3-Bedroom"
     },
@@ -355,7 +345,7 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.06695,-66.76066",
-        "Stage Status": "04 - Construction - Started",
+        "Stage Status": "07 - Foundation Inspection",
         "Subcontractor Name": "A & S General Contractor",
         "Model Home Design Selection": "Single-Story 2-Bedroom"
     },
@@ -395,7 +385,7 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "17.96116,-66.93376",
-        "Stage Status": "06 - Retaining Wall Inspection (Walls)",
+        "Stage Status": "07 - Foundation Inspection",
         "Subcontractor Name": "Y.E TRANSPORT LLC",
         "Model Home Design Selection": "Single-Story 2-Bedroom"
     },
@@ -405,7 +395,7 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "17.97923,-66.88368",
-        "Stage Status": "07 - Foundation Inspection",
+        "Stage Status": "08 - Walls Inspection (1st Level)",
         "Subcontractor Name": "F&R Construction Group, Inc.",
         "Model Home Design Selection": "Single-Story 3-Bedroom"
     },
@@ -425,7 +415,7 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "17.97946,-66.88543",
-        "Stage Status": "07 - Foundation Inspection",
+        "Stage Status": "08 - Walls Inspection (1st Level)",
         "Subcontractor Name": "OF Construction Corp",
         "Model Home Design Selection": "Single-Story 2-Bedroom (ADA)"
     },
@@ -495,7 +485,7 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.00497,-66.91159",
-        "Stage Status": "04 - Construction - Started",
+        "Stage Status": "07 - Foundation Inspection",
         "Subcontractor Name": "Y.E TRANSPORT LLC",
         "Model Home Design Selection": "Single-Story 2-Bedroom (ADA)"
     },
@@ -518,6 +508,16 @@
         "Stage Status": "04 - Construction - Started",
         "Subcontractor Name": "Constructora Yanmar, LLC",
         "Model Home Design Selection": "Two-Story 4-Bedroom (RAR)"
+    },
+    {
+        "Case ID": "PR-R3-26215",
+        "Municipality": "Yauco",
+        "Region": "South",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.00437,-66.84543",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "JN TRANSPORT",
+        "Model Home Design Selection": "Single-Story 2-Bedroom (ADA)"
     },
     {
         "Case ID": "PR-BR-50495",
@@ -585,7 +585,7 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.06061,-66.69777",
-        "Stage Status": "08 - Walls Inspection (1st Level)",
+        "Stage Status": "11 - Structure Inspection",
         "Subcontractor Name": "Super World Construction, Corp.",
         "Model Home Design Selection": "Single-Story 2-Bedroom (ADA)"
     },
@@ -605,8 +605,18 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.05554,-66.71492",
-        "Stage Status": "07 - Foundation Inspection",
+        "Stage Status": "08 - Walls Inspection (1st Level)",
         "Subcontractor Name": "Gp pro construction & supplies",
+        "Model Home Design Selection": "Single-Story 2-Bedroom (ADA)"
+    },
+    {
+        "Case ID": "PR-SFM-02181",
+        "Municipality": "Santa Isabel",
+        "Region": "South",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "17.99813,-66.34326",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "OF Construction Corp",
         "Model Home Design Selection": "Single-Story 2-Bedroom (ADA)"
     },
     {
@@ -625,7 +635,7 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.02911,-66.86174",
-        "Stage Status": "07 - Foundation Inspection",
+        "Stage Status": "08 - Walls Inspection (1st Level)",
         "Subcontractor Name": "Super World Construction, Corp.",
         "Model Home Design Selection": "Single-Story 2-Bedroom (RAR)"
     },
@@ -655,9 +665,19 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.05033,-66.55241",
-        "Stage Status": "06 - Retaining Wall Inspection (Walls)",
+        "Stage Status": "07 - Foundation Inspection",
         "Subcontractor Name": "3K Management & Construction LLC",
         "Model Home Design Selection": "Single-Story 2-Bedroom"
+    },
+    {
+        "Case ID": "PR-R3-26255",
+        "Municipality": "Manat\u00ed",
+        "Region": "North",
+        "Award Type Equivalent": "Relocation",
+        "Coordinates": "18.42627,-66.49334",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Custom Development LLC",
+        "Model Home Design Selection": null
     },
     {
         "Case ID": "PR-R3-07653 (BR)",
@@ -675,7 +695,7 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.03636,-66.8576",
-        "Stage Status": "08 - Walls Inspection (1st Level)",
+        "Stage Status": "11 - Structure Inspection",
         "Subcontractor Name": "Engitech PR LLC",
         "Model Home Design Selection": "Single-Story 2-Bedroom"
     },
@@ -690,63 +710,113 @@
         "Model Home Design Selection": "Single-Story 4-Bedroom"
     },
     {
+        "Case ID": "PR-SFM-04595",
+        "Municipality": "Manat\u00ed",
+        "Region": "North",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.44009,-66.44752",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Custom Development Group, LLC",
+        "Model Home Design Selection": "Two-Story 2-Bedroom"
+    },
+    {
         "Case ID": "PR-SFM-04409",
         "Municipality": "Pe\u00f1uelas",
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.05736,-66.6954",
-        "Stage Status": "04 - Construction - Started",
+        "Stage Status": "07 - Foundation Inspection",
         "Subcontractor Name": "3K Management & Construction LLC",
         "Model Home Design Selection": "Single-Story 2-Bedroom"
     },
     {
-        "Case ID": "PR-R3-06509",
-        "Municipality": "Arecibo",
-        "Region": "North",
-        "Award Type Equivalent": "Relocation",
-        "Coordinates": "18.4883,-66.65072",
-        "Stage Status": "04 - Construction - Started",
-        "Subcontractor Name": "Constructora Yanmar, LLC",
-        "Model Home Design Selection": null
-    },
-    {
-        "Case ID": "PR-R3-03868",
-        "Municipality": "Lares",
-        "Region": "North",
-        "Award Type Equivalent": "Relocation",
-        "Coordinates": "18.25165,-66.85495",
-        "Stage Status": "04 - Construction - Started",
-        "Subcontractor Name": "3K Management & Construction LLC",
-        "Model Home Design Selection": null
-    },
-    {
-        "Case ID": "PR-R3-15853",
-        "Municipality": "Mayag\u00fcez",
+        "Case ID": "PR-SFM-04034",
+        "Municipality": "Juana D\u00edaz",
         "Region": "South",
-        "Award Type Equivalent": "Relocation",
-        "Coordinates": "18.23527,-67.16981",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.04979,-66.5282",
         "Stage Status": "04 - Construction - Started",
-        "Subcontractor Name": "Of Construction",
+        "Subcontractor Name": "Rodca Contractor",
+        "Model Home Design Selection": "Single-Story 2-Bedroom (ADA)"
+    },
+    {
+        "Case ID": "PR-SFM-04782",
+        "Municipality": "Juana D\u00edaz",
+        "Region": "South",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.02678,-66.53794",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Super World Construction, Corp.",
+        "Model Home Design Selection": "Single-Story 4-Bedroom"
+    },
+    {
+        "Case ID": "PR-SFM-03875",
+        "Municipality": "Camuy",
+        "Region": "North",
+        "Award Type Equivalent": "Relocation",
+        "Coordinates": "18.48544,-66.85003",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Y.E TRANSPORT LLC",
         "Model Home Design Selection": null
     },
     {
-        "Case ID": "PR-R3-20628",
+        "Case ID": "PR-R3-10918",
+        "Municipality": "Vega Baja",
+        "Region": "North",
+        "Award Type Equivalent": "Relocation",
+        "Coordinates": "18.44223,-66.38123",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Engitech PR LLC",
+        "Model Home Design Selection": null
+    },
+    {
+        "Case ID": "PR-R3-02692",
+        "Municipality": "Barceloneta",
+        "Region": "North",
+        "Award Type Equivalent": "Relocation",
+        "Coordinates": "18.43239,-66.53972",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Gialsi Crane, LLC",
+        "Model Home Design Selection": null
+    },
+    {
+        "Case ID": "PR-SFM-02828",
+        "Municipality": "San Sebasti\u00e1n",
+        "Region": "North",
+        "Award Type Equivalent": "Relocation",
+        "Coordinates": "18.3353,-66.98766",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "GP Pro Cronstruction LP",
+        "Model Home Design Selection": null
+    },
+    {
+        "Case ID": "PR-SFM-01503",
+        "Municipality": "San Sebasti\u00e1n",
+        "Region": "North",
+        "Award Type Equivalent": "Relocation",
+        "Coordinates": "18.33065,-66.98963",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "GP Pro Cronstruction LP",
+        "Model Home Design Selection": null
+    },
+    {
+        "Case ID": "PR-SFM-02353",
+        "Municipality": "A\u00f1asco",
+        "Region": "North",
+        "Award Type Equivalent": "Relocation",
+        "Coordinates": "18.28169,-67.14921",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Super World Construction, Corp.",
+        "Model Home Design Selection": null
+    },
+    {
+        "Case ID": "PR-R3-04081",
         "Municipality": "Naguabo",
         "Region": "North",
         "Award Type Equivalent": "Relocation",
-        "Coordinates": "18.23472,-65.70038",
+        "Coordinates": "18.24374,-65.7939",
         "Stage Status": "04 - Construction - Started",
-        "Subcontractor Name": "Rodca Contractor",
-        "Model Home Design Selection": null
-    },
-    {
-        "Case ID": "PR-SFM-01610",
-        "Municipality": "Mayag\u00fcez",
-        "Region": "South",
-        "Award Type Equivalent": "Relocation",
-        "Coordinates": "18.17588,-67.17157",
-        "Stage Status": "04 - Construction - Started",
-        "Subcontractor Name": "Rodca Contractor",
+        "Subcontractor Name": "Torres Development LLC",
         "Model Home Design Selection": null
     },
     {
@@ -755,7 +825,7 @@
         "Region": "South",
         "Award Type Equivalent": "Relocation",
         "Coordinates": "18.05403,-66.71835",
-        "Stage Status": "04 - Construction - Started",
+        "Stage Status": "13 - Final Inspection",
         "Subcontractor Name": "Super World Construction",
         "Model Home Design Selection": null
     }
