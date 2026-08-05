@@ -117,6 +117,16 @@ async function fetchDataAndPlot() {
         const cases = await response.json();
         allCases = cases;
         
+        try {
+            const lastUpdateRes = await fetch(`last_update.json?t=${new Date().getTime()}`);
+            if (lastUpdateRes.ok) {
+                const updateData = await lastUpdateRes.json();
+                document.getElementById('last-updated-text').textContent = `Data Last Updated: ${updateData.last_update}`;
+            }
+        } catch (e) {
+            document.getElementById('last-updated-text').textContent = `Data Last Updated: Unknown`;
+        }
+        
         populateFilters();
         applyFilters(); // This will call plotMarkers, generateSummary, and generateTable
         
@@ -307,6 +317,14 @@ function generateTable(cases) {
             ? `<button type="button" class="schedule-badge schedule-badge-set" data-case-id="${caseId}">📅 Set</button>`
             : `<span class="schedule-badge schedule-badge-none">—</span>`;
 
+        let supsHtml = 'N/A';
+        if (typeof scheduledCaseSupervisors !== 'undefined' && scheduledCaseSupervisors.has(caseId)) {
+            const sups = scheduledCaseSupervisors.get(caseId);
+            if (Array.isArray(sups) && sups.length > 0) {
+                supsHtml = sups.join('<br>');
+            }
+        }
+
         tableHtml += `
             <tr>
                 <td>${c['Case ID'] || 'N/A'}</td>
@@ -316,6 +334,8 @@ function generateTable(cases) {
                 <td>${sub}</td>
                 <td>${c['Stage Status'] || 'N/A'}</td>
                 <td>${c['Model Home Design Selection'] || 'N/A'}</td>
+                <td>${c['Days Since Last Milestone Inspection'] || 'N/A'}</td>
+                <td>${supsHtml}</td>
                 <td>${scheduleCell}</td>
             </tr>
         `;

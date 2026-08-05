@@ -63,7 +63,8 @@ def main():
         "Subcontractor Date of Notice to Proceed", 
         "Stage Status",
         "Subcontractor Name",
-        "Model Home Design Selection"
+        "Model Home Design Selection",
+        "Days Since Last Milestone Inspection"
     ]
     
     # Some columns might have slightly different names, trying to handle that if needed, 
@@ -117,7 +118,8 @@ def main():
             "Coordinates": row_dict.get("Coordinates", ""),
             "Stage Status": stage,
             "Subcontractor Name": row_dict.get("Subcontractor Name", "") or row_dict.get("Subcontractor", ""),
-            "Model Home Design Selection": row_dict.get("Model Home Design Selection", "")
+            "Model Home Design Selection": row_dict.get("Model Home Design Selection", ""),
+            "Days Since Last Milestone Inspection": row_dict.get("Days Since Last Milestone Inspection", "")
         }
         cases.append(case_data)
 
@@ -143,8 +145,17 @@ def main():
             print("Successfully pushed to GitHub!")
         else:
             print("No changes to commit.")
-    except Exception as e:
-        print(f"Error during git operations: {e}")
+    except subprocess.CalledProcessError as e:
+        print(f"Error pushing to GitHub: {e}")
+        exit(1)
+
+    # Generate last_update.json
+    from datetime import datetime
+    last_update_file = os.path.join(os.path.dirname(__file__), "last_update.json")
+    with open(last_update_file, 'w', encoding='utf-8') as f:
+        json.dump({"last_update": datetime.now().strftime("%Y-%m-%d %I:%M %p")}, f)
+        
+    print("GitHub push completed successfully.")
 
 if __name__ == "__main__":
     main()

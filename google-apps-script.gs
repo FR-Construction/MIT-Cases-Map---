@@ -13,12 +13,12 @@ function getSheet_() {
   let sheet = ss.getSheetByName(SHEET_NAME);
   if (!sheet) {
     sheet = ss.insertSheet(SHEET_NAME);
-    sheet.appendRow(['Case ID', 'Start Date', 'Tasks JSON', 'Last Updated']);
+    sheet.appendRow(['Case ID', 'Start Date', 'Tasks JSON', 'Last Updated', 'Supervisors']);
   }
-  // Force Start Date and Last Updated columns to Plain Text so Sheets doesn't
-  // auto-convert them into Date objects with timezone/time-of-day noise.
+  // Force Start Date, Last Updated, and Supervisors columns to Plain Text
   sheet.getRange('B:B').setNumberFormat('@');
   sheet.getRange('D:D').setNumberFormat('@');
+  sheet.getRange('E:E').setNumberFormat('@');
   return sheet;
 }
 
@@ -59,12 +59,19 @@ function doGet(e) {
     return jsonResponse_({ found: false });
   }
 
-  const values = sheet.getRange(row, 1, 1, 4).getValues()[0];
+  const values = sheet.getRange(row, 1, 1, 5).getValues()[0];
   let tasks = [];
   try {
     tasks = JSON.parse(values[2] || '[]');
   } catch (err) {
     tasks = [];
+  }
+  
+  let supervisors = [];
+  try {
+    supervisors = JSON.parse(values[4] || '[]');
+  } catch (err) {
+    supervisors = [];
   }
 
   return jsonResponse_({
@@ -72,7 +79,8 @@ function doGet(e) {
     caseId: values[0],
     startDate: toPlainDateString_(values[1]),
     tasks: tasks,
-    lastUpdated: toPlainDateString_(values[3])
+    lastUpdated: toPlainDateString_(values[3]),
+    supervisors: supervisors
   });
 }
 
@@ -93,6 +101,13 @@ function listAllSchedules_(sheet) {
       tasks = [];
     }
 
+    let supervisors = [];
+    try {
+      supervisors = JSON.parse(data[i][4] || '[]');
+    } catch (err) {
+      supervisors = [];
+    }
+
     const totalDays = tasks.reduce((max, t) => Math.max(max, Number(t.diaFin) || 0), 0);
 
     summaries.push({
@@ -100,7 +115,8 @@ function listAllSchedules_(sheet) {
       startDate: toPlainDateString_(data[i][1]),
       totalDurationDays: totalDays,
       taskCount: tasks.length,
-      lastUpdated: toPlainDateString_(data[i][3])
+      lastUpdated: toPlainDateString_(data[i][3]),
+      supervisors: supervisors
     });
   }
 
@@ -113,19 +129,26 @@ function doPost(e) {
   if (!caseId) {
     return jsonResponse_({ error: 'Missing caseId' }, 400);
   }
-
+  const startDate = body.startDate || '';
+  const tasks = body.tasks || [];
+  const supervisors = body.supervisors || [];
+  const timestamp = Utilities.formatDate(new Date(), Session.getScriptTimeZone(), 'yyyy-MM-dd HH:mm:ss');
+  
   const sheet = getSheet_();
   const row = findRowByCaseId_(sheet, caseId);
-  const tasksJson = JSON.stringify(body.tasks || []);
-  const now = new Date().toISOString();
-
+  
   if (row === -1) {
-    sheet.appendRow([caseId, body.startDate || '', tasksJson, now]);
+    // Append new
+    sheet.appendRow([caseId, startDate, JSON.stringify(tasks), timestamp, JSON.stringify(supervisors)]);
   } else {
-    sheet.getRange(row, 2, 1, 3).setValues([[body.startDate || '', tasksJson, now]]);
+    // Update existing
+    sheet.getRange(row, 2).setValue(startDate);
+    sheet.getRange(row, 3).setValue(JSON.stringify(tasks));
+    sheet.getRange(row, 4).setValue(timestamp);
+    sheet.getRange(row, 5).setValue(JSON.stringify(supervisors));
   }
 
-  return jsonResponse_({ success: true, lastUpdated: now });
+  return jsonResponse_({ success: true, lastUpdated: timestamp });
 }
 
 function jsonResponse_(obj, statusCode) {

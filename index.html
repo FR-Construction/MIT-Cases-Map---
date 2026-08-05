@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Puerto Rico Cases Dashboard</title>
-    <link rel="stylesheet" href="style.css?v=13">
+    <link rel="stylesheet" href="style.css?v=14">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,10 @@
     <div id="app-container">
         <header>
             <div class="header-content">
-                <h1>MIT Cases Dashboard</h1>
+                <div>
+                    <h1 style="margin-bottom: 4px;">MIT Cases Dashboard</h1>
+                    <div id="last-updated-text" style="font-size: 0.85rem; color: #718096; font-weight: 500;">Data Last Updated: Loading...</div>
+                </div>
                 <div class="header-actions">
                     <button id="btn-schedule-tool" class="btn" style="background-color: #805ad5;">Schedule Tool</button>
                     <button id="btn-popout-map" class="btn">Pop-out Map</button>
@@ -41,6 +44,10 @@
                     <div class="filter-group">
                         <label for="schedule-start-date">Fecha de Comienzo</label>
                         <input type="date" id="schedule-start-date">
+                    </div>
+                    <div class="filter-group" style="min-width: 250px;">
+                        <label for="schedule-supervisors">Supervisors</label>
+                        <select id="schedule-supervisors" multiple></select>
                     </div>
                     <button id="btn-schedule-load" class="btn">Load</button>
                     <button id="btn-schedule-reset" class="btn" style="background-color: #718096;">Reset to Template</button>
@@ -152,6 +159,8 @@
                                 <th>Subcontractor Name</th>
                                 <th>Stage Status</th>
                                 <th>Model Home Design</th>
+                                <th>Days Last Milestone Inspection</th>
+                                <th>Supervisors</th>
                                 <th>Schedule Substantial</th>
                             </tr>
                         </thead>
@@ -174,7 +183,7 @@
     <!-- Google Maps JS API -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7mft-eK0A5xk6JpV7w-7EGLEoINuLaqM&callback=initMap&libraries=maps,marker&v=beta" async defer></script>
     <script src="https://unpkg.com/@googlemaps/markerclusterer@2.5.3/dist/index.min.js"></script>
-    <script src="app.js?v=17"></script>
-    <script src="schedule.js?v=7"></script>
+    <script src="app.js?v=14"></script>
+    <script src="schedule.js?v=8"></script>
 </body>
 </html>

@@ -11,14 +11,25 @@ const SCHEDULE_STORAGE_PREFIX = 'mit_schedule_';
 // Set of Case IDs that currently have a saved schedule, used to badge the
 // main Cases Report table. Populated from the shared Google Sheet on load.
 let scheduledCaseIds = new Set();
+let scheduledCaseSupervisors = new Map();
 
 async function loadScheduledCaseIdsSet() {
     if (!SCHEDULE_API_URL) return;
     try {
         const res = await fetch(`${SCHEDULE_API_URL}?list=true`);
         const data = await res.json();
-        scheduledCaseIds = new Set((data.schedules || []).map(s => s.caseId));
+        const schedules = data.schedules || [];
+        scheduledCaseIds = new Set(schedules.map(s => s.caseId));
+        
+        scheduledCaseSupervisors.clear();
+        schedules.forEach(s => {
+            if (s.supervisors && s.supervisors.length) {
+                scheduledCaseSupervisors.set(s.caseId, s.supervisors);
+            }
+        });
+        
         if (typeof applyFilters === 'function') applyFilters();
+        if (typeof generateTable === 'function' && typeof allCases !== 'undefined') generateTable(allCases.filter(c => true)); // Re-render table to show loaded supervisors
     } catch (err) {
         console.error('Could not load list of scheduled cases:', err);
     }
@@ -101,7 +112,7 @@ async function loadSchedule(caseId) {
             const res = await fetch(`${SCHEDULE_API_URL}?caseId=${encodeURIComponent(caseId)}`);
             const data = await res.json();
             if (data.found) {
-                const schedule = { startDate: data.startDate || '', tasks: data.tasks || [] };
+                const schedule = { startDate: data.startDate || '', tasks: data.tasks || [], supervisors: data.supervisors || [] };
                 localStorage.setItem(SCHEDULE_STORAGE_PREFIX + caseId, JSON.stringify(schedule));
                 setSaveStatus('Loaded from shared sheet ✓');
                 return schedule;
@@ -140,7 +151,8 @@ async function saveSchedule() {
             body: JSON.stringify({
                 caseId,
                 startDate: scheduleData.startDate,
-                tasks: scheduleData.tasks
+                tasks: scheduleData.tasks,
+                supervisors: scheduleData.supervisors || []
             })
         });
         setSaveStatus('Saved to shared sheet ✓');
@@ -435,6 +447,14 @@ async function loadScheduleForCurrentCaseId() {
     const caseId = document.getElementById('schedule-case-id').value.trim();
     scheduleData = await loadSchedule(caseId);
     document.getElementById('schedule-start-date').value = scheduleData.startDate || '';
+    
+    if (window.scheduleSupervisorsChoices) {
+        window.scheduleSupervisorsChoices.removeActiveItems();
+        if (scheduleData.supervisors && scheduleData.supervisors.length > 0) {
+            window.scheduleSupervisorsChoices.setChoiceByValue(scheduleData.supervisors);
+        }
+    }
+    
     renderScheduleTable();
     updateScheduleCaseInfo(caseId);
 }
@@ -578,6 +598,29 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!scheduleData) scheduleData = getDefaultSchedule();
         scheduleData.startDate = e.target.value;
         renderScheduleTable();
+        scheduleAutoSave();
+    });
+
+    const supervisorsList = [
+        "Jose L. Mundo", "Jose Garces", "Jose Negrón", "Harry Velez",
+        "Christian Bonilla", "Jangel Sanchez", "Samuel Santiago",
+        "Jaime Rivera", "Rafael Morales", "Jose Velez", "Eliezer Aponte"
+    ];
+    const supOptions = supervisorsList.map(s => ({ value: s, label: s }));
+
+    window.scheduleSupervisorsChoices = new Choices('#schedule-supervisors', {
+        removeItemButton: true,
+        searchEnabled: true,
+        placeholder: true,
+        placeholderValue: 'Assign Supervisors',
+        itemSelectText: ''
+    });
+    window.scheduleSupervisorsChoices.setChoices(supOptions, 'value', 'label', true);
+
+    document.getElementById('schedule-supervisors').addEventListener('change', () => {
+        if (!scheduleData) scheduleData = getDefaultSchedule();
+        const vals = window.scheduleSupervisorsChoices.getValue(true);
+        scheduleData.supervisors = Array.isArray(vals) ? vals : (vals ? [vals] : []);
         scheduleAutoSave();
     });
 });
