@@ -5,6 +5,7 @@
 // Paste the Apps Script "Web app" URL here once deployed (see SCHEDULE_SETUP.md).
 // Leave empty to run in local-only mode (localStorage per browser).
 const SCHEDULE_API_URL = 'https://script.google.com/macros/s/AKfycbxOqtomVz7Y3HRqU2R5FZcBLFSRZdCP7okFVB_hpKcHdqMzhK7NCvLVCCELdGJi6dPS/exec';
+window.SCHEDULE_API_URL = SCHEDULE_API_URL;
 
 const SCHEDULE_STORAGE_PREFIX = 'mit_schedule_';
 

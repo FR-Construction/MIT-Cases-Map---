@@ -400,15 +400,17 @@ function generateTable(cases) {
                 // Fetch existing schedule
                 let existingTasks = [];
                 let existingStart = '';
-                if (typeof SCHEDULE_API_URL !== 'undefined' && SCHEDULE_API_URL) {
-                    const res = await fetch(`${SCHEDULE_API_URL}?caseId=${encodeURIComponent(caseId)}`);
+                const apiUrl = window.SCHEDULE_API_URL || (typeof SCHEDULE_API_URL !== 'undefined' ? SCHEDULE_API_URL : null);
+                
+                if (apiUrl) {
+                    const res = await fetch(`${apiUrl}?caseId=${encodeURIComponent(caseId)}`);
                     const data = await res.json();
                     if (data.found) {
                         existingTasks = data.tasks || [];
                         existingStart = data.startDate || '';
                     }
                     
-                    await fetch(SCHEDULE_API_URL, {
+                    await fetch(apiUrl, {
                         method: 'POST',
                         body: JSON.stringify({
                             caseId: caseId,
@@ -423,6 +425,8 @@ function generateTable(cases) {
                         statusEl.style.color = '#38a169'; // green
                         setTimeout(() => { if (statusEl) statusEl.textContent = ''; }, 2000);
                     }
+                } else {
+                    throw new Error('API URL not found');
                 }
             } catch (err) {
                 console.error('Error saving supervisor from table:', err);
