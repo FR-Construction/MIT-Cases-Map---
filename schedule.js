@@ -15,7 +15,33 @@ window.scheduledCaseIds = window.scheduledCaseIds || new Set();
 window.scheduledCaseDates = window.scheduledCaseDates || new Map();
 window.scheduledCaseSupervisors = window.scheduledCaseSupervisors || new Map();
 
+function loadSupervisorsFromLocalStorage() {
+    try {
+        for (let i = 0; i < localStorage.length; i++) {
+            const key = localStorage.key(i);
+            if (key && key.startsWith('mit_supervisors_')) {
+                const cId = key.replace('mit_supervisors_', '');
+                const val = JSON.parse(localStorage.getItem(key) || '[]');
+                if (Array.isArray(val) && val.length) {
+                    window.scheduledCaseSupervisors.set(cId, val);
+                }
+            } else if (key && key.startsWith(SCHEDULE_STORAGE_PREFIX)) {
+                const cId = key.replace(SCHEDULE_STORAGE_PREFIX, '');
+                try {
+                    const parsed = JSON.parse(localStorage.getItem(key) || '{}');
+                    if (parsed.supervisors && Array.isArray(parsed.supervisors) && parsed.supervisors.length) {
+                        window.scheduledCaseSupervisors.set(cId, parsed.supervisors);
+                    }
+                } catch(e){}
+            }
+        }
+    } catch (e) {
+        console.error('Error loading supervisors from localStorage:', e);
+    }
+}
+
 async function loadScheduledCaseIdsSet() {
+    loadSupervisorsFromLocalStorage();
     const url = window.SCHEDULE_API_URL || (typeof SCHEDULE_API_URL !== 'undefined' ? SCHEDULE_API_URL : null);
     if (!url) return;
     try {
@@ -25,14 +51,13 @@ async function loadScheduledCaseIdsSet() {
         
         window.scheduledCaseIds.clear();
         window.scheduledCaseDates.clear();
-        window.scheduledCaseSupervisors.clear();
         
         schedules.forEach(s => {
             if (s.startDate && String(s.startDate).trim() !== '') {
                 window.scheduledCaseIds.add(s.caseId);
                 window.scheduledCaseDates.set(s.caseId, String(s.startDate).trim());
             }
-            if (s.supervisors && s.supervisors.length) {
+            if (s.supervisors && Array.isArray(s.supervisors) && s.supervisors.length) {
                 window.scheduledCaseSupervisors.set(s.caseId, s.supervisors);
             }
         });
@@ -156,6 +181,11 @@ async function saveSchedule() {
 
     try {
         setSaveStatus('Saving...');
+        if (scheduleData.supervisors) {
+            try {
+                localStorage.setItem('mit_supervisors_' + caseId, JSON.stringify(scheduleData.supervisors));
+            } catch(e){}
+        }
         await fetch(SCHEDULE_API_URL, {
             method: 'POST',
             body: JSON.stringify({

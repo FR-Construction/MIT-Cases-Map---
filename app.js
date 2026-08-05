@@ -386,10 +386,13 @@ function generateTable(cases) {
             const vals = choice.getValue(true);
             const newSups = Array.isArray(vals) ? vals : (vals ? [vals] : []);
             
-            // Update local map immediately
-            if (typeof scheduledCaseSupervisors !== 'undefined') {
-                scheduledCaseSupervisors.set(caseId, newSups);
+            // Update local map immediately and write to localStorage
+            if (window.scheduledCaseSupervisors) {
+                window.scheduledCaseSupervisors.set(caseId, newSups);
             }
+            try {
+                localStorage.setItem('mit_supervisors_' + caseId, JSON.stringify(newSups));
+            } catch(e){}
             
             const statusEl = document.getElementById(`status-${caseId}`);
             if (statusEl) {
