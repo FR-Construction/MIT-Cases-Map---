@@ -11,21 +11,22 @@ const SCHEDULE_STORAGE_PREFIX = 'mit_schedule_';
 
 // Set of Case IDs that currently have a saved schedule, used to badge the
 // main Cases Report table. Populated from the shared Google Sheet on load.
-let scheduledCaseIds = new Set();
-let scheduledCaseSupervisors = new Map();
+window.scheduledCaseIds = window.scheduledCaseIds || new Set();
+window.scheduledCaseSupervisors = window.scheduledCaseSupervisors || new Map();
 
 async function loadScheduledCaseIdsSet() {
-    if (!SCHEDULE_API_URL) return;
+    const url = window.SCHEDULE_API_URL || (typeof SCHEDULE_API_URL !== 'undefined' ? SCHEDULE_API_URL : null);
+    if (!url) return;
     try {
-        const res = await fetch(`${SCHEDULE_API_URL}?list=true`);
+        const res = await fetch(`${url}?list=true`);
         const data = await res.json();
         const schedules = data.schedules || [];
-        scheduledCaseIds = new Set(schedules.map(s => s.caseId));
+        window.scheduledCaseIds = new Set(schedules.map(s => s.caseId));
         
-        scheduledCaseSupervisors.clear();
+        window.scheduledCaseSupervisors.clear();
         schedules.forEach(s => {
             if (s.supervisors && s.supervisors.length) {
-                scheduledCaseSupervisors.set(s.caseId, s.supervisors);
+                window.scheduledCaseSupervisors.set(s.caseId, s.supervisors);
             }
         });
         

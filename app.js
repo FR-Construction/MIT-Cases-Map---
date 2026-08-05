@@ -320,14 +320,14 @@ function generateTable(cases) {
         }
 
         const caseId = c['Case ID'] || '';
-        const hasSchedule = typeof scheduledCaseIds !== 'undefined' && scheduledCaseIds.has(caseId);
+        const hasSchedule = window.scheduledCaseIds && window.scheduledCaseIds.has(caseId);
         const scheduleCell = hasSchedule
             ? `<button type="button" class="schedule-badge schedule-badge-set" data-case-id="${caseId}">📅 Set</button>`
-            : `<span class="schedule-badge schedule-badge-none">—</span>`;
+            : `<button type="button" class="schedule-badge schedule-badge-create" data-case-id="${caseId}">+ Set</button>`;
 
         let selectedSups = [];
-        if (typeof scheduledCaseSupervisors !== 'undefined' && scheduledCaseSupervisors.has(caseId)) {
-            const sups = scheduledCaseSupervisors.get(caseId);
+        if (window.scheduledCaseSupervisors && window.scheduledCaseSupervisors.has(caseId)) {
+            const sups = window.scheduledCaseSupervisors.get(caseId);
             if (Array.isArray(sups)) selectedSups = sups;
         }
         
@@ -438,16 +438,15 @@ function generateTable(cases) {
         });
     });
 
-    tableBody.querySelectorAll('.schedule-badge-set').forEach(btn => {
+    tableBody.querySelectorAll('.schedule-badge-set, .schedule-badge-create').forEach(btn => {
         btn.addEventListener('click', (e) => {
+            const caseId = e.currentTarget.dataset.caseId;
             if (typeof openScheduleForCaseId === 'function') {
-                openScheduleForCaseId(e.currentTarget.dataset.caseId);
+                openScheduleForCaseId(caseId);
             }
         });
     });
 }
-
-
 
 function populateFilters() {
     const statuses = new Set();

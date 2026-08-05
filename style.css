@@ -297,6 +297,18 @@ main {
 .schedule-badge-set:hover {
     background-color: #bee3f8;
 }
+.schedule-badge-create {
+    background-color: #f7fafc;
+    color: #4a5568;
+    border: 1px dashed #cbd5e0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.schedule-badge-create:hover {
+    background-color: #e2e8f0;
+    border-color: #a0aec0;
+    color: #2d3748;
+}
 .schedule-badge-none {
     color: #a0aec0;
 }
