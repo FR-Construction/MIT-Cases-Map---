@@ -28,8 +28,9 @@ async function loadScheduledCaseIdsSet() {
             }
         });
         
-        if (typeof applyFilters === 'function') applyFilters();
-        if (typeof generateTable === 'function' && typeof allCases !== 'undefined') generateTable(allCases.filter(c => true)); // Re-render table to show loaded supervisors
+        if (typeof applyFilters === 'function') {
+            applyFilters();
+        }
     } catch (err) {
         console.error('Could not load list of scheduled cases:', err);
     }
