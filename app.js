@@ -4,6 +4,7 @@ let markerCluster = null;
 const LABEL_MIN_ZOOM = 12; // Case ID labels only show once zoomed in past this level
 let allCases = [];
 let choicesInstances = {};
+window.tableSupervisorChoices = [];
 
 // Custom renderer for grouped-marker clusters: bigger, dark-blue circles with
 // the case count, growing slightly as more cases stack into one cluster.
@@ -304,6 +305,13 @@ function generateTable(cases) {
     if (viewMode === 'map') return; // Skip table
 
     const tableBody = document.getElementById('cases-table-body');
+    
+    // Destroy previous Choices instances to prevent memory leaks
+    if (window.tableSupervisorChoices) {
+        window.tableSupervisorChoices.forEach(c => c.destroy());
+    }
+    window.tableSupervisorChoices = [];
+
     let tableHtml = '';
     cases.forEach(c => {
         let sub = c['Subcontractor Name'] || 'N/A';
@@ -317,13 +325,23 @@ function generateTable(cases) {
             ? `<button type="button" class="schedule-badge schedule-badge-set" data-case-id="${caseId}">📅 Set</button>`
             : `<span class="schedule-badge schedule-badge-none">—</span>`;
 
-        let supsHtml = 'N/A';
+        let selectedSups = [];
         if (typeof scheduledCaseSupervisors !== 'undefined' && scheduledCaseSupervisors.has(caseId)) {
             const sups = scheduledCaseSupervisors.get(caseId);
-            if (Array.isArray(sups) && sups.length > 0) {
-                supsHtml = sups.join('<br>');
-            }
+            if (Array.isArray(sups)) selectedSups = sups;
         }
+        
+        // Build options for select
+        const supervisorsList = [
+            "Jose L. Mundo", "Jose Garces", "Jose Negrón", "Harry Velez",
+            "Christian Bonilla", "Jangel Sanchez", "Samuel Santiago",
+            "Jaime Rivera", "Rafael Morales", "Jose Velez", "Eliezer Aponte"
+        ];
+        
+        let optionsHtml = supervisorsList.map(s => {
+            const isSelected = selectedSups.includes(s) ? 'selected' : '';
+            return `<option value="${s}" ${isSelected}>${s}</option>`;
+        }).join('');
 
         tableHtml += `
             <tr>
@@ -335,12 +353,86 @@ function generateTable(cases) {
                 <td>${c['Stage Status'] || 'N/A'}</td>
                 <td>${c['Model Home Design Selection'] || 'N/A'}</td>
                 <td>${c['Days Since Last Milestone Inspection'] || 'N/A'}</td>
-                <td>${supsHtml}</td>
+                <td style="min-width: 200px;">
+                    <div style="position: relative;">
+                        <span class="save-status-indicator" id="status-${caseId}" style="position: absolute; top: -18px; right: 0; font-size: 0.75rem; color: #38a169; font-weight: bold;"></span>
+                        <select class="table-supervisor-select" data-case-id="${caseId}" multiple>
+                            ${optionsHtml}
+                        </select>
+                    </div>
+                </td>
                 <td>${scheduleCell}</td>
             </tr>
         `;
     });
     tableBody.innerHTML = tableHtml;
+
+    // Initialize Choices for all selects in table
+    const selects = tableBody.querySelectorAll('.table-supervisor-select');
+    selects.forEach(select => {
+        const choice = new Choices(select, {
+            removeItemButton: true,
+            searchEnabled: true,
+            placeholder: true,
+            placeholderValue: 'Assign...',
+            itemSelectText: ''
+        });
+        window.tableSupervisorChoices.push(choice);
+        
+        // Handle saving when changed
+        select.addEventListener('change', async (e) => {
+            const caseId = e.target.dataset.caseId;
+            const vals = choice.getValue(true);
+            const newSups = Array.isArray(vals) ? vals : (vals ? [vals] : []);
+            
+            // Update local map immediately
+            if (typeof scheduledCaseSupervisors !== 'undefined') {
+                scheduledCaseSupervisors.set(caseId, newSups);
+            }
+            
+            const statusEl = document.getElementById(`status-${caseId}`);
+            if (statusEl) {
+                statusEl.textContent = 'Saving...';
+                statusEl.style.color = '#d69e2e'; // yellow
+            }
+            
+            try {
+                // Fetch existing schedule
+                let existingTasks = [];
+                let existingStart = '';
+                if (typeof SCHEDULE_API_URL !== 'undefined' && SCHEDULE_API_URL) {
+                    const res = await fetch(`${SCHEDULE_API_URL}?caseId=${encodeURIComponent(caseId)}`);
+                    const data = await res.json();
+                    if (data.found) {
+                        existingTasks = data.tasks || [];
+                        existingStart = data.startDate || '';
+                    }
+                    
+                    await fetch(SCHEDULE_API_URL, {
+                        method: 'POST',
+                        body: JSON.stringify({
+                            caseId: caseId,
+                            startDate: existingStart,
+                            tasks: existingTasks,
+                            supervisors: newSups
+                        })
+                    });
+                    
+                    if (statusEl) {
+                        statusEl.textContent = 'Saved ✓';
+                        statusEl.style.color = '#38a169'; // green
+                        setTimeout(() => { if (statusEl) statusEl.textContent = ''; }, 2000);
+                    }
+                }
+            } catch (err) {
+                console.error('Error saving supervisor from table:', err);
+                if (statusEl) {
+                    statusEl.textContent = 'Error';
+                    statusEl.style.color = '#e53e3e'; // red
+                }
+            }
+        });
+    });
 
     tableBody.querySelectorAll('.schedule-badge-set').forEach(btn => {
         btn.addEventListener('click', (e) => {
