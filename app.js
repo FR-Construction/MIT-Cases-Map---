@@ -321,9 +321,10 @@ function generateTable(cases) {
 
         const caseId = c['Case ID'] || '';
         const hasSchedule = window.scheduledCaseIds && window.scheduledCaseIds.has(caseId);
+        const startDateStr = window.scheduledCaseDates ? window.scheduledCaseDates.get(caseId) : '';
         const scheduleCell = hasSchedule
-            ? `<button type="button" class="schedule-badge schedule-badge-set" data-case-id="${caseId}">📅 Set</button>`
-            : `<button type="button" class="schedule-badge schedule-badge-create" data-case-id="${caseId}">+ Set</button>`;
+            ? `<button type="button" class="schedule-badge schedule-badge-set" data-case-id="${caseId}">📅 Scheduled ${startDateStr ? '(' + startDateStr + ')' : ''}</button>`
+            : `<button type="button" class="schedule-badge schedule-badge-create" data-case-id="${caseId}">+ Add Schedule</button>`;
 
         let selectedSups = [];
         if (window.scheduledCaseSupervisors && window.scheduledCaseSupervisors.has(caseId)) {

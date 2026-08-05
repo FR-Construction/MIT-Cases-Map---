@@ -4,7 +4,7 @@
 
 // Paste the Apps Script "Web app" URL here once deployed (see SCHEDULE_SETUP.md).
 // Leave empty to run in local-only mode (localStorage per browser).
-const SCHEDULE_API_URL = 'https://script.google.com/macros/s/AKfycbxOqtomVz7Y3HRqU2R5FZcBLFSRZdCP7okFVB_hpKcHdqMzhK7NCvLVCCELdGJi6dPS/exec';
+const SCHEDULE_API_URL = 'https://script.google.com/macros/s/AKfycbwYIOCBPcOb1fjwEIpu_Cw_mSEjEvo-ZzvpivfkEM7QDN6WmkdvQ1hjametLHP4VBVn/exec';
 window.SCHEDULE_API_URL = SCHEDULE_API_URL;
 
 const SCHEDULE_STORAGE_PREFIX = 'mit_schedule_';
@@ -12,6 +12,7 @@ const SCHEDULE_STORAGE_PREFIX = 'mit_schedule_';
 // Set of Case IDs that currently have a saved schedule, used to badge the
 // main Cases Report table. Populated from the shared Google Sheet on load.
 window.scheduledCaseIds = window.scheduledCaseIds || new Set();
+window.scheduledCaseDates = window.scheduledCaseDates || new Map();
 window.scheduledCaseSupervisors = window.scheduledCaseSupervisors || new Map();
 
 async function loadScheduledCaseIdsSet() {
@@ -21,10 +22,16 @@ async function loadScheduledCaseIdsSet() {
         const res = await fetch(`${url}?list=true`);
         const data = await res.json();
         const schedules = data.schedules || [];
-        window.scheduledCaseIds = new Set(schedules.map(s => s.caseId));
         
+        window.scheduledCaseIds.clear();
+        window.scheduledCaseDates.clear();
         window.scheduledCaseSupervisors.clear();
+        
         schedules.forEach(s => {
+            if (s.startDate && String(s.startDate).trim() !== '') {
+                window.scheduledCaseIds.add(s.caseId);
+                window.scheduledCaseDates.set(s.caseId, String(s.startDate).trim());
+            }
             if (s.supervisors && s.supervisors.length) {
                 window.scheduledCaseSupervisors.set(s.caseId, s.supervisors);
             }
