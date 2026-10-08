@@ -351,9 +351,11 @@ function generateTable(cases) {
                 <td>${c.Region || 'N/A'}</td>
                 <td>${c['Award Type Equivalent'] || 'N/A'}</td>
                 <td>${sub}</td>
+                <td>${c['Subcontractor Date of Notice to Proceed'] || 'N/A'}</td>
                 <td>${c['Stage Status'] || 'N/A'}</td>
                 <td>${c['Model Home Design Selection'] || 'N/A'}</td>
                 <td>${c['Days Since Last Milestone Inspection'] || 'N/A'}</td>
+                <td>${c['Days Left'] || 'N/A'}</td>
                 <td style="min-width: 200px;">
                     <div style="position: relative;">
                         <span class="save-status-indicator" id="status-${caseId}" style="position: absolute; top: -18px; right: 0; font-size: 0.75rem; color: #38a169; font-weight: bold;"></span>
