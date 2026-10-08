@@ -1,5 +1,18 @@
 [
     {
+        "Case ID": "PR-SFM-02265",
+        "Municipality": "Dorado",
+        "Region": "North",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.45409,-66.29096",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Testing - GLOBAL\n\nDemolition - F&R Construction Group, Inc.\nAll Site - F&R Construction Group, Inc.\n\n\n\n\n\nAll House - F&R Construction Group, Inc.\n\n\n\n\nPV System Installation - F&R Construction Group, Inc.\nWS System Installation - F&R Construction Group, Inc.",
+        "Model Home Design Selection": "Single-Story 2-Bedroom",
+        "Days Since Last Milestone Inspection": "10",
+        "Subcontractor Date of Notice to Proceed": "2026-09-28",
+        "Days Left": "185"
+    },
+    {
         "Case ID": "PR-SFM-01985",
         "Municipality": "Vega Alta",
         "Region": "North",
@@ -128,6 +141,19 @@
         "Days Since Last Milestone Inspection": "80",
         "Subcontractor Date of Notice to Proceed": "2025-09-23",
         "Days Left": "-65"
+    },
+    {
+        "Case ID": "PR-R3-24102",
+        "Municipality": "Moca",
+        "Region": "North",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.39567,-67.07105",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Testing - AES\n\nDemolition - F&R Construction Group, Inc.\nAll Site - F&R Construction Group, Inc.\n\n\n\n\n\nAll House - F&R Construction Group, Inc.\n\n\n\n\nPV System Installation - F&R Construction Group, Inc.\nWS System Installation - F&R Construction Group, Inc.",
+        "Model Home Design Selection": "Single-Story 2-Bedroom",
+        "Days Since Last Milestone Inspection": "24",
+        "Subcontractor Date of Notice to Proceed": "2026-09-14",
+        "Days Left": "176"
     },
     {
         "Case ID": "PR-R3-13835",
@@ -364,6 +390,45 @@
         "Days Left": "-9"
     },
     {
+        "Case ID": "PR-R3-01809",
+        "Municipality": "Morovis",
+        "Region": "North",
+        "Award Type Equivalent": "Relocation",
+        "Coordinates": "18.33924,-66.42969",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "N/A",
+        "Model Home Design Selection": null,
+        "Days Since Last Milestone Inspection": "321",
+        "Subcontractor Date of Notice to Proceed": "2025-11-21",
+        "Days Left": "-261"
+    },
+    {
+        "Case ID": "PR-R3-08571",
+        "Municipality": "San Sebasti\u00e1n",
+        "Region": "North",
+        "Award Type Equivalent": "Relocation",
+        "Coordinates": "18.35602,-66.99989",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Demolition - F&R Construction Group, Inc.\nAll Site - F&R Construction Group, Inc.",
+        "Model Home Design Selection": null,
+        "Days Since Last Milestone Inspection": "42",
+        "Subcontractor Date of Notice to Proceed": "2026-08-27",
+        "Days Left": "33"
+    },
+    {
+        "Case ID": "PR-R3-26472 (BR)",
+        "Municipality": "Ponce",
+        "Region": "South",
+        "Award Type Equivalent": "Relocation",
+        "Coordinates": "17.97872,-66.61646",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Custom Development Group, LLC",
+        "Model Home Design Selection": null,
+        "Days Since Last Milestone Inspection": "297",
+        "Subcontractor Date of Notice to Proceed": "2025-12-15",
+        "Days Left": "-225"
+    },
+    {
         "Case ID": "PR-R3-25531",
         "Municipality": "Arecibo",
         "Region": "North",
@@ -388,6 +453,19 @@
         "Days Since Last Milestone Inspection": "38",
         "Subcontractor Date of Notice to Proceed": "2025-11-18",
         "Days Left": "-73"
+    },
+    {
+        "Case ID": "PR-R3-07131",
+        "Municipality": "Arecibo",
+        "Region": "North",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.47804,-66.69698",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "HOLD",
+        "Model Home Design Selection": "Single-Story 2-Bedroom",
+        "Days Since Last Milestone Inspection": "101",
+        "Subcontractor Date of Notice to Proceed": "2026-06-29",
+        "Days Left": "127"
     },
     {
         "Case ID": "PR-R3-07237",
@@ -507,6 +585,19 @@
         "Days Left": "-92"
     },
     {
+        "Case ID": "PR-EQK-00918",
+        "Municipality": "Yauco",
+        "Region": "South",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.00983,-66.85847",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Testing - Environmental Health & Safety Services\n\nDemolition - F&R Construction Group, Inc.\nAll Site - F&R Construction Group, Inc.\n\n\n\n\n\nAll House - F&R Construction Group, Inc.\n\n\n\n\nPV System Installation - F&R Construction Group, Inc.\nWS System Installation - F&R Construction Group, Inc.",
+        "Model Home Design Selection": "Single-Story 2-Bedroom (RAR)",
+        "Days Since Last Milestone Inspection": "13",
+        "Subcontractor Date of Notice to Proceed": "2026-09-25",
+        "Days Left": "214"
+    },
+    {
         "Case ID": "PR-EQK-00964",
         "Municipality": "Gu\u00e1nica",
         "Region": "South",
@@ -546,6 +637,32 @@
         "Days Left": "98"
     },
     {
+        "Case ID": "PR-EQK-01224",
+        "Municipality": "Yauco",
+        "Region": "South",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.01236,-66.86538",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Testing - GLOBAL\nAbatement - DEK\nDemolition - F&R Construction Group, Inc.\nAll Site - F&R Construction Group, Inc.\n\n\n\n\n\nAll House - F&R Construction Group, Inc.\n\n\n\n\nPV System Installation - F&R Construction Group, Inc.\nWS System Installation - F&R Construction Group, Inc.",
+        "Model Home Design Selection": "Single-Story 2-Bedroom",
+        "Days Since Last Milestone Inspection": "14",
+        "Subcontractor Date of Notice to Proceed": "2026-09-24",
+        "Days Left": "185"
+    },
+    {
+        "Case ID": "PR-R3-02792",
+        "Municipality": "San Juan",
+        "Region": "North",
+        "Award Type Equivalent": "Relocation",
+        "Coordinates": "18.44549,-66.08057",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Testing - AES",
+        "Model Home Design Selection": null,
+        "Days Since Last Milestone Inspection": "1",
+        "Subcontractor Date of Notice to Proceed": "2026-10-07",
+        "Days Left": "59"
+    },
+    {
         "Case ID": "PR-R3-08556",
         "Municipality": "Carolina",
         "Region": "North",
@@ -557,6 +674,19 @@
         "Days Since Last Milestone Inspection": "191",
         "Subcontractor Date of Notice to Proceed": "2026-04-13",
         "Days Left": "-93"
+    },
+    {
+        "Case ID": "PR-R3-12153",
+        "Municipality": "San Juan",
+        "Region": "North",
+        "Award Type Equivalent": "Relocation",
+        "Coordinates": "18.42967,-66.03989",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Testing - AES\nAbatement - DEK\nDemolition - F&R Construction Group, Inc.\nAll Site - F&R Construction Group, Inc.",
+        "Model Home Design Selection": null,
+        "Days Since Last Milestone Inspection": "16",
+        "Subcontractor Date of Notice to Proceed": "2026-09-22",
+        "Days Left": "44"
     },
     {
         "Case ID": "PR-R3-00123",
@@ -793,6 +923,19 @@
         "Days Left": "70"
     },
     {
+        "Case ID": "PR-R3-12773",
+        "Municipality": "Ponce",
+        "Region": "South",
+        "Award Type Equivalent": "Relocation",
+        "Coordinates": "18.07771,-66.67776",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Testing - AES\n\nDemolition - F&R Construction Group, Inc.\nAll Site - F&R Construction Group, Inc.",
+        "Model Home Design Selection": null,
+        "Days Since Last Milestone Inspection": "15",
+        "Subcontractor Date of Notice to Proceed": "2026-09-23",
+        "Days Left": "57"
+    },
+    {
         "Case ID": "PR-EQK-00729",
         "Municipality": "Yauco",
         "Region": "South",
@@ -845,6 +988,32 @@
         "Days Left": "62"
     },
     {
+        "Case ID": "PR-SFM-04512",
+        "Municipality": "Juana D\u00edaz",
+        "Region": "South",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.02877,-66.53348",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Testing - Environmental Health & Safety Services\n\nDemolition - F&R Construction Group, Inc.\nAll Site - F&R Construction Group, Inc.\n\n\n\n\n\nAll House - F&R Construction Group, Inc.\nF&R Construction Group, Inc.\n\n\n\n\nPV System Installation - F&R Construction Group, Inc.\nWS System Installation - F&R Construction Group, Inc.",
+        "Model Home Design Selection": "Single-Story 2-Bedroom",
+        "Days Since Last Milestone Inspection": "29",
+        "Subcontractor Date of Notice to Proceed": "2026-09-09",
+        "Days Left": "160"
+    },
+    {
+        "Case ID": "PR-BR-00454",
+        "Municipality": "Vega Baja",
+        "Region": "North",
+        "Award Type Equivalent": "Relocation",
+        "Coordinates": "18.39218,-66.41434",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "HOLD",
+        "Model Home Design Selection": null,
+        "Days Since Last Milestone Inspection": "125",
+        "Subcontractor Date of Notice to Proceed": "2026-06-05",
+        "Days Left": "-65"
+    },
+    {
         "Case ID": "PR-EQK-00876",
         "Municipality": "Yauco",
         "Region": "South",
@@ -869,6 +1038,19 @@
         "Days Since Last Milestone Inspection": "43",
         "Subcontractor Date of Notice to Proceed": "2026-05-20",
         "Days Left": "42"
+    },
+    {
+        "Case ID": "PR-SFM-05130",
+        "Municipality": "Arecibo",
+        "Region": "North",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.46243,-66.5966",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Testing - GLOBAL\nAbatement - ENVIRO\nDemolition - F&R Construction Group, Inc.\nAll Site - F&R Construction Group, Inc.\n\n\n\n\n\nAll House - F&R Construction Group, Inc.\n\n\n\n\n\nWS System Installation - F&R Construction Group, Inc.",
+        "Model Home Design Selection": "Single-Story 2-Bedroom",
+        "Days Since Last Milestone Inspection": "29",
+        "Subcontractor Date of Notice to Proceed": "2026-09-09",
+        "Days Left": "191"
     },
     {
         "Case ID": "PR-SFM-04581",
@@ -923,6 +1105,19 @@
         "Days Left": "148"
     },
     {
+        "Case ID": "PR-SFM-03490",
+        "Municipality": "Villalba",
+        "Region": "South",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.11482,-66.48999",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Testing - AES\nAbatement - DEK\nDemolition - F&R Construction Group, Inc.\nAll Site - F&R Construction Group, Inc.\n\n\n\n\n\nAll House - F&R Construction Group, Inc.\n\n\n\n\nPV System Installation - F&R Construction Group, Inc.\nWS System Installation - F&R Construction Group, Inc.",
+        "Model Home Design Selection": "Single-Story 2-Bedroom",
+        "Days Since Last Milestone Inspection": "14",
+        "Subcontractor Date of Notice to Proceed": "2026-09-24",
+        "Days Left": "194"
+    },
+    {
         "Case ID": "PR-SFM-04073",
         "Municipality": "Cabo Rojo",
         "Region": "South",
@@ -947,6 +1142,45 @@
         "Days Since Last Milestone Inspection": "27",
         "Subcontractor Date of Notice to Proceed": "2026-05-29",
         "Days Left": "111"
+    },
+    {
+        "Case ID": "PR-SFM-04312",
+        "Municipality": "Cabo Rojo",
+        "Region": "South",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.03007,-67.16651",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Testing - AES\nAbatement - DEK\nDemolition - F&R Construction Group, Inc.\nAll Site - F&R Construction Group, Inc.\n\n\n\n\n\nAll House - F&R Construction Group, Inc.\n\n\n\n\nPV System Installation - F&R Construction Group, Inc.\nWS System Installation - F&R Construction Group, Inc.",
+        "Model Home Design Selection": "Single-Story 2-Bedroom (RAR)",
+        "Days Since Last Milestone Inspection": "16",
+        "Subcontractor Date of Notice to Proceed": "2026-09-22",
+        "Days Left": "192"
+    },
+    {
+        "Case ID": "PR-SFM-04915",
+        "Municipality": "Cabo Rojo",
+        "Region": "South",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "17.97609,-67.19395",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Testing - AES\nAbatement - DEK\nDemolition - F&R Construction Group, Inc.\nAll Site - F&R Construction Group, Inc.\n\n\n\n\n\nAll House - F&R Construction Group, Inc.\n\n\n\n\nPV System Installation - F&R Construction Group, Inc.\nWS System Installation - F&R Construction Group, Inc.",
+        "Model Home Design Selection": "Single-Story 2-Bedroom",
+        "Days Since Last Milestone Inspection": "41",
+        "Subcontractor Date of Notice to Proceed": "2026-08-28",
+        "Days Left": "187"
+    },
+    {
+        "Case ID": "PR-SFM-04792",
+        "Municipality": "Cabo Rojo",
+        "Region": "South",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "17.97396,-67.18771",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Testing - AES\n\nDemolition - F&R Construction Group, Inc.\nAll Site - F&R Construction Group, Inc.\n\n\n\n\n\nAll House - F&R Construction Group, Inc.\n\n\n\n\nPV System Installation - F&R Construction Group, Inc.\nWS System Installation - F&R Construction Group, Inc.",
+        "Model Home Design Selection": "Single-Story 2-Bedroom",
+        "Days Since Last Milestone Inspection": "9",
+        "Subcontractor Date of Notice to Proceed": "2026-09-29",
+        "Days Left": "183"
     },
     {
         "Case ID": "PR-R3-04902",
@@ -988,6 +1222,45 @@
         "Days Left": "143"
     },
     {
+        "Case ID": "PR-R3-10641",
+        "Municipality": "Maunabo",
+        "Region": "South",
+        "Award Type Equivalent": "Relocation",
+        "Coordinates": "18.0222,-65.91866",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Testing - AES\n\nDemolition - F&R Construction Group, Inc.\nAll Site - F&R Construction Group, Inc.",
+        "Model Home Design Selection": null,
+        "Days Since Last Milestone Inspection": "15",
+        "Subcontractor Date of Notice to Proceed": "2026-09-23",
+        "Days Left": "45"
+    },
+    {
+        "Case ID": "PR-R3-13268",
+        "Municipality": "Juana D\u00edaz",
+        "Region": "South",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.03064,-66.49308",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Testing - AES\nAbatement - DEK\nDemolition - F&R Construction Group, Inc.\nAll Site - F&R Construction Group, Inc.\n\n\n\n\n\nAll House - F&R Construction Group, Inc.\nF&R Construction Group, Inc.\n\n\n\n\nPV System Installation - F&R Construction Group, Inc.",
+        "Model Home Design Selection": "Single-Story 3-Bedroom",
+        "Days Since Last Milestone Inspection": "38",
+        "Subcontractor Date of Notice to Proceed": "2026-08-31",
+        "Days Left": "170"
+    },
+    {
+        "Case ID": "PR-SFM-03648",
+        "Municipality": "Arecibo",
+        "Region": "North",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.41479,-66.63769",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Testing - GLOBAL\nAbatement - DEK\nDemolition - F&R Construction Group, Inc.\nAll Site - F&R Construction Group, Inc.\n\n\n\n\n\nAll House - F&R Construction Group, Inc.\n\n\n\n\nPV System Installation - F&R Construction Group, Inc.\nWS System Installation - F&R Construction Group, Inc.",
+        "Model Home Design Selection": "Single-Story 2-Bedroom",
+        "Days Since Last Milestone Inspection": "8",
+        "Subcontractor Date of Notice to Proceed": "2026-09-30",
+        "Days Left": "210"
+    },
+    {
         "Case ID": "PR-SFM-04034",
         "Municipality": "Juana D\u00edaz",
         "Region": "South",
@@ -1027,6 +1300,19 @@
         "Days Left": "105"
     },
     {
+        "Case ID": "PR-SFM-05438",
+        "Municipality": "Juana D\u00edaz",
+        "Region": "South",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.02942,-66.53966",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Testing - Environmental Health & Safety Services\n\nDemolition - F&R Construction Group, Inc.\nAll Site - F&R Construction Group, Inc.\n\n\n\n\n\nAll House - F&R Construction Group, Inc.\nF&R Construction Group, Inc.\n\n\n\n\nPV System Installation - F&R Construction Group, Inc.\nWS System Installation - F&R Construction Group, Inc.",
+        "Model Home Design Selection": "Single-Story 3-Bedroom",
+        "Days Since Last Milestone Inspection": "29",
+        "Subcontractor Date of Notice to Proceed": "2026-09-09",
+        "Days Left": "159"
+    },
+    {
         "Case ID": "PR-SFM-05399",
         "Municipality": "Juana D\u00edaz",
         "Region": "South",
@@ -1038,5 +1324,135 @@
         "Days Since Last Milestone Inspection": "42",
         "Subcontractor Date of Notice to Proceed": "2026-09-17",
         "Days Left": "168"
+    },
+    {
+        "Case ID": "PR-SFM-04500",
+        "Municipality": "Juana D\u00edaz",
+        "Region": "South",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.05681,-66.45376",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Testing - AES\nAbatement - DEK\nDemolition - F&R Construction Group, Inc.\nAll Site - F&R Construction Group, Inc.\n\n\n\n\n\nAll House - F&R Construction Group, Inc.\n\n\n\n\nPV System Installation - F&R Construction Group, Inc.\nWS System Installation - F&R Construction Group, Inc.",
+        "Model Home Design Selection": "Single-Story 2-Bedroom",
+        "Days Since Last Milestone Inspection": "27",
+        "Subcontractor Date of Notice to Proceed": "2026-09-11",
+        "Days Left": "197"
+    },
+    {
+        "Case ID": "PR-EQK-00807",
+        "Municipality": "Gu\u00e1nica",
+        "Region": "South",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.0062,-66.89541",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Testing - AES\n\nDemolition - F&R Construction Group, Inc.\nAll Site - F&R Construction Group, Inc.\n\n\n\n\n\nAll House - F&R Construction Group, Inc.\n\n\n\n\nPV System Installation - F&R Construction Group, Inc.\nWS System Installation - F&R Construction Group, Inc.",
+        "Model Home Design Selection": "Single-Story 2-Bedroom (RAR)",
+        "Days Since Last Milestone Inspection": "9",
+        "Subcontractor Date of Notice to Proceed": "2026-09-29",
+        "Days Left": "178"
+    },
+    {
+        "Case ID": "PR-R3-08165",
+        "Municipality": "Vega Alta",
+        "Region": "North",
+        "Award Type Equivalent": "Relocation",
+        "Coordinates": "18.40923,-66.33279",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Abatement - DEK\nDemolition - F&R Construction Group, Inc.\nAll Site - F&R Construction Group, Inc.",
+        "Model Home Design Selection": null,
+        "Days Since Last Milestone Inspection": "41",
+        "Subcontractor Date of Notice to Proceed": "2026-08-28",
+        "Days Left": "19"
+    },
+    {
+        "Case ID": "PR-SFM-00694",
+        "Municipality": "Ceiba",
+        "Region": "North",
+        "Award Type Equivalent": "Relocation",
+        "Coordinates": "18.27533,-65.66224",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Testing - AES\nAbatement - CENTRAL\nDemolition - F&R Construction Group, Inc.\nAll Site - F&R Construction Group, Inc.",
+        "Model Home Design Selection": null,
+        "Days Since Last Milestone Inspection": "16",
+        "Subcontractor Date of Notice to Proceed": "2026-09-22",
+        "Days Left": "44"
+    },
+    {
+        "Case ID": "PR-SFM-02648",
+        "Municipality": "Humacao",
+        "Region": "South",
+        "Award Type Equivalent": "Relocation",
+        "Coordinates": "18.16803,-65.74784",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Testing - AES\n\nDemolition - F&R Construction Group, Inc.\nAll Site - F&R Construction Group, Inc.",
+        "Model Home Design Selection": null,
+        "Days Since Last Milestone Inspection": "16",
+        "Subcontractor Date of Notice to Proceed": "2026-09-22",
+        "Days Left": "44"
+    },
+    {
+        "Case ID": "PR-R3-14207",
+        "Municipality": "Ponce",
+        "Region": "South",
+        "Award Type Equivalent": "Relocation",
+        "Coordinates": "17.98533,-66.62218",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Testing - AES\nAbatement - DEK\nDemolition - F&R Construction Group, Inc.\nAll Site - F&R Construction Group, Inc.",
+        "Model Home Design Selection": null,
+        "Days Since Last Milestone Inspection": "16",
+        "Subcontractor Date of Notice to Proceed": "2026-09-22",
+        "Days Left": "53"
+    },
+    {
+        "Case ID": "PR-R3-06488 (BR)",
+        "Municipality": "Quebradillas",
+        "Region": "North",
+        "Award Type Equivalent": "Relocation",
+        "Coordinates": "18.46297,-66.90467",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Testing - AES\nAbatement - DEK\nDemolition - F&R Construction Group, Inc.\nAll Site - F&R Construction Group, Inc.",
+        "Model Home Design Selection": null,
+        "Days Since Last Milestone Inspection": "15",
+        "Subcontractor Date of Notice to Proceed": "2026-09-23",
+        "Days Left": "56"
+    },
+    {
+        "Case ID": "PR-SFM-01056",
+        "Municipality": "Mayag\u00fcez",
+        "Region": "South",
+        "Award Type Equivalent": "Relocation",
+        "Coordinates": "18.17438,-67.17297",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Testing - Environmental Health & Safety Services\nAbatement - DEK\nDemolition - F&R Construction Group, Inc.\nAll Site - F&R Construction Group, Inc.",
+        "Model Home Design Selection": null,
+        "Days Since Last Milestone Inspection": "73",
+        "Subcontractor Date of Notice to Proceed": "2026-07-27",
+        "Days Left": "53"
+    },
+    {
+        "Case ID": "PR-SFM-02565",
+        "Municipality": "Gu\u00e1nica",
+        "Region": "South",
+        "Award Type Equivalent": "Relocation",
+        "Coordinates": "17.99892,-66.89609",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Testing - Environmental Health & Safety Services\n\nDemolition - F&R Construction Group, Inc.\nAll Site - F&R Construction Group, Inc.\n\n\n\n\n\nAll House - F&R Construction Group, Inc.",
+        "Model Home Design Selection": null,
+        "Days Since Last Milestone Inspection": "52",
+        "Subcontractor Date of Notice to Proceed": "2026-08-17",
+        "Days Left": "23"
+    },
+    {
+        "Case ID": "PR-SFM-02952",
+        "Municipality": "Arecibo",
+        "Region": "North",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.44096,-66.65219",
+        "Stage Status": "11 - Structure Inspection",
+        "Subcontractor Name": "Testing - Environmental Health & Safety Services\nAbatement - DEK\nDemolition - F&R Construction Group, Inc.\nAll Site - F&R Construction Group, Inc.\n\n\n\n\n\nAll House - F&R Construction Group, Inc.\nF&R Construction Group, Inc.\n\n\n\n\nPV System Installation - F&R Construction Group, Inc.\nWS System Installation - F&R Construction Group, Inc.",
+        "Model Home Design Selection": "Single-Story 2-Bedroom",
+        "Days Since Last Milestone Inspection": "118",
+        "Subcontractor Date of Notice to Proceed": "2026-04-09",
+        "Days Left": "43"
     }
 ]
