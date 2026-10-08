@@ -8,7 +8,9 @@
         "Stage Status": "12 - Substantial Inspection",
         "Subcontractor Name": "Rodca Contractor",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "128"
+        "Days Since Last Milestone Inspection": "192",
+        "Subcontractor Date of Notice to Proceed": "2025-06-05",
+        "Days Left": "16"
     },
     {
         "Case ID": "PR-SFM-01930",
@@ -19,7 +21,9 @@
         "Stage Status": "12 - Substantial Inspection",
         "Subcontractor Name": "CVJ CONTRACTOR LLC",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "51"
+        "Days Since Last Milestone Inspection": "115",
+        "Subcontractor Date of Notice to Proceed": "2025-10-06",
+        "Days Left": "-111"
     },
     {
         "Case ID": "PR-EQK-00878",
@@ -27,10 +31,12 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.02904,-66.86223",
-        "Stage Status": "11 - Structure Inspection",
+        "Stage Status": "12 - Substantial Inspection",
         "Subcontractor Name": "F&R Construction Group, Inc.",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "35"
+        "Days Since Last Milestone Inspection": "41",
+        "Subcontractor Date of Notice to Proceed": "2026-03-02",
+        "Days Left": "15"
     },
     {
         "Case ID": "PR-EQK-00594",
@@ -41,7 +47,9 @@
         "Stage Status": "11 - Structure Inspection",
         "Subcontractor Name": "Constructora Yanmar, LLC",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "107"
+        "Days Since Last Milestone Inspection": "171",
+        "Subcontractor Date of Notice to Proceed": "2025-11-19",
+        "Days Left": "-62"
     },
     {
         "Case ID": "PR-SFM-01868",
@@ -49,10 +57,12 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.00354,-66.10611",
-        "Stage Status": "08 - Walls Inspection (1st Level)",
+        "Stage Status": "11 - Structure Inspection",
         "Subcontractor Name": "A & S General Contractor",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "9"
+        "Days Since Last Milestone Inspection": "27",
+        "Subcontractor Date of Notice to Proceed": "2026-04-27",
+        "Days Left": "64"
     },
     {
         "Case ID": "PR-SFM-01867",
@@ -60,10 +70,12 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.00453,-66.10711",
-        "Stage Status": "11 - Structure Inspection",
+        "Stage Status": "12 - Substantial Inspection",
         "Subcontractor Name": "Constructora Yanmar, LLC",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "142"
+        "Days Since Last Milestone Inspection": "63",
+        "Subcontractor Date of Notice to Proceed": "2025-11-19",
+        "Days Left": "-17"
     },
     {
         "Case ID": "PR-SFM-01851",
@@ -71,10 +83,12 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "17.96404,-66.16652",
-        "Stage Status": "11 - Structure Inspection",
+        "Stage Status": "12 - Substantial Inspection",
         "Subcontractor Name": "OF Construction Corp",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "142"
+        "Days Since Last Milestone Inspection": "50",
+        "Subcontractor Date of Notice to Proceed": "2025-05-07",
+        "Days Left": "-96"
     },
     {
         "Case ID": "PR-SFM-01842",
@@ -85,7 +99,9 @@
         "Stage Status": "11 - Structure Inspection",
         "Subcontractor Name": "A & S General Contractor",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "44"
+        "Days Since Last Milestone Inspection": "108",
+        "Subcontractor Date of Notice to Proceed": "2026-05-25",
+        "Days Left": "-109"
     },
     {
         "Case ID": "PR-R3-25289 (BR)",
@@ -93,10 +109,12 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "17.96019,-66.93079",
-        "Stage Status": "11 - Structure Inspection",
+        "Stage Status": "12 - Substantial Inspection",
         "Subcontractor Name": "OF Construction Corp",
         "Model Home Design Selection": "Single-Story 2-Bedroom (ADA)",
-        "Days Since Last Milestone Inspection": "135"
+        "Days Since Last Milestone Inspection": "9",
+        "Subcontractor Date of Notice to Proceed": "2006-04-01",
+        "Days Left": "-103"
     },
     {
         "Case ID": "PR-SFM-02788",
@@ -107,7 +125,22 @@
         "Stage Status": "12 - Substantial Inspection",
         "Subcontractor Name": "Constructora Yanmar, LLC",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "16"
+        "Days Since Last Milestone Inspection": "80",
+        "Subcontractor Date of Notice to Proceed": "2025-09-23",
+        "Days Left": "-65"
+    },
+    {
+        "Case ID": "PR-R3-13835",
+        "Municipality": "Isabela",
+        "Region": "North",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.50338,-67.02018",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "De Leon Contractor Group LLC",
+        "Model Home Design Selection": "Single-Story 2-Bedroom",
+        "Days Since Last Milestone Inspection": "38",
+        "Subcontractor Date of Notice to Proceed": "2026-09-10",
+        "Days Left": "154"
     },
     {
         "Case ID": "PR-R3-04719",
@@ -118,7 +151,9 @@
         "Stage Status": "11 - Structure Inspection",
         "Subcontractor Name": "Constructora Yanmar, LLC",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "65"
+        "Days Since Last Milestone Inspection": "129",
+        "Subcontractor Date of Notice to Proceed": "2025-11-05",
+        "Days Left": "-22"
     },
     {
         "Case ID": "PR-SFM-01990",
@@ -129,7 +164,9 @@
         "Stage Status": "12 - Substantial Inspection",
         "Subcontractor Name": "Torres Development LLC",
         "Model Home Design Selection": "One-Story 2-Bedroom (Compact/Narrow) Mod. A",
-        "Days Since Last Milestone Inspection": "16"
+        "Days Since Last Milestone Inspection": "80",
+        "Subcontractor Date of Notice to Proceed": "2025-09-02",
+        "Days Left": "-46"
     },
     {
         "Case ID": "PR-EQK-01123",
@@ -137,10 +174,12 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.00081,-66.87351",
-        "Stage Status": "08 - Walls Inspection (1st Level)",
+        "Stage Status": "11 - Structure Inspection",
         "Subcontractor Name": "Constructora Yanmar, LLC",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "44"
+        "Days Since Last Milestone Inspection": "64",
+        "Subcontractor Date of Notice to Proceed": "2026-02-19",
+        "Days Left": "2"
     },
     {
         "Case ID": "PR-EQK-00946",
@@ -151,18 +190,9 @@
         "Stage Status": "11 - Structure Inspection",
         "Subcontractor Name": "VB Total Building LLC",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "57"
-    },
-    {
-        "Case ID": "PR-EQK-00496",
-        "Municipality": "Gu\u00e1nica",
-        "Region": "South",
-        "Award Type Equivalent": "Reconstruction",
-        "Coordinates": "18.00591,-66.89617",
-        "Stage Status": "12 - Substantial Inspection",
-        "Subcontractor Name": "Constructora Yanmar, LLC",
-        "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "54"
+        "Days Since Last Milestone Inspection": "121",
+        "Subcontractor Date of Notice to Proceed": "2025-11-05",
+        "Days Left": "-53"
     },
     {
         "Case ID": "PR-R3-13085",
@@ -170,10 +200,12 @@
         "Region": "North",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.46265,-66.74788",
-        "Stage Status": "08 - Walls Inspection (1st Level)",
+        "Stage Status": "11 - Structure Inspection",
         "Subcontractor Name": "Custom Development Group, LLC",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "30"
+        "Days Since Last Milestone Inspection": "45",
+        "Subcontractor Date of Notice to Proceed": "2025-10-30",
+        "Days Left": "26"
     },
     {
         "Case ID": "PR-R3-20326 (BR)",
@@ -181,10 +213,12 @@
         "Region": "North",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.48478,-66.64658",
-        "Stage Status": "11 - Structure Inspection",
+        "Stage Status": "12 - Substantial Inspection",
         "Subcontractor Name": "Marcelo Electro Inc.",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "68"
+        "Days Since Last Milestone Inspection": "9",
+        "Subcontractor Date of Notice to Proceed": "2026-03-16",
+        "Days Left": "-2"
     },
     {
         "Case ID": "PR-SFM-02512",
@@ -195,7 +229,9 @@
         "Stage Status": "11 - Structure Inspection",
         "Subcontractor Name": "Marcelo Electro Inc.",
         "Model Home Design Selection": "Single-Story 3-Bedroom (ADA)",
-        "Days Since Last Milestone Inspection": "41"
+        "Days Since Last Milestone Inspection": "105",
+        "Subcontractor Date of Notice to Proceed": "2026-04-20",
+        "Days Left": "10"
     },
     {
         "Case ID": "PR-SFM-02842",
@@ -203,10 +239,12 @@
         "Region": "North",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.45875,-66.73754",
-        "Stage Status": "11 - Structure Inspection",
+        "Stage Status": "12 - Substantial Inspection",
         "Subcontractor Name": "Rodca Contractor",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "89"
+        "Days Since Last Milestone Inspection": "45",
+        "Subcontractor Date of Notice to Proceed": "2025-10-31",
+        "Days Left": "-46"
     },
     {
         "Case ID": "PR-SFM-02916",
@@ -214,10 +252,12 @@
         "Region": "North",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.44363,-66.65529",
-        "Stage Status": "11 - Structure Inspection",
+        "Stage Status": "12 - Substantial Inspection",
         "Subcontractor Name": "Torres Development LLC",
         "Model Home Design Selection": "One-Story 2-Bedroom (Compact/Narrow) Mod. B",
-        "Days Since Last Milestone Inspection": "127"
+        "Days Since Last Milestone Inspection": "45",
+        "Subcontractor Date of Notice to Proceed": "2025-09-12",
+        "Days Left": "-120"
     },
     {
         "Case ID": "PR-SFM-02923",
@@ -228,7 +268,9 @@
         "Stage Status": "11 - Structure Inspection",
         "Subcontractor Name": "Custom Development Group, LLC",
         "Model Home Design Selection": "Single-Story 4-Bedroom",
-        "Days Since Last Milestone Inspection": "19"
+        "Days Since Last Milestone Inspection": "83",
+        "Subcontractor Date of Notice to Proceed": "2025-12-16",
+        "Days Left": "-43"
     },
     {
         "Case ID": "PR-SFM-02930",
@@ -239,7 +281,9 @@
         "Stage Status": "12 - Substantial Inspection",
         "Subcontractor Name": "Marcelo Electro Inc.",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "98"
+        "Days Since Last Milestone Inspection": "162",
+        "Subcontractor Date of Notice to Proceed": "2025-11-06",
+        "Days Left": "80"
     },
     {
         "Case ID": "PR-SFM-02942",
@@ -247,10 +291,12 @@
         "Region": "North",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.48428,-66.67687",
-        "Stage Status": "04 - Construction - Started",
+        "Stage Status": "11 - Structure Inspection",
         "Subcontractor Name": "Torres Development LLC",
         "Model Home Design Selection": "One-Story 2-Bedroom (Compact/Narrow) Mod. B",
-        "Days Since Last Milestone Inspection": "79"
+        "Days Since Last Milestone Inspection": "20",
+        "Subcontractor Date of Notice to Proceed": "2026-05-18",
+        "Days Left": "61"
     },
     {
         "Case ID": "PR-SFM-02952",
@@ -261,7 +307,9 @@
         "Stage Status": "11 - Structure Inspection",
         "Subcontractor Name": "Marcelo Electro Inc.",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "54"
+        "Days Since Last Milestone Inspection": "118",
+        "Subcontractor Date of Notice to Proceed": "2026-04-27",
+        "Days Left": "43"
     },
     {
         "Case ID": "PR-SFM-02953",
@@ -269,21 +317,12 @@
         "Region": "North",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.48825,-66.63818",
-        "Stage Status": "11 - Structure Inspection",
-        "Subcontractor Name": "Marcelo Electro Inc.",
-        "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "97"
-    },
-    {
-        "Case ID": "PR-SFM-02962",
-        "Municipality": "Arecibo",
-        "Region": "North",
-        "Award Type Equivalent": "Reconstruction",
-        "Coordinates": "18.42564,-66.76378",
         "Stage Status": "12 - Substantial Inspection",
         "Subcontractor Name": "Marcelo Electro Inc.",
-        "Model Home Design Selection": "Single-Story 4-Bedroom",
-        "Days Since Last Milestone Inspection": "42"
+        "Model Home Design Selection": "Single-Story 2-Bedroom",
+        "Days Since Last Milestone Inspection": "17",
+        "Subcontractor Date of Notice to Proceed": "2025-12-23",
+        "Days Left": "-87"
     },
     {
         "Case ID": "PR-SFM-02980",
@@ -291,10 +330,12 @@
         "Region": "North",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.42977,-66.68573",
-        "Stage Status": "04 - Construction - Started",
+        "Stage Status": "11 - Structure Inspection",
         "Subcontractor Name": "Marcelo Electro Inc.",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "36"
+        "Days Since Last Milestone Inspection": "13",
+        "Subcontractor Date of Notice to Proceed": "2026-07-20",
+        "Days Left": "127"
     },
     {
         "Case ID": "PR-SFM-02999",
@@ -302,10 +343,12 @@
         "Region": "North",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.42475,-66.6722",
-        "Stage Status": "11 - Structure Inspection",
+        "Stage Status": "12 - Substantial Inspection",
         "Subcontractor Name": "Marcelo Electro Inc.",
         "Model Home Design Selection": "Single-Story 2-Bedroom (RAR)",
-        "Days Since Last Milestone Inspection": "68"
+        "Days Since Last Milestone Inspection": "38",
+        "Subcontractor Date of Notice to Proceed": "2026-02-18",
+        "Days Left": "4"
     },
     {
         "Case ID": "PR-SFM-03025",
@@ -313,10 +356,12 @@
         "Region": "North",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.43793,-66.76117",
-        "Stage Status": "11 - Structure Inspection",
+        "Stage Status": "12 - Substantial Inspection",
         "Subcontractor Name": "Marcelo Electro Inc.",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "89"
+        "Days Since Last Milestone Inspection": "24",
+        "Subcontractor Date of Notice to Proceed": "2026-01-29",
+        "Days Left": "-9"
     },
     {
         "Case ID": "PR-R3-25531",
@@ -324,10 +369,12 @@
         "Region": "North",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.47347,-66.65071",
-        "Stage Status": "04 - Construction - Started",
+        "Stage Status": "11 - Structure Inspection",
         "Subcontractor Name": "Marcelo Electro Inc.",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "40"
+        "Days Since Last Milestone Inspection": "24",
+        "Subcontractor Date of Notice to Proceed": "2026-07-14",
+        "Days Left": "117"
     },
     {
         "Case ID": "PR-SFM-02833",
@@ -335,10 +382,12 @@
         "Region": "North",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.31318,-66.38738",
-        "Stage Status": "11 - Structure Inspection",
+        "Stage Status": "12 - Substantial Inspection",
         "Subcontractor Name": "Rodca Contractor",
         "Model Home Design Selection": "Single-Story 2-Bedroom (RAR)",
-        "Days Since Last Milestone Inspection": "77"
+        "Days Since Last Milestone Inspection": "38",
+        "Subcontractor Date of Notice to Proceed": "2025-11-18",
+        "Days Left": "-73"
     },
     {
         "Case ID": "PR-R3-07237",
@@ -346,10 +395,12 @@
         "Region": "North",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.40086,-66.60016",
-        "Stage Status": "08 - Walls Inspection (1st Level)",
+        "Stage Status": "11 - Structure Inspection",
         "Subcontractor Name": "Marcelo Electro Inc.",
         "Model Home Design Selection": "Single-Story 3-Bedroom",
-        "Days Since Last Milestone Inspection": "19"
+        "Days Since Last Milestone Inspection": "43",
+        "Subcontractor Date of Notice to Proceed": "2026-05-11",
+        "Days Left": "60"
     },
     {
         "Case ID": "PR-EQK-00610",
@@ -357,10 +408,12 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.03508,-66.97281",
-        "Stage Status": "08 - Walls Inspection (1st Level)",
+        "Stage Status": "11 - Structure Inspection",
         "Subcontractor Name": "Constructora Yanmar, LLC",
         "Model Home Design Selection": "Single-Story 3-Bedroom",
-        "Days Since Last Milestone Inspection": "42"
+        "Days Since Last Milestone Inspection": "64",
+        "Subcontractor Date of Notice to Proceed": "2026-02-19",
+        "Days Left": "-13"
     },
     {
         "Case ID": "PR-EQK-00667",
@@ -368,10 +421,12 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.06695,-66.76066",
-        "Stage Status": "07 - Foundation Inspection",
+        "Stage Status": "08 - Walls Inspection (1st Level)",
         "Subcontractor Name": "A & S General Contractor",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "12"
+        "Days Since Last Milestone Inspection": "30",
+        "Subcontractor Date of Notice to Proceed": "2026-06-15",
+        "Days Left": "-2"
     },
     {
         "Case ID": "PR-EQK-03012",
@@ -379,10 +434,12 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.00367,-67.07123",
-        "Stage Status": "07 - Foundation Inspection",
+        "Stage Status": "11 - Structure Inspection",
         "Subcontractor Name": "Constructora Yanmar, LLC",
         "Model Home Design Selection": "Single-Story 3-Bedroom",
-        "Days Since Last Milestone Inspection": "42"
+        "Days Since Last Milestone Inspection": "10",
+        "Subcontractor Date of Notice to Proceed": "2026-04-07",
+        "Days Left": "26"
     },
     {
         "Case ID": "PR-R3-01373",
@@ -393,7 +450,9 @@
         "Stage Status": "11 - Structure Inspection",
         "Subcontractor Name": "A & S General Contractor",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "78"
+        "Days Since Last Milestone Inspection": "142",
+        "Subcontractor Date of Notice to Proceed": "2026-02-13",
+        "Days Left": "-45"
     },
     {
         "Case ID": "PR-EQK-00458",
@@ -401,10 +460,12 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "17.96096,-66.93308",
-        "Stage Status": "04 - Construction - Started",
+        "Stage Status": "08 - Walls Inspection (1st Level)",
         "Subcontractor Name": "Engitech PR LLC",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "69"
+        "Days Since Last Milestone Inspection": "21",
+        "Subcontractor Date of Notice to Proceed": "2026-06-19",
+        "Days Left": "122"
     },
     {
         "Case ID": "PR-EQK-00499",
@@ -412,10 +473,12 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "17.96116,-66.93376",
-        "Stage Status": "07 - Foundation Inspection",
+        "Stage Status": "08 - Walls Inspection (1st Level)",
         "Subcontractor Name": "Y.E TRANSPORT LLC",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "20"
+        "Days Since Last Milestone Inspection": "52",
+        "Subcontractor Date of Notice to Proceed": "2026-03-26",
+        "Days Left": "46"
     },
     {
         "Case ID": "PR-EQK-00565",
@@ -423,10 +486,12 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "17.97923,-66.88368",
-        "Stage Status": "08 - Walls Inspection (1st Level)",
-        "Subcontractor Name": "F&R Construction Group, Inc.",
+        "Stage Status": "11 - Structure Inspection",
+        "Subcontractor Name": "F&R Construction Group, Inc. \nSANTIAGO ELECTRIC & GENERAL CONTRACOR INC",
         "Model Home Design Selection": "Single-Story 3-Bedroom",
-        "Days Since Last Milestone Inspection": "16"
+        "Days Since Last Milestone Inspection": "48",
+        "Subcontractor Date of Notice to Proceed": "2026-03-24",
+        "Days Left": "30"
     },
     {
         "Case ID": "PR-EQK-00650",
@@ -437,7 +502,9 @@
         "Stage Status": "11 - Structure Inspection",
         "Subcontractor Name": "VB Total Building LLC",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "86"
+        "Days Since Last Milestone Inspection": "150",
+        "Subcontractor Date of Notice to Proceed": "2025-12-03",
+        "Days Left": "-92"
     },
     {
         "Case ID": "PR-EQK-00964",
@@ -445,10 +512,12 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "17.97946,-66.88543",
-        "Stage Status": "08 - Walls Inspection (1st Level)",
+        "Stage Status": "12 - Substantial Inspection",
         "Subcontractor Name": "F&R Construction Group, Inc.",
         "Model Home Design Selection": "Single-Story 2-Bedroom (ADA)",
-        "Days Since Last Milestone Inspection": "22"
+        "Days Since Last Milestone Inspection": "8",
+        "Subcontractor Date of Notice to Proceed": "2026-05-21",
+        "Days Left": "17"
     },
     {
         "Case ID": "PR-EQK-00973",
@@ -456,10 +525,12 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "17.96533,-66.94202",
-        "Stage Status": "07 - Foundation Inspection",
+        "Stage Status": "08 - Walls Inspection (1st Level)",
         "Subcontractor Name": "F&R Construction Group, Inc.",
         "Model Home Design Selection": "Single-Story 3-Bedroom",
-        "Days Since Last Milestone Inspection": "6"
+        "Days Since Last Milestone Inspection": "52",
+        "Subcontractor Date of Notice to Proceed": "2026-03-24",
+        "Days Left": "18"
     },
     {
         "Case ID": "PR-EQK-01214",
@@ -470,7 +541,9 @@
         "Stage Status": "12 - Substantial Inspection",
         "Subcontractor Name": "OF Construction Corp",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "35"
+        "Days Since Last Milestone Inspection": "99",
+        "Subcontractor Date of Notice to Proceed": "2026-03-06",
+        "Days Left": "98"
     },
     {
         "Case ID": "PR-R3-08556",
@@ -481,7 +554,9 @@
         "Stage Status": "04 - Construction - Started",
         "Subcontractor Name": "Constructora Yanmar, LLC",
         "Model Home Design Selection": null,
-        "Days Since Last Milestone Inspection": "127"
+        "Days Since Last Milestone Inspection": "191",
+        "Subcontractor Date of Notice to Proceed": "2026-04-13",
+        "Days Left": "-93"
     },
     {
         "Case ID": "PR-R3-00123",
@@ -492,7 +567,9 @@
         "Stage Status": "04 - Construction - Started",
         "Subcontractor Name": "CVJ CONTRACTOR LLC",
         "Model Home Design Selection": null,
-        "Days Since Last Milestone Inspection": "324"
+        "Days Since Last Milestone Inspection": "388",
+        "Subcontractor Date of Notice to Proceed": "2025-09-18",
+        "Days Left": "-388"
     },
     {
         "Case ID": "PR-EQK-00646",
@@ -503,7 +580,9 @@
         "Stage Status": "11 - Structure Inspection",
         "Subcontractor Name": "Constructora Yanmar, LLC",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "84"
+        "Days Since Last Milestone Inspection": "148",
+        "Subcontractor Date of Notice to Proceed": "2025-01-27",
+        "Days Left": "-43"
     },
     {
         "Case ID": "PR-EQK-00676",
@@ -514,7 +593,9 @@
         "Stage Status": "11 - Structure Inspection",
         "Subcontractor Name": "Constructora Yanmar, LLC",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "69"
+        "Days Since Last Milestone Inspection": "133",
+        "Subcontractor Date of Notice to Proceed": "2026-02-18",
+        "Days Left": "-11"
     },
     {
         "Case ID": "PR-EQK-00832",
@@ -522,10 +603,12 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.00497,-66.91159",
-        "Stage Status": "07 - Foundation Inspection",
+        "Stage Status": "08 - Walls Inspection (1st Level)",
         "Subcontractor Name": "Y.E TRANSPORT LLC",
         "Model Home Design Selection": "Single-Story 2-Bedroom (ADA)",
-        "Days Since Last Milestone Inspection": "20"
+        "Days Since Last Milestone Inspection": "45",
+        "Subcontractor Date of Notice to Proceed": "2026-04-09",
+        "Days Left": "42"
     },
     {
         "Case ID": "PR-EQK-00835",
@@ -534,9 +617,11 @@
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "17.99664,-66.9714",
         "Stage Status": "11 - Structure Inspection",
-        "Subcontractor Name": "Constructora Yanmar, LLC",
+        "Subcontractor Name": "CONSTRUCTORA YANMAR LLC",
         "Model Home Design Selection": "Single-Story 3-Bedroom",
-        "Days Since Last Milestone Inspection": "86"
+        "Days Since Last Milestone Inspection": "150",
+        "Subcontractor Date of Notice to Proceed": "2026-01-14",
+        "Days Left": "-74"
     },
     {
         "Case ID": "PR-EQK-00951",
@@ -544,10 +629,12 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "17.99614,-66.97159",
-        "Stage Status": "04 - Construction - Started",
+        "Stage Status": "07 - Foundation Inspection",
         "Subcontractor Name": "Constructora Yanmar, LLC",
         "Model Home Design Selection": "Two-Story 4-Bedroom (RAR)",
-        "Days Since Last Milestone Inspection": "75"
+        "Days Since Last Milestone Inspection": "24",
+        "Subcontractor Date of Notice to Proceed": "2026-06-02",
+        "Days Left": "113"
     },
     {
         "Case ID": "PR-R3-26215",
@@ -555,10 +642,12 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.00437,-66.84543",
-        "Stage Status": "04 - Construction - Started",
+        "Stage Status": "06 - Retaining Wall Inspection (Walls)",
         "Subcontractor Name": "JN TRANSPORT",
         "Model Home Design Selection": "Single-Story 2-Bedroom (ADA)",
-        "Days Since Last Milestone Inspection": "50"
+        "Days Since Last Milestone Inspection": "17",
+        "Subcontractor Date of Notice to Proceed": "2026-07-10",
+        "Days Left": "153"
     },
     {
         "Case ID": "PR-BR-50495",
@@ -569,7 +658,9 @@
         "Stage Status": "11 - Structure Inspection",
         "Subcontractor Name": "Constructora Yanmar, LLC",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "35"
+        "Days Since Last Milestone Inspection": "99",
+        "Subcontractor Date of Notice to Proceed": "2026-02-24",
+        "Days Left": "-6"
     },
     {
         "Case ID": "PR-R3-09808",
@@ -577,10 +668,12 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.01209,-66.87451",
-        "Stage Status": "11 - Structure Inspection",
+        "Stage Status": "12 - Substantial Inspection",
         "Subcontractor Name": "Constructora Yanmar, LLC",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "121"
+        "Days Since Last Milestone Inspection": "50",
+        "Subcontractor Date of Notice to Proceed": "2025-12-23",
+        "Days Left": "-16"
     },
     {
         "Case ID": "PR-R3-25372",
@@ -588,10 +681,12 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.03962,-66.79576",
-        "Stage Status": "08 - Walls Inspection (1st Level)",
+        "Stage Status": "11 - Structure Inspection",
         "Subcontractor Name": "Constructora Yanmar, LLC",
         "Model Home Design Selection": "Single-Story 2-Bedroom (ADA)",
-        "Days Since Last Milestone Inspection": "28"
+        "Days Since Last Milestone Inspection": "48",
+        "Subcontractor Date of Notice to Proceed": "2026-01-27",
+        "Days Left": "-8"
     },
     {
         "Case ID": "PR-SFM-03059",
@@ -599,10 +694,12 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.06603,-66.75093",
-        "Stage Status": "07 - Foundation Inspection",
+        "Stage Status": "08 - Walls Inspection (1st Level)",
         "Subcontractor Name": "A & S General Contractor",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "7"
+        "Days Since Last Milestone Inspection": "29",
+        "Subcontractor Date of Notice to Proceed": "2026-02-02",
+        "Days Left": "56"
     },
     {
         "Case ID": "PR-SFM-03109",
@@ -610,10 +707,12 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.05792,-66.69619",
-        "Stage Status": "11 - Structure Inspection",
+        "Stage Status": "12 - Substantial Inspection",
         "Subcontractor Name": "A & I Constructions Inc",
         "Model Home Design Selection": "Single-Story 3-Bedroom",
-        "Days Since Last Milestone Inspection": "86"
+        "Days Since Last Milestone Inspection": "17",
+        "Subcontractor Date of Notice to Proceed": "2025-12-15",
+        "Days Left": "-50"
     },
     {
         "Case ID": "PR-SFM-03110",
@@ -621,10 +720,12 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.05963,-66.69681",
-        "Stage Status": "08 - Walls Inspection (1st Level)",
+        "Stage Status": "11 - Structure Inspection",
         "Subcontractor Name": "A & I Constructions Inc",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "29"
+        "Days Since Last Milestone Inspection": "30",
+        "Subcontractor Date of Notice to Proceed": "2026-03-09",
+        "Days Left": "-7"
     },
     {
         "Case ID": "PR-SFM-03113",
@@ -635,7 +736,9 @@
         "Stage Status": "11 - Structure Inspection",
         "Subcontractor Name": "Super World Construction, Corp.",
         "Model Home Design Selection": "Single-Story 2-Bedroom (ADA)",
-        "Days Since Last Milestone Inspection": "12"
+        "Days Since Last Milestone Inspection": "76",
+        "Subcontractor Date of Notice to Proceed": "2026-04-24",
+        "Days Left": "53"
     },
     {
         "Case ID": "PR-SFM-03172",
@@ -646,7 +749,9 @@
         "Stage Status": "11 - Structure Inspection",
         "Subcontractor Name": "Constructora Yanmar, LLC",
         "Model Home Design Selection": "Single-Story 2-Bedroom (ADA)",
-        "Days Since Last Milestone Inspection": "49"
+        "Days Since Last Milestone Inspection": "113",
+        "Subcontractor Date of Notice to Proceed": "2026-03-06",
+        "Days Left": "-9"
     },
     {
         "Case ID": "PR-SFM-03341",
@@ -654,10 +759,12 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.05554,-66.71492",
-        "Stage Status": "08 - Walls Inspection (1st Level)",
+        "Stage Status": "11 - Structure Inspection",
         "Subcontractor Name": "Gp pro construction & supplies",
         "Model Home Design Selection": "Single-Story 2-Bedroom (ADA)",
-        "Days Since Last Milestone Inspection": "12"
+        "Days Since Last Milestone Inspection": "52",
+        "Subcontractor Date of Notice to Proceed": "2026-05-08",
+        "Days Left": "56"
     },
     {
         "Case ID": "PR-SFM-02181",
@@ -665,10 +772,12 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "17.99813,-66.34326",
-        "Stage Status": "04 - Construction - Started",
+        "Stage Status": "08 - Walls Inspection (1st Level)",
         "Subcontractor Name": "OF Construction Corp",
         "Model Home Design Selection": "Single-Story 2-Bedroom (ADA)",
-        "Days Since Last Milestone Inspection": "69"
+        "Days Since Last Milestone Inspection": "15",
+        "Subcontractor Date of Notice to Proceed": "2026-07-15",
+        "Days Left": "113"
     },
     {
         "Case ID": "PR-EQK-00814",
@@ -676,10 +785,12 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "17.97875,-66.89214",
-        "Stage Status": "07 - Foundation Inspection",
+        "Stage Status": "08 - Walls Inspection (1st Level)",
         "Subcontractor Name": "Prime Restoration Services LLC",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "82"
+        "Days Since Last Milestone Inspection": "27",
+        "Subcontractor Date of Notice to Proceed": "2026-05-20",
+        "Days Left": "70"
     },
     {
         "Case ID": "PR-EQK-00729",
@@ -687,10 +798,12 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.02911,-66.86174",
-        "Stage Status": "08 - Walls Inspection (1st Level)",
+        "Stage Status": "11 - Structure Inspection",
         "Subcontractor Name": "Super World Construction, Corp.",
         "Model Home Design Selection": "Single-Story 2-Bedroom (RAR)",
-        "Days Since Last Milestone Inspection": "20"
+        "Days Since Last Milestone Inspection": "62",
+        "Subcontractor Date of Notice to Proceed": "2026-05-06",
+        "Days Left": "24"
     },
     {
         "Case ID": "PR-R3-07716",
@@ -698,10 +811,12 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.04978,-66.71501",
-        "Stage Status": "11 - Structure Inspection",
+        "Stage Status": "12 - Substantial Inspection",
         "Subcontractor Name": "OF Construction Corp",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "51"
+        "Days Since Last Milestone Inspection": "10",
+        "Subcontractor Date of Notice to Proceed": "2026-04-13",
+        "Days Left": "0"
     },
     {
         "Case ID": "PR-SFM-02602",
@@ -709,10 +824,12 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.04828,-66.55212",
-        "Stage Status": "08 - Walls Inspection (1st Level)",
+        "Stage Status": "10 - Walls Inspection (2nd Level)",
         "Subcontractor Name": "Y.E TRANSPORT LLC",
         "Model Home Design Selection": "Two-Story 3-Bedroom",
-        "Days Since Last Milestone Inspection": "37"
+        "Days Since Last Milestone Inspection": "7",
+        "Subcontractor Date of Notice to Proceed": "2026-03-26",
+        "Days Left": "39"
     },
     {
         "Case ID": "PR-SFM-03075",
@@ -720,21 +837,12 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.05033,-66.55241",
-        "Stage Status": "07 - Foundation Inspection",
+        "Stage Status": "11 - Structure Inspection",
         "Subcontractor Name": "3K Management & Construction LLC",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "14"
-    },
-    {
-        "Case ID": "PR-R3-26255",
-        "Municipality": "Manat\u00ed",
-        "Region": "North",
-        "Award Type Equivalent": "Relocation",
-        "Coordinates": "18.42627,-66.49334",
-        "Stage Status": "04 - Construction - Started",
-        "Subcontractor Name": "Custom Development LLC",
-        "Model Home Design Selection": null,
-        "Days Since Last Milestone Inspection": "69"
+        "Days Since Last Milestone Inspection": "14",
+        "Subcontractor Date of Notice to Proceed": "2026-06-03",
+        "Days Left": "62"
     },
     {
         "Case ID": "PR-EQK-00876",
@@ -745,7 +853,9 @@
         "Stage Status": "11 - Structure Inspection",
         "Subcontractor Name": "Engitech PR LLC",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "14"
+        "Days Since Last Milestone Inspection": "78",
+        "Subcontractor Date of Notice to Proceed": "2026-04-21",
+        "Days Left": "12"
     },
     {
         "Case ID": "PR-EQK-03013",
@@ -753,10 +863,51 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.029,-66.98486",
-        "Stage Status": "04 - Construction - Started",
+        "Stage Status": "07 - Foundation Inspection",
         "Subcontractor Name": "Prime Restoration Services LLC",
         "Model Home Design Selection": "Single-Story 4-Bedroom",
-        "Days Since Last Milestone Inspection": "97"
+        "Days Since Last Milestone Inspection": "43",
+        "Subcontractor Date of Notice to Proceed": "2026-05-20",
+        "Days Left": "42"
+    },
+    {
+        "Case ID": "PR-SFM-04581",
+        "Municipality": "Arecibo",
+        "Region": "North",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.43938,-66.76435",
+        "Stage Status": "08 - Walls Inspection (1st Level)",
+        "Subcontractor Name": "Marcelo Electro Inc.",
+        "Model Home Design Selection": "Single-Story 2-Bedroom (ADA)",
+        "Days Since Last Milestone Inspection": "10",
+        "Subcontractor Date of Notice to Proceed": "2026-08-04",
+        "Days Left": "113"
+    },
+    {
+        "Case ID": "PR-SFM-02974",
+        "Municipality": "Cabo Rojo",
+        "Region": "South",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "17.97317,-67.18638",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "JN TRANSPORT & EQUIPMENT LLC\n\nF&R Construction Group, Inc",
+        "Model Home Design Selection": "Single-Story 2-Bedroom",
+        "Days Since Last Milestone Inspection": "50",
+        "Subcontractor Date of Notice to Proceed": "2026-09-16",
+        "Days Left": "169"
+    },
+    {
+        "Case ID": "PR-SFM-05356",
+        "Municipality": "Manat\u00ed",
+        "Region": "North",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.44921,-66.51021",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Marcelo Electro Inc.",
+        "Model Home Design Selection": "Single-Story 2-Bedroom (ADA)",
+        "Days Since Last Milestone Inspection": "44",
+        "Subcontractor Date of Notice to Proceed": "2026-09-10",
+        "Days Left": "159"
     },
     {
         "Case ID": "PR-SFM-04595",
@@ -764,10 +915,25 @@
         "Region": "North",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.44009,-66.44752",
-        "Stage Status": "04 - Construction - Started",
+        "Stage Status": "07 - Foundation Inspection",
         "Subcontractor Name": "Custom Development Group, LLC",
         "Model Home Design Selection": "Two-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "43"
+        "Days Since Last Milestone Inspection": "29",
+        "Subcontractor Date of Notice to Proceed": "2026-07-14",
+        "Days Left": "148"
+    },
+    {
+        "Case ID": "PR-SFM-04073",
+        "Municipality": "Cabo Rojo",
+        "Region": "South",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.09852,-67.17373",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "F&R Construction Group, Inc",
+        "Model Home Design Selection": "Single-Story 2-Bedroom",
+        "Days Since Last Milestone Inspection": "52",
+        "Subcontractor Date of Notice to Proceed": "2026-09-01",
+        "Days Left": "192"
     },
     {
         "Case ID": "PR-SFM-04409",
@@ -775,10 +941,51 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.05736,-66.6954",
-        "Stage Status": "07 - Foundation Inspection",
+        "Stage Status": "08 - Walls Inspection (1st Level)",
         "Subcontractor Name": "3K Management & Construction LLC",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "14"
+        "Days Since Last Milestone Inspection": "27",
+        "Subcontractor Date of Notice to Proceed": "2026-05-29",
+        "Days Left": "111"
+    },
+    {
+        "Case ID": "PR-R3-04902",
+        "Municipality": "Ponce",
+        "Region": "South",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.06366,-66.60115",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Constructora Yanmar, LLC",
+        "Model Home Design Selection": "Single-Story 2-Bedroom (ADA)",
+        "Days Since Last Milestone Inspection": "58",
+        "Subcontractor Date of Notice to Proceed": "2026-09-01",
+        "Days Left": "152"
+    },
+    {
+        "Case ID": "PR-R3-15230",
+        "Municipality": "Ponce",
+        "Region": "South",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.04344,-66.67824",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Constructora Yanmar, LLC",
+        "Model Home Design Selection": "Single-Story 4-Bedroom",
+        "Days Since Last Milestone Inspection": "58",
+        "Subcontractor Date of Notice to Proceed": "2026-09-01",
+        "Days Left": "144"
+    },
+    {
+        "Case ID": "PR-R3-22745",
+        "Municipality": "Ponce",
+        "Region": "South",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.031,-66.65839",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Constructora Yanmar, LLC",
+        "Model Home Design Selection": "Single-Story 2-Bedroom (RAR)",
+        "Days Since Last Milestone Inspection": "70",
+        "Subcontractor Date of Notice to Proceed": "2026-09-01",
+        "Days Left": "143"
     },
     {
         "Case ID": "PR-SFM-04034",
@@ -786,10 +993,25 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.04979,-66.5282",
-        "Stage Status": "04 - Construction - Started",
+        "Stage Status": "11 - Structure Inspection",
         "Subcontractor Name": "Rodca Contractor",
         "Model Home Design Selection": "Single-Story 2-Bedroom (ADA)",
-        "Days Since Last Milestone Inspection": "16"
+        "Days Since Last Milestone Inspection": "13",
+        "Subcontractor Date of Notice to Proceed": "2026-07-27",
+        "Days Left": "113"
+    },
+    {
+        "Case ID": "PR-SFM-04534",
+        "Municipality": "Juana D\u00edaz",
+        "Region": "South",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.04015,-66.46816",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "GP PRO CONSTRUCTION & SUPPLIES",
+        "Model Home Design Selection": "Single-Story 2-Bedroom (ADA)",
+        "Days Since Last Milestone Inspection": "45",
+        "Subcontractor Date of Notice to Proceed": "2026-09-21",
+        "Days Left": "154"
     },
     {
         "Case ID": "PR-SFM-04782",
@@ -797,53 +1019,24 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.02678,-66.53794",
-        "Stage Status": "04 - Construction - Started",
+        "Stage Status": "07 - Foundation Inspection",
         "Subcontractor Name": "Super World Construction, Corp.",
         "Model Home Design Selection": "Single-Story 4-Bedroom",
-        "Days Since Last Milestone Inspection": "19"
+        "Days Since Last Milestone Inspection": "30",
+        "Subcontractor Date of Notice to Proceed": "2026-07-21",
+        "Days Left": "105"
     },
     {
-        "Case ID": "PR-R3-10918",
-        "Municipality": "Vega Baja",
-        "Region": "North",
-        "Award Type Equivalent": "Relocation",
-        "Coordinates": "18.44223,-66.38123",
+        "Case ID": "PR-SFM-05399",
+        "Municipality": "Juana D\u00edaz",
+        "Region": "South",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.05707,-66.45496",
         "Stage Status": "04 - Construction - Started",
-        "Subcontractor Name": "Engitech PR LLC",
-        "Model Home Design Selection": null,
-        "Days Since Last Milestone Inspection": "61"
-    },
-    {
-        "Case ID": "PR-R3-02692",
-        "Municipality": "Barceloneta",
-        "Region": "North",
-        "Award Type Equivalent": "Relocation",
-        "Coordinates": "18.43239,-66.53972",
-        "Stage Status": "04 - Construction - Started",
-        "Subcontractor Name": "Gialsi Crane, LLC",
-        "Model Home Design Selection": null,
-        "Days Since Last Milestone Inspection": "55"
-    },
-    {
-        "Case ID": "PR-SFM-02828",
-        "Municipality": "San Sebasti\u00e1n",
-        "Region": "North",
-        "Award Type Equivalent": "Relocation",
-        "Coordinates": "18.3353,-66.98766",
-        "Stage Status": "04 - Construction - Started",
-        "Subcontractor Name": "GP Pro Cronstruction LP",
-        "Model Home Design Selection": null,
-        "Days Since Last Milestone Inspection": "55"
-    },
-    {
-        "Case ID": "PR-R3-04081",
-        "Municipality": "Naguabo",
-        "Region": "North",
-        "Award Type Equivalent": "Relocation",
-        "Coordinates": "18.24374,-65.7939",
-        "Stage Status": "04 - Construction - Started",
-        "Subcontractor Name": "Torres Development LLC",
-        "Model Home Design Selection": null,
-        "Days Since Last Milestone Inspection": "35"
+        "Subcontractor Name": "3K MANAGEMENT & CONSTRUCTION",
+        "Model Home Design Selection": "Single-Story 2-Bedroom",
+        "Days Since Last Milestone Inspection": "42",
+        "Subcontractor Date of Notice to Proceed": "2026-09-17",
+        "Days Left": "168"
     }
 ]
