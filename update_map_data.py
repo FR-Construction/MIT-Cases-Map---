@@ -64,7 +64,9 @@ def main():
         "Stage Status",
         "Subcontractor Name",
         "Model Home Design Selection",
-        "Days Since Last Milestone Inspection"
+        "Days Since Last Milestone Inspection",
+        "Subcontractor Date of Notice to Proceed",
+        "Days Left"
     ]
     
     # Some columns might have slightly different names, trying to handle that if needed, 
@@ -95,16 +97,19 @@ def main():
             if title:
                 row_dict[title] = cell.display_value or cell.value
 
-        # Filter logic
-        ntp = row_dict.get("Subcontractor Date of Notice to Proceed")
+        # Filter logic: Active Construction Pipeline (Stages 04 through 12)
         stage = str(row_dict.get("Stage Status", "")).strip()
+        active_construction_stages = [
+            "04 - Construction - Started",
+            "06 - Retaining Wall Inspection (Walls)",
+            "07 - Foundation Inspection",
+            "08 - Walls Inspection (1st Level)",
+            "10 - Walls Inspection (2nd Level)",
+            "11 - Structure Inspection",
+            "12 - Substantial Inspection"
+        ]
         
-        # 1. Must have Subcontractor Notice to Proceed
-        if not ntp:
-            continue
-            
-        # 2. Exclude specific stage statuses
-        if any(ex_status in stage for ex_status in excluded_statuses):
+        if not any(stage.startswith(s.split(" - ")[0]) or stage == s for s in active_construction_stages):
             continue
 
         municipality = row_dict.get("Municipality", "")
@@ -119,7 +124,9 @@ def main():
             "Stage Status": stage,
             "Subcontractor Name": row_dict.get("Subcontractor Name", "") or row_dict.get("Subcontractor", ""),
             "Model Home Design Selection": row_dict.get("Model Home Design Selection", ""),
-            "Days Since Last Milestone Inspection": row_dict.get("Days Since Last Milestone Inspection", "")
+            "Days Since Last Milestone Inspection": row_dict.get("Days Since Last Milestone Inspection", ""),
+            "Subcontractor Date of Notice to Proceed": row_dict.get("Subcontractor Date of Notice to Proceed", "") or row_dict.get("Date Of Notice To Proceed", ""),
+            "Days Left": row_dict.get("Days Left", "")
         }
         cases.append(case_data)
 
@@ -132,11 +139,18 @@ def main():
         
     print(f"Saved to {output_file}")
     
+    # Generate last_update.json BEFORE git commit/push
+    from datetime import datetime
+    last_update_file = os.path.join(os.path.dirname(__file__), "last_update.json")
+    with open(last_update_file, 'w', encoding='utf-8') as f:
+        json.dump({"last_update": datetime.now().strftime("%Y-%m-%d %I:%M %p")}, f)
+    print(f"Generated {last_update_file}")
+
     # Commit and push to git
     try:
         print("Committing and pushing to GitHub...")
         cwd = os.path.dirname(__file__)
-        subprocess.run(["git", "add", "cases.json"], cwd=cwd, check=True)
+        subprocess.run(["git", "add", "cases.json", "last_update.json"], cwd=cwd, check=True)
         # Check if there are changes to commit
         status = subprocess.run(["git", "status", "--porcelain"], cwd=cwd, capture_output=True, text=True)
         if status.stdout.strip():
@@ -149,12 +163,6 @@ def main():
         print(f"Error pushing to GitHub: {e}")
         exit(1)
 
-    # Generate last_update.json
-    from datetime import datetime
-    last_update_file = os.path.join(os.path.dirname(__file__), "last_update.json")
-    with open(last_update_file, 'w', encoding='utf-8') as f:
-        json.dump({"last_update": datetime.now().strftime("%Y-%m-%d %I:%M %p")}, f)
-        
     print("GitHub push completed successfully.")
 
 if __name__ == "__main__":
