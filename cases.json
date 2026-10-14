@@ -892,7 +892,7 @@
         "Stage Status": "11 - Structure Inspection",
         "Subcontractor Name": "OF Construction Corp",
         "Model Home Design Selection": "Single-Story 2-Bedroom (ADA)",
-        "Days Since Last Milestone Inspection": "2",
+        "Days Since Last Milestone Inspection": "1",
         "Subcontractor Date of Notice to Proceed": "2026-07-15",
         "Days Left": "107"
     },
@@ -1206,7 +1206,7 @@
         "Model Home Design Selection": "Single-Story 4-Bedroom",
         "Days Since Last Milestone Inspection": "64",
         "Subcontractor Date of Notice to Proceed": "2026-09-01",
-        "Days Left": "138"
+        "Days Left": "148"
     },
     {
         "Case ID": "PR-R3-22745",
@@ -1220,19 +1220,6 @@
         "Days Since Last Milestone Inspection": "6",
         "Subcontractor Date of Notice to Proceed": "2026-09-01",
         "Days Left": "137"
-    },
-    {
-        "Case ID": "PR-R3-10641",
-        "Municipality": "Maunabo",
-        "Region": "South",
-        "Award Type Equivalent": "Relocation",
-        "Coordinates": "18.0222,-65.91866",
-        "Stage Status": "04 - Construction - Started",
-        "Subcontractor Name": "SANTIAGO ELECTRIC & GENERAL CONTRACTO INC",
-        "Model Home Design Selection": null,
-        "Days Since Last Milestone Inspection": "21",
-        "Subcontractor Date of Notice to Proceed": "2026-09-28",
-        "Days Left": "39"
     },
     {
         "Case ID": "PR-R3-13268",
