@@ -486,7 +486,7 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.06695,-66.76066",
-        "Stage Status": "08 - Walls Inspection (1st Level)",
+        "Stage Status": "11 - Structure Inspection",
         "Subcontractor Name": "A & S General Contractor",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
         "Days Since Last Milestone Inspection": "38",
@@ -1427,7 +1427,7 @@
         "Model Home Design Selection": null,
         "Days Since Last Milestone Inspection": "60",
         "Subcontractor Date of Notice to Proceed": "2026-08-17",
-        "Days Left": "15"
+        "Days Left": "44"
     },
     {
         "Case ID": "PR-SFM-02952",
