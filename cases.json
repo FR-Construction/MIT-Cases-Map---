@@ -448,10 +448,10 @@
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.47804,-66.69698",
         "Stage Status": "07 - Foundation Inspection",
-        "Subcontractor Name": "HOLD",
+        "Subcontractor Name": "RODCA CONTRACTORS LLC",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
         "Days Since Last Milestone Inspection": "2",
-        "Subcontractor Date of Notice to Proceed": "2026-06-29",
+        "Subcontractor Date of Notice to Proceed": "2026-09-29",
         "Days Left": "112"
     },
     {
@@ -544,6 +544,19 @@
         "Days Since Last Milestone Inspection": "11",
         "Subcontractor Date of Notice to Proceed": "2026-03-26",
         "Days Left": "31"
+    },
+    {
+        "Case ID": "PR-EQK-00511",
+        "Municipality": "Gu\u00e1nica",
+        "Region": "South",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "17.97676,-66.88705",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Testing - AES\nAbatement - ENVIRO\n\n\n\n\n\n\n\n\n\n\n\n\nPV System Installation - F&R Construction Group, Inc.\nWS System Installation - F&R Construction Group, Inc.",
+        "Model Home Design Selection": "Single-Story 2-Bedroom",
+        "Days Since Last Milestone Inspection": null,
+        "Subcontractor Date of Notice to Proceed": "2026-10-23",
+        "Days Left": "199"
     },
     {
         "Case ID": "PR-EQK-00565",
@@ -1440,7 +1453,7 @@
         "Model Home Design Selection": null,
         "Days Since Last Milestone Inspection": "7",
         "Subcontractor Date of Notice to Proceed": "2026-10-16",
-        "Days Left": "53"
+        "Days Left": "62"
     },
     {
         "Case ID": "PR-R3-14207",
