@@ -1193,7 +1193,7 @@
         "Model Home Design Selection": "Single-Story 3-Bedroom",
         "Days Since Last Milestone Inspection": "7",
         "Subcontractor Date of Notice to Proceed": "2026-10-19",
-        "Days Left": "183"
+        "Days Left": "193"
     },
     {
         "Case ID": "PR-SFM-04312",
@@ -1207,6 +1207,19 @@
         "Days Since Last Milestone Inspection": "34",
         "Subcontractor Date of Notice to Proceed": "2026-10-13",
         "Days Left": "174"
+    },
+    {
+        "Case ID": "PR-SFM-04809",
+        "Municipality": "Guayanilla",
+        "Region": "South",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "17.99728,-66.81361",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Testing - AES\nAbatement - DEK\n\n\n\n\n\n\n\n\n\n\n\n\nPV System Installation - F&R Construction Group, Inc.\nWS System Installation - F&R Construction Group, Inc.",
+        "Model Home Design Selection": "Single-Story 2-Bedroom (ADA)",
+        "Days Since Last Milestone Inspection": null,
+        "Subcontractor Date of Notice to Proceed": "2026-10-23",
+        "Days Left": "191"
     },
     {
         "Case ID": "PR-SFM-04915",
