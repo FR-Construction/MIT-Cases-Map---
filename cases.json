@@ -10,7 +10,7 @@
         "Model Home Design Selection": "Single-Story 2-Bedroom",
         "Days Since Last Milestone Inspection": "29",
         "Subcontractor Date of Notice to Proceed": "2026-09-28",
-        "Days Left": "166"
+        "Days Left": "199"
     },
     {
         "Case ID": "PR-SFM-01985",
@@ -153,7 +153,7 @@
         "Model Home Design Selection": "Single-Story 2-Bedroom",
         "Days Since Last Milestone Inspection": "43",
         "Subcontractor Date of Notice to Proceed": "2026-09-17",
-        "Days Left": "157"
+        "Days Left": "199"
     },
     {
         "Case ID": "PR-R3-13835",
@@ -244,7 +244,7 @@
         "Model Home Design Selection": "Single-Story 3-Bedroom (ADA)",
         "Days Since Last Milestone Inspection": "124",
         "Subcontractor Date of Notice to Proceed": "2026-04-20",
-        "Days Left": "-9"
+        "Days Left": "-5"
     },
     {
         "Case ID": "PR-SFM-02842",
@@ -452,7 +452,7 @@
         "Model Home Design Selection": "Single-Story 2-Bedroom",
         "Days Since Last Milestone Inspection": "6",
         "Subcontractor Date of Notice to Proceed": "2026-09-29",
-        "Days Left": "108"
+        "Days Left": "164"
     },
     {
         "Case ID": "PR-R3-07237",
@@ -1076,7 +1076,7 @@
         "Model Home Design Selection": "Single-Story 4-Bedroom",
         "Days Since Last Milestone Inspection": "15",
         "Subcontractor Date of Notice to Proceed": "2026-05-20",
-        "Days Left": "23"
+        "Days Left": "32"
     },
     {
         "Case ID": "PR-SFM-05130",
@@ -1084,7 +1084,7 @@
         "Region": "North",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.46243,-66.5966",
-        "Stage Status": "04 - Construction - Started",
+        "Stage Status": "07 - Foundation Inspection",
         "Subcontractor Name": "Marcelo Electro Inc.",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
         "Days Since Last Milestone Inspection": "48",
@@ -1141,7 +1141,7 @@
         "Model Home Design Selection": "Single-Story 2-Bedroom (ADA)",
         "Days Since Last Milestone Inspection": "63",
         "Subcontractor Date of Notice to Proceed": "2026-09-10",
-        "Days Left": "140"
+        "Days Left": "156"
     },
     {
         "Case ID": "PR-SFM-04595",
@@ -1597,5 +1597,18 @@
         "Days Since Last Milestone Inspection": "21",
         "Subcontractor Date of Notice to Proceed": "2026-04-09",
         "Days Left": "44"
+    },
+    {
+        "Case ID": "PR-R3-10982",
+        "Municipality": "Bayam\u00f3n",
+        "Region": "North",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.28788,-66.15269",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": null,
+        "Model Home Design Selection": null,
+        "Days Since Last Milestone Inspection": null,
+        "Subcontractor Date of Notice to Proceed": "2022-04-19",
+        "Days Left": "-1067"
     }
 ]
