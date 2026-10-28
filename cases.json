@@ -26,19 +26,6 @@
         "Days Left": "16"
     },
     {
-        "Case ID": "PR-SFM-01930",
-        "Municipality": "Guayama",
-        "Region": "South",
-        "Award Type Equivalent": "Reconstruction",
-        "Coordinates": "18.00379,-66.10729",
-        "Stage Status": "12 - Substantial Inspection",
-        "Subcontractor Name": "CVJ CONTRACTOR LLC",
-        "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "135",
-        "Subcontractor Date of Notice to Proceed": "2025-10-06",
-        "Days Left": "-111"
-    },
-    {
         "Case ID": "PR-EQK-00878",
         "Municipality": "Yauco",
         "Region": "South",
@@ -76,32 +63,6 @@
         "Days Since Last Milestone Inspection": "47",
         "Subcontractor Date of Notice to Proceed": "2026-04-27",
         "Days Left": "44"
-    },
-    {
-        "Case ID": "PR-SFM-01867",
-        "Municipality": "Guayama",
-        "Region": "South",
-        "Award Type Equivalent": "Reconstruction",
-        "Coordinates": "18.00453,-66.10711",
-        "Stage Status": "12 - Substantial Inspection",
-        "Subcontractor Name": "Constructora Yanmar, LLC",
-        "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "83",
-        "Subcontractor Date of Notice to Proceed": "2025-11-19",
-        "Days Left": "-17"
-    },
-    {
-        "Case ID": "PR-SFM-01851",
-        "Municipality": "Guayama",
-        "Region": "South",
-        "Award Type Equivalent": "Reconstruction",
-        "Coordinates": "17.96404,-66.16652",
-        "Stage Status": "12 - Substantial Inspection",
-        "Subcontractor Name": "OF Construction Corp",
-        "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "70",
-        "Subcontractor Date of Notice to Proceed": "2025-05-07",
-        "Days Left": "-96"
     },
     {
         "Case ID": "PR-SFM-01842",
@@ -624,19 +585,6 @@
         "Days Left": "-2"
     },
     {
-        "Case ID": "PR-EQK-01214",
-        "Municipality": "Gu\u00e1nica",
-        "Region": "South",
-        "Award Type Equivalent": "Reconstruction",
-        "Coordinates": "18.00559,-66.90186",
-        "Stage Status": "12 - Substantial Inspection",
-        "Subcontractor Name": "OF Construction Corp",
-        "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "119",
-        "Subcontractor Date of Notice to Proceed": "2026-03-06",
-        "Days Left": "98"
-    },
-    {
         "Case ID": "PR-EQK-01217",
         "Municipality": "Gu\u00e1nica",
         "Region": "South",
@@ -1007,11 +955,24 @@
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.46113,-66.75013",
         "Stage Status": "04 - Construction - Started",
-        "Subcontractor Name": "Testing - AES\n\n\n\n\n\n\n\n\n\n\n\n\n\nPV System Installation - F&R Construction Group, Inc.\nWS System Installation - F&R Construction Group, Inc.",
+        "Subcontractor Name": "DE LEON CONTRACTOR GROUP LLC",
         "Model Home Design Selection": "Two-Story 3-Bedroom",
         "Days Since Last Milestone Inspection": "16",
         "Subcontractor Date of Notice to Proceed": "2026-10-12",
         "Days Left": "223"
+    },
+    {
+        "Case ID": "PR-SFM-04131",
+        "Municipality": "Juana D\u00edaz",
+        "Region": "South",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.03114,-66.53721",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Testing - AES\nAbatement - DEK\n\n\n\n\n\n\n\n\n\n\n\n\nPV System Installation - F&R Construction Group, Inc.\nWS System Installation - F&R Construction Group, Inc.",
+        "Model Home Design Selection": "Single-Story 2-Bedroom",
+        "Days Since Last Milestone Inspection": "0",
+        "Subcontractor Date of Notice to Proceed": "2026-10-28",
+        "Days Left": "187"
     },
     {
         "Case ID": "PR-SFM-04512",
@@ -1573,6 +1534,19 @@
         "Days Left": "32"
     },
     {
+        "Case ID": "PR-R3-03840 (BR)",
+        "Municipality": "Ciales",
+        "Region": "North",
+        "Award Type Equivalent": "Relocation",
+        "Coordinates": "18.29985,-66.55253",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Testing - AES",
+        "Model Home Design Selection": null,
+        "Days Since Last Milestone Inspection": "0",
+        "Subcontractor Date of Notice to Proceed": "2026-10-28",
+        "Days Left": "60"
+    },
+    {
         "Case ID": "PR-EQK-01185",
         "Municipality": "Guayanilla",
         "Region": "South",
@@ -1597,18 +1571,5 @@
         "Days Since Last Milestone Inspection": "22",
         "Subcontractor Date of Notice to Proceed": "2026-04-09",
         "Days Left": "44"
-    },
-    {
-        "Case ID": "PR-R3-10982",
-        "Municipality": "Bayam\u00f3n",
-        "Region": "North",
-        "Award Type Equivalent": "Reconstruction",
-        "Coordinates": "18.28788,-66.15269",
-        "Stage Status": "04 - Construction - Started",
-        "Subcontractor Name": null,
-        "Model Home Design Selection": null,
-        "Days Since Last Milestone Inspection": "1653",
-        "Subcontractor Date of Notice to Proceed": "2022-04-19",
-        "Days Left": "-1068"
     }
 ]
