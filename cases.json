@@ -6,7 +6,7 @@
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.45409,-66.29096",
         "Stage Status": "04 - Construction - Started",
-        "Subcontractor Name": "MARCELO ELECTRIC INC (MEGC)",
+        "Subcontractor Name": "Marcelo Electro Inc.",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
         "Days Since Last Milestone Inspection": "32",
         "Subcontractor Date of Notice to Proceed": "2026-09-28",
@@ -357,7 +357,7 @@
         "Award Type Equivalent": "Relocation",
         "Coordinates": "18.35602,-66.99989",
         "Stage Status": "04 - Construction - Started",
-        "Subcontractor Name": "Demolition - F&R Construction Group, Inc.\nAll Site - F&R Construction Group, Inc.",
+        "Subcontractor Name": "Custom Development Group, LLC",
         "Model Home Design Selection": null,
         "Days Since Last Milestone Inspection": "64",
         "Subcontractor Date of Notice to Proceed": "2026-08-27",
@@ -525,12 +525,12 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "17.97923,-66.88368",
-        "Stage Status": "11 - Structure Inspection",
+        "Stage Status": "12 - Substantial Inspection",
         "Subcontractor Name": "F&R Construction Group, Inc. \nSANTIAGO ELECTRIC & GENERAL CONTRACOR INC",
         "Model Home Design Selection": "Single-Story 3-Bedroom",
         "Days Since Last Milestone Inspection": "70",
         "Subcontractor Date of Notice to Proceed": "2026-03-24",
-        "Days Left": "8"
+        "Days Left": "12"
     },
     {
         "Case ID": "PR-EQK-00650",
@@ -1280,10 +1280,10 @@
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.41479,-66.63769",
         "Stage Status": "04 - Construction - Started",
-        "Subcontractor Name": "Marcelo Electric",
+        "Subcontractor Name": "Marcelo Electro Inc.",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
         "Days Since Last Milestone Inspection": "30",
-        "Subcontractor Date of Notice to Proceed": "2026-09-30",
+        "Subcontractor Date of Notice to Proceed": "2026-10-12",
         "Days Left": "188"
     },
     {
