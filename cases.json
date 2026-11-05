@@ -338,19 +338,6 @@
         "Days Left": "-289"
     },
     {
-        "Case ID": "PR-R3-08571",
-        "Municipality": "San Sebasti\u00e1n",
-        "Region": "North",
-        "Award Type Equivalent": "Relocation",
-        "Coordinates": "18.35602,-66.99989",
-        "Stage Status": "04 - Construction - Started",
-        "Subcontractor Name": "Custom Development Group, LLC",
-        "Model Home Design Selection": null,
-        "Days Since Last Milestone Inspection": "70",
-        "Subcontractor Date of Notice to Proceed": "2026-08-27",
-        "Days Left": "5"
-    },
-    {
         "Case ID": "PR-R3-26472 (BR)",
         "Municipality": "Ponce",
         "Region": "South",
@@ -460,12 +447,12 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "17.96378,-66.37358",
-        "Stage Status": "11 - Structure Inspection",
+        "Stage Status": "12 - Substantial Inspection",
         "Subcontractor Name": "A & S General Contractor",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "170",
+        "Days Since Last Milestone Inspection": "7",
         "Subcontractor Date of Notice to Proceed": "2026-02-13",
-        "Days Left": "-73"
+        "Days Left": "-66"
     },
     {
         "Case ID": "PR-EQK-00458",
@@ -1045,10 +1032,10 @@
         "Region": "North",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.46243,-66.5966",
-        "Stage Status": "07 - Foundation Inspection",
+        "Stage Status": "08 - Walls Inspection (1st Level)",
         "Subcontractor Name": "Marcelo Electro Inc.",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "10",
+        "Days Since Last Milestone Inspection": "2",
         "Subcontractor Date of Notice to Proceed": "2026-10-08",
         "Days Left": "163"
     },
