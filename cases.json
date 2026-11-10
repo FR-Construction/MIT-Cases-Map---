@@ -632,7 +632,7 @@
         "Stage Status": "04 - Construction - Started",
         "Subcontractor Name": "Testing - Environmental Health & Safety Services\nAbatement - Central",
         "Model Home Design Selection": null,
-        "Days Since Last Milestone Inspection": null,
+        "Days Since Last Milestone Inspection": "1",
         "Subcontractor Date of Notice to Proceed": "2026-11-09",
         "Days Left": "59"
     },
@@ -1040,6 +1040,19 @@
         "Days Left": "18"
     },
     {
+        "Case ID": "PR-EQK-00796",
+        "Municipality": "Yauco",
+        "Region": "South",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.01447,-66.87367",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Testing - Environmental Health & Safety Services\n\n\n\n\n\n\n\n\n\n\n\n\n\nPV System Installation - F&R Construction Group, Inc.\nWS System Installation - F&R Construction Group, Inc.",
+        "Model Home Design Selection": "Single-Story 2-Bedroom (RAR)",
+        "Days Since Last Milestone Inspection": null,
+        "Subcontractor Date of Notice to Proceed": "2026-11-10",
+        "Days Left": "192"
+    },
+    {
         "Case ID": "PR-SFM-05130",
         "Municipality": "Arecibo",
         "Region": "North",
@@ -1412,7 +1425,7 @@
         "Stage Status": "04 - Construction - Started",
         "Subcontractor Name": "Testing - AES\nAbatement - DEK\n\n\n\n\n\n\n\n\n\n\n\n\nPV System Installation - F&R Construction Group, Inc.\nWS System Installation - F&R Construction Group, Inc.",
         "Model Home Design Selection": "One-Story 2-Bedroom (Compact/Narrow) Mod. A (ADA)",
-        "Days Since Last Milestone Inspection": null,
+        "Days Since Last Milestone Inspection": "1",
         "Subcontractor Date of Notice to Proceed": "2026-11-09",
         "Days Left": "187"
     },
@@ -1555,7 +1568,7 @@
         "Stage Status": "04 - Construction - Started",
         "Subcontractor Name": "Testing - AES",
         "Model Home Design Selection": null,
-        "Days Since Last Milestone Inspection": null,
+        "Days Since Last Milestone Inspection": "1",
         "Subcontractor Date of Notice to Proceed": "2026-11-09",
         "Days Left": "59"
     },
