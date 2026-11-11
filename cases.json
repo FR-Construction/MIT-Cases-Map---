@@ -382,10 +382,10 @@
         "Region": "North",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.47804,-66.69698",
-        "Stage Status": "07 - Foundation Inspection",
+        "Stage Status": "08 - Walls Inspection (1st Level)",
         "Subcontractor Name": "RODCA CONTRACTORS LLC",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "21",
+        "Days Since Last Milestone Inspection": "2",
         "Subcontractor Date of Notice to Proceed": "2026-09-29",
         "Days Left": "149"
     },
@@ -611,6 +611,19 @@
         "Days Left": "25"
     },
     {
+        "Case ID": "PR-R3-05854",
+        "Municipality": "Aguas Buenas",
+        "Region": "North",
+        "Award Type Equivalent": "Relocation",
+        "Coordinates": "18.28943,-66.07397",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Testing - AES",
+        "Model Home Design Selection": null,
+        "Days Since Last Milestone Inspection": "0",
+        "Subcontractor Date of Notice to Proceed": "2026-11-11",
+        "Days Left": "60"
+    },
+    {
         "Case ID": "PR-R3-08556",
         "Municipality": "Carolina",
         "Region": "North",
@@ -720,10 +733,10 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.00437,-66.84543",
-        "Stage Status": "06 - Retaining Wall Inspection (Walls)",
+        "Stage Status": "07 - Foundation Inspection",
         "Subcontractor Name": "F&R Construction Group, Inc",
         "Model Home Design Selection": "Single-Story 2-Bedroom (ADA)",
-        "Days Since Last Milestone Inspection": "51",
+        "Days Since Last Milestone Inspection": "2",
         "Subcontractor Date of Notice to Proceed": "2026-07-10",
         "Days Left": "119"
     },
@@ -1180,7 +1193,7 @@
         "Model Home Design Selection": "Single-Story 2-Bedroom (RAR)",
         "Days Since Last Milestone Inspection": "50",
         "Subcontractor Date of Notice to Proceed": "2026-10-13",
-        "Days Left": "158"
+        "Days Left": "160"
     },
     {
         "Case ID": "PR-SFM-04809",
@@ -1266,10 +1279,10 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.03064,-66.49308",
-        "Stage Status": "07 - Foundation Inspection",
+        "Stage Status": "08 - Walls Inspection (1st Level)",
         "Subcontractor Name": "QUARTZITE CONSTRUCTION LLC",
         "Model Home Design Selection": "Single-Story 3-Bedroom",
-        "Days Since Last Milestone Inspection": "21",
+        "Days Since Last Milestone Inspection": "2",
         "Subcontractor Date of Notice to Proceed": "2026-10-05",
         "Days Left": "136"
     },
@@ -1495,6 +1508,19 @@
         "Days Left": "39"
     },
     {
+        "Case ID": "PR-R3-19192",
+        "Municipality": "San Juan",
+        "Region": "North",
+        "Award Type Equivalent": "Relocation",
+        "Coordinates": "18.44307,-66.07089",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Testing - Innovate\nAbatement - DEK",
+        "Model Home Design Selection": null,
+        "Days Since Last Milestone Inspection": "0",
+        "Subcontractor Date of Notice to Proceed": "2026-11-11",
+        "Days Left": "60"
+    },
+    {
         "Case ID": "PR-BR-51014",
         "Municipality": "Dorado",
         "Region": "North",
@@ -1508,6 +1534,19 @@
         "Days Left": "39"
     },
     {
+        "Case ID": "PR-SFM-03796",
+        "Municipality": "Can\u00f3vanas",
+        "Region": "North",
+        "Award Type Equivalent": "Relocation",
+        "Coordinates": "18.40109,-65.89014",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Testing - AES",
+        "Model Home Design Selection": null,
+        "Days Since Last Milestone Inspection": "0",
+        "Subcontractor Date of Notice to Proceed": "2026-11-11",
+        "Days Left": "60"
+    },
+    {
         "Case ID": "PR-SFM-01056",
         "Municipality": "Mayag\u00fcez",
         "Region": "South",
@@ -1519,6 +1558,19 @@
         "Days Since Last Milestone Inspection": "107",
         "Subcontractor Date of Notice to Proceed": "2026-07-27",
         "Days Left": "19"
+    },
+    {
+        "Case ID": "PR-R3-09205",
+        "Municipality": "Cayey",
+        "Region": "South",
+        "Award Type Equivalent": "Relocation",
+        "Coordinates": "18.1588,-66.09287",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Testing - Environmental Health & Safety Services",
+        "Model Home Design Selection": null,
+        "Days Since Last Milestone Inspection": "0",
+        "Subcontractor Date of Notice to Proceed": "2026-11-11",
+        "Days Left": "60"
     },
     {
         "Case ID": "PR-SFM-02124",
