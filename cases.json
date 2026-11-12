@@ -943,7 +943,7 @@
         "Coordinates": "18.04503,-66.55002",
         "Stage Status": "04 - Construction - Started",
         "Subcontractor Name": "Testing - AES\n\n\n\n\n\n\n\n\n\n\n\n\n\nPV System Installation - F&R Construction Group, Inc.",
-        "Model Home Design Selection": "Two Story 3-Bedroom (RAR)",
+        "Model Home Design Selection": "Two-Story 3-Bedroom (RAR)",
         "Days Since Last Milestone Inspection": "13",
         "Subcontractor Date of Notice to Proceed": "2026-10-30",
         "Days Left": "219"
@@ -1443,19 +1443,6 @@
         "Days Left": "185"
     },
     {
-        "Case ID": "PR-SFM-00694",
-        "Municipality": "Ceiba",
-        "Region": "North",
-        "Award Type Equivalent": "Relocation",
-        "Coordinates": "18.27533,-65.66224",
-        "Stage Status": "04 - Construction - Started",
-        "Subcontractor Name": "RENEWAL ENERGY GROUP LLC",
-        "Model Home Design Selection": null,
-        "Days Since Last Milestone Inspection": "51",
-        "Subcontractor Date of Notice to Proceed": "2026-10-08",
-        "Days Left": "9"
-    },
-    {
         "Case ID": "PR-R3-19804",
         "Municipality": "Lajas",
         "Region": "South",
@@ -1519,19 +1506,6 @@
         "Days Since Last Milestone Inspection": "1",
         "Subcontractor Date of Notice to Proceed": "2026-11-11",
         "Days Left": "59"
-    },
-    {
-        "Case ID": "PR-BR-51014",
-        "Municipality": "Dorado",
-        "Region": "North",
-        "Award Type Equivalent": "Relocation",
-        "Coordinates": "18.44281,-66.28946",
-        "Stage Status": "04 - Construction - Started",
-        "Subcontractor Name": "Y.E transporte LLC.",
-        "Model Home Design Selection": null,
-        "Days Since Last Milestone Inspection": "22",
-        "Subcontractor Date of Notice to Proceed": "2026-10-21",
-        "Days Left": "38"
     },
     {
         "Case ID": "PR-SFM-03796",
