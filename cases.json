@@ -117,6 +117,19 @@
         "Days Left": "-61"
     },
     {
+        "Case ID": "PR-R3-11872",
+        "Municipality": "Guaynabo",
+        "Region": "North",
+        "Award Type Equivalent": "Relocation",
+        "Coordinates": "18.34579,-66.12024",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Testing - AES",
+        "Model Home Design Selection": null,
+        "Days Since Last Milestone Inspection": null,
+        "Subcontractor Date of Notice to Proceed": "2026-11-16",
+        "Days Left": "60"
+    },
+    {
         "Case ID": "PR-EQK-01123",
         "Municipality": "Gu\u00e1nica",
         "Region": "South",
@@ -218,7 +231,7 @@
         "Model Home Design Selection": "Single-Story 4-Bedroom",
         "Days Since Last Milestone Inspection": "122",
         "Subcontractor Date of Notice to Proceed": "2025-12-16",
-        "Days Left": "-82"
+        "Days Left": "-58"
     },
     {
         "Case ID": "PR-SFM-02930",
@@ -634,7 +647,7 @@
         "Model Home Design Selection": null,
         "Days Since Last Milestone Inspection": "7",
         "Subcontractor Date of Notice to Proceed": "2026-11-09",
-        "Days Left": "53"
+        "Days Left": "60"
     },
     {
         "Case ID": "PR-R3-00123",
@@ -1391,6 +1404,19 @@
         "Days Left": "158"
     },
     {
+        "Case ID": "PR-SFM-00332",
+        "Municipality": "Toa Alta",
+        "Region": "North",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.38373,-66.25684",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Testing - GLOBAL\nAbatement - DEK\n\n\n\n\n\n\n\n\n\n\n\n\nPV System Installation - F&R Construction Group, Inc.\nWS System Installation - F&R Construction Group, Inc.",
+        "Model Home Design Selection": "Single-Story 2-Bedroom (RAR)",
+        "Days Since Last Milestone Inspection": null,
+        "Subcontractor Date of Notice to Proceed": "2026-11-16",
+        "Days Left": "210"
+    },
+    {
         "Case ID": "PR-EQK-00807",
         "Municipality": "Gu\u00e1nica",
         "Region": "South",
@@ -1456,6 +1482,19 @@
         "Days Left": "38"
     },
     {
+        "Case ID": "PR-SFM-05453",
+        "Municipality": "Yauco",
+        "Region": "South",
+        "Award Type Equivalent": "Relocation",
+        "Coordinates": "18.01099,-66.87105",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Testing - AES",
+        "Model Home Design Selection": null,
+        "Days Since Last Milestone Inspection": null,
+        "Subcontractor Date of Notice to Proceed": "2026-11-16",
+        "Days Left": "60"
+    },
+    {
         "Case ID": "PR-R3-14207",
         "Municipality": "Ponce",
         "Region": "South",
@@ -1493,6 +1532,32 @@
         "Days Since Last Milestone Inspection": "5",
         "Subcontractor Date of Notice to Proceed": "2026-11-11",
         "Days Left": "55"
+    },
+    {
+        "Case ID": "PR-SFM-01657",
+        "Municipality": "Toa Baja",
+        "Region": "North",
+        "Award Type Equivalent": "Relocation",
+        "Coordinates": "18.4281,-66.23834",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Testing - AES\nAbatement - ENVIRO",
+        "Model Home Design Selection": null,
+        "Days Since Last Milestone Inspection": null,
+        "Subcontractor Date of Notice to Proceed": "2026-11-16",
+        "Days Left": "60"
+    },
+    {
+        "Case ID": "PR-SFM-02146",
+        "Municipality": "Toa Baja",
+        "Region": "North",
+        "Award Type Equivalent": "Relocation",
+        "Coordinates": "18.41875,-66.21382",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Testing - AES\nAbatement - CENTRAL",
+        "Model Home Design Selection": null,
+        "Days Since Last Milestone Inspection": null,
+        "Subcontractor Date of Notice to Proceed": "2026-11-16",
+        "Days Left": "60"
     },
     {
         "Case ID": "PR-SFM-03796",
@@ -1560,6 +1625,19 @@
         "Days Left": "13"
     },
     {
+        "Case ID": "PR-SFM-05429",
+        "Municipality": "Las Piedras",
+        "Region": "North",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "18.22593,-65.8607",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Testing - AES\nAbatement - ENVIRO'\n\n\n\n\n\n\n\n\n\n\n\n\nPV System Installation - F&R Construction Group, Inc.\nWS System Installation - F&R Construction Group, Inc.",
+        "Model Home Design Selection": "Single-Story 2-Bedroom (RAR)",
+        "Days Since Last Milestone Inspection": null,
+        "Subcontractor Date of Notice to Proceed": "2026-11-16",
+        "Days Left": "186"
+    },
+    {
         "Case ID": "PR-R3-03840 (BR)",
         "Municipality": "Ciales",
         "Region": "North",
@@ -1573,6 +1651,19 @@
         "Days Left": "41"
     },
     {
+        "Case ID": "PR-SFM-02936",
+        "Municipality": "Toa Alta",
+        "Region": "North",
+        "Award Type Equivalent": "Relocation",
+        "Coordinates": "18.37937,-66.21868",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Testing - AES\nAbatement - DEK",
+        "Model Home Design Selection": null,
+        "Days Since Last Milestone Inspection": null,
+        "Subcontractor Date of Notice to Proceed": "2026-11-16",
+        "Days Left": "60"
+    },
+    {
         "Case ID": "PR-SFM-01510",
         "Municipality": "San Sebasti\u00e1n",
         "Region": "North",
@@ -1583,7 +1674,7 @@
         "Model Home Design Selection": null,
         "Days Since Last Milestone Inspection": "7",
         "Subcontractor Date of Notice to Proceed": "2026-11-09",
-        "Days Left": "53"
+        "Days Left": "60"
     },
     {
         "Case ID": "PR-SFM-00884",
@@ -1597,6 +1688,19 @@
         "Days Since Last Milestone Inspection": "3",
         "Subcontractor Date of Notice to Proceed": "2026-11-13",
         "Days Left": "57"
+    },
+    {
+        "Case ID": "PR-SFM-02728",
+        "Municipality": "Guayama",
+        "Region": "South",
+        "Award Type Equivalent": "Relocation",
+        "Coordinates": "17.95323,-66.16862",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Testing - AES",
+        "Model Home Design Selection": null,
+        "Days Since Last Milestone Inspection": null,
+        "Subcontractor Date of Notice to Proceed": "2026-11-16",
+        "Days Left": "60"
     },
     {
         "Case ID": "PR-EQK-01185",
