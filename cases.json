@@ -715,19 +715,6 @@
         "Days Left": "-115"
     },
     {
-        "Case ID": "PR-EQK-00951",
-        "Municipality": "Lajas",
-        "Region": "South",
-        "Award Type Equivalent": "Reconstruction",
-        "Coordinates": "17.99614,-66.97159",
-        "Stage Status": "08 - Walls Inspection (1st Level)",
-        "Subcontractor Name": "Constructora Yanmar, LLC",
-        "Model Home Design Selection": "Two-Story 4-Bedroom (RAR)",
-        "Days Since Last Milestone Inspection": "37",
-        "Subcontractor Date of Notice to Proceed": "2026-06-02",
-        "Days Left": "72"
-    },
-    {
         "Case ID": "PR-R3-26215",
         "Municipality": "Yauco",
         "Region": "South",
@@ -777,7 +764,7 @@
         "Model Home Design Selection": "Single-Story 2-Bedroom (ADA)",
         "Days Since Last Milestone Inspection": "89",
         "Subcontractor Date of Notice to Proceed": "2026-01-27",
-        "Days Left": "-49"
+        "Days Left": "-31"
     },
     {
         "Case ID": "PR-SFM-03059",
@@ -842,7 +829,7 @@
         "Model Home Design Selection": "Single-Story 2-Bedroom (ADA)",
         "Days Since Last Milestone Inspection": "154",
         "Subcontractor Date of Notice to Proceed": "2026-03-06",
-        "Days Left": "-50"
+        "Days Left": "-28"
     },
     {
         "Case ID": "PR-SFM-03341",
@@ -1097,10 +1084,10 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.029,-66.98486",
-        "Stage Status": "08 - Walls Inspection (1st Level)",
+        "Stage Status": "11 - Structure Inspection",
         "Subcontractor Name": "Prime Restoration Services LLC",
         "Model Home Design Selection": "Single-Story 4-Bedroom",
-        "Days Since Last Milestone Inspection": "37",
+        "Days Since Last Milestone Inspection": "2",
         "Subcontractor Date of Notice to Proceed": "2026-05-20",
         "Days Left": "10"
     },
@@ -1175,10 +1162,10 @@
         "Region": "North",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.44921,-66.51021",
-        "Stage Status": "07 - Foundation Inspection",
+        "Stage Status": "08 - Walls Inspection (1st Level)",
         "Subcontractor Name": "Marcelo Electro Inc.",
         "Model Home Design Selection": "Single-Story 2-Bedroom (ADA)",
-        "Days Since Last Milestone Inspection": "13",
+        "Days Since Last Milestone Inspection": "2",
         "Subcontractor Date of Notice to Proceed": "2026-09-10",
         "Days Left": "134"
     },
@@ -1298,6 +1285,19 @@
         "Days Since Last Milestone Inspection": "50",
         "Subcontractor Date of Notice to Proceed": "2026-09-29",
         "Days Left": "142"
+    },
+    {
+        "Case ID": "PR-EQK-01195",
+        "Municipality": "Gu\u00e1nica",
+        "Region": "South",
+        "Award Type Equivalent": "Reconstruction",
+        "Coordinates": "17.97614,-66.89636",
+        "Stage Status": "04 - Construction - Started",
+        "Subcontractor Name": "Testing - AES\nAbatement - ENVIRO\n\n\n\n\n\n\n\n\n\n\n\n\nPV System Installation - F&R Construction Group, Inc.\nWS System Installation - F&R Construction Group, Inc.",
+        "Model Home Design Selection": "Single-Story 2-Bedroom (RAR)",
+        "Days Since Last Milestone Inspection": null,
+        "Subcontractor Date of Notice to Proceed": "2026-11-18",
+        "Days Left": "189"
     },
     {
         "Case ID": "PR-R3-04902",
