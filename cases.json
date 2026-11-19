@@ -346,7 +346,7 @@
         "Stage Status": "04 - Construction - Started",
         "Subcontractor Name": null,
         "Model Home Design Selection": null,
-        "Days Since Last Milestone Inspection": null,
+        "Days Since Last Milestone Inspection": "1",
         "Subcontractor Date of Notice to Proceed": "2026-11-18",
         "Days Left": "59"
     },
@@ -699,7 +699,7 @@
         "Model Home Design Selection": "Single-Story 2-Bedroom",
         "Days Since Last Milestone Inspection": "175",
         "Subcontractor Date of Notice to Proceed": "2026-02-18",
-        "Days Left": "-53"
+        "Days Left": "-42"
     },
     {
         "Case ID": "PR-EQK-00832",
@@ -1011,7 +1011,7 @@
         "Model Home Design Selection": "Single-Story 2-Bedroom",
         "Days Since Last Milestone Inspection": "22",
         "Subcontractor Date of Notice to Proceed": "2026-10-28",
-        "Days Left": "165"
+        "Days Left": "191"
     },
     {
         "Case ID": "PR-SFM-04512",
@@ -1370,10 +1370,10 @@
         "Region": "North",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.41479,-66.63769",
-        "Stage Status": "04 - Construction - Started",
+        "Stage Status": "07 - Foundation Inspection",
         "Subcontractor Name": "Marcelo Electro Inc.",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "50",
+        "Days Since Last Milestone Inspection": "2",
         "Subcontractor Date of Notice to Proceed": "2026-10-12",
         "Days Left": "168"
     },
