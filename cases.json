@@ -751,7 +751,7 @@
         "Model Home Design Selection": "Single-Story 2-Bedroom",
         "Days Since Last Milestone Inspection": "142",
         "Subcontractor Date of Notice to Proceed": "2026-02-24",
-        "Days Left": "-49"
+        "Days Left": "-29"
     },
     {
         "Case ID": "PR-R3-09808",
@@ -1019,10 +1019,10 @@
         "Region": "South",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.02877,-66.53348",
-        "Stage Status": "04 - Construction - Started",
+        "Stage Status": "07 - Foundation Inspection",
         "Subcontractor Name": "3K MANAGEMENT & CONSTRUCTION",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "72",
+        "Days Since Last Milestone Inspection": "2",
         "Subcontractor Date of Notice to Proceed": "2026-09-29",
         "Days Left": "117"
     },
@@ -1123,10 +1123,10 @@
         "Region": "North",
         "Award Type Equivalent": "Reconstruction",
         "Coordinates": "18.46243,-66.5966",
-        "Stage Status": "08 - Walls Inspection (1st Level)",
+        "Stage Status": "11 - Structure Inspection",
         "Subcontractor Name": "Marcelo Electro Inc.",
         "Model Home Design Selection": "Single-Story 2-Bedroom",
-        "Days Since Last Milestone Inspection": "17",
+        "Days Since Last Milestone Inspection": "2",
         "Subcontractor Date of Notice to Proceed": "2026-10-08",
         "Days Left": "148"
     },
